@@ -1,0 +1,2324 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/8686b79d/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/9428b0ca/solarized_light.css" rel="stylesheet">
+<link href="./assets/d7033ccd/style.css" rel="stylesheet">
+<script src="./assets/f11dae8d/jquery.js"></script>
+<script src="./assets/8686b79d/js/bootstrap.js"></script>
+<script src="./assets/d7033ccd/socialveo/custom.js"></script>
+<script src="./assets/b3b826a4/jssearch.js"></script>    <title>UsersController, Socialveo\WebApi\Controllers\UsersController - Socialveo API Documentation</title>
+
+    <link rel='stylesheet' id='awesome-css' href='https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/font-awesome.min.css' type='text/css' media='all'/>
+    <link rel="stylesheet" id="bootstrap-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/bootstrap.min.css?ver=4.1.5" type="text/css" media="all"/>
+    <link rel="stylesheet" id="animations-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/animate.css?ver=4.1.5" type="text/css" media="all"/>
+    <link rel="stylesheet" id="main-style-css" href="https://socialveo.com/wp-content/themes/socialveo/style.css?ver=4.1.5" type="text/css" media="all"/>
+
+    <link href="./assets/socialveo/custom.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navigation navigation-header site-header" role="banner">
+        <div class="container">
+            <div class="rowx">
+                <div class="col-md-3">
+                    <div class="navigation-brand">
+                        <div class="brand-logo">
+                            <a href="https://socialveo.com/" class="logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 searchbox-col" role="search">
+                    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+                </div>
+                <button class="navigation-toggle visible-sm visible-xs" type="button" data-toggle="dropdown"
+                        data-target=".navigation-navbar"><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+                <div class="col-md-6">
+                    <nav id="site-navigation" class="main-navigation navigation-navbar navigation-bar-right"
+                         role="navigation">
+                        <div class="menu-menu-1-container">
+                            <ul id="menu-menu-1" class="nav-menu navigation-bar navigation-bar-right">
+                                <li class="menu-item"><a href="https://socialveo.com/help/"><i
+                                            class="fa fa-life-ring"></i> Home</a></li>
+                                <li class="menu-item"><a href="https://socialveo.com/go/kb/"><i
+                                            class="fa fa-question-circle"></i> Knowledge Base</a></li>
+                                <li class="menu-item"><a href="https://socialveo.com/help/restapi/"><i
+                                            class="fa fa-code"></i> Rest API</a></li>
+                                <li class="menu-item"><a href="https://socialveo.com/help/docs/"><i
+                                            class="fa fa-file-code-o"></i> Documentation</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="wrap">
+    <nav id="w16304" class="navbar-inverse navbar-fixed-top navbar"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w16304-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Socialveo API Documentation</a></div><div id="w16304-collapse" class="collapse navbar-collapse"><ul id="w16305" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li></ul></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-3">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-16244" data-toggle="collapse" data-parent="#navigation">Socialveo\Admin <b class="caret"></b></a><div id="navigation-16244" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-16244-16245" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\Controllers <b class="caret"></b></a><div id="navigation-16244-16245" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-controllers-admincontroller.html">AdminController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-authcontroller.html">AuthController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-commentscontroller.html">CommentsController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-indexcontroller.html">IndexController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-karmabadgecontroller.html">KarmabadgeController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-mediacontroller.html">MediaController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-networkscontroller.html">NetworksController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-postscontroller.html">PostsController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-settingscontroller.html">SettingsController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-spamcontroller.html">SpamController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-staticpagescontroller.html">StaticpagesController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-userscontroller.html">UsersController</a></div>
+<a class="list-group-item" href="#navigation-16244-16246" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\forms <b class="caret"></b></a><div id="navigation-16244-16246" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-abstractform.html">AbstractForm</a></div>
+<a class="list-group-item" href="#navigation-16244-16247" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\forms\auth <b class="caret"></b></a><div id="navigation-16244-16247" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-auth-login.html">Login</a></div>
+<a class="list-group-item" href="#navigation-16244-16248" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\forms\comments <b class="caret"></b></a><div id="navigation-16244-16248" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-comments-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-comments-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-16244-16249" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\forms\karmabadge <b class="caret"></b></a><div id="navigation-16244-16249" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-karmabadge-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-karmabadge-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-16244-16250" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\forms\media <b class="caret"></b></a><div id="navigation-16244-16250" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-media-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-media-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-16244-16251" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\forms\networks <b class="caret"></b></a><div id="navigation-16244-16251" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-networks-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-networks-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-16244-16252" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\forms\posts <b class="caret"></b></a><div id="navigation-16244-16252" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-posts-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-posts-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-16244-16253" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\forms\spam <b class="caret"></b></a><div id="navigation-16244-16253" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-spam-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-spam-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-16244-16254" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\forms\staticpages <b class="caret"></b></a><div id="navigation-16244-16254" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-staticpages-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-staticpages-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-16244-16255" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\forms\users <b class="caret"></b></a><div id="navigation-16244-16255" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-users-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-users-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-16244-16256" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\routes <b class="caret"></b></a><div id="navigation-16244-16256" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-routes-indexroutes.html">IndexRoutes</a>
+<a class="list-group-item" href="./socialveo-admin-routes-usersroutes.html">UsersRoutes</a></div>
+<a class="list-group-item" href="#navigation-16244-16257" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\widgets <b class="caret"></b></a><div id="navigation-16244-16257" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-widgets-widgetbase.html">WidgetBase</a></div>
+<a class="list-group-item" href="#navigation-16244-16258" data-toggle="collapse" data-parent="#navigation-16244">Socialveo\Admin\widgets\gridView <b class="caret"></b></a><div id="navigation-16244-16258" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-widgets-gridview-gridview.html">GridView</a></div>
+<a class="list-group-item" href="./socialveo-admin-module.html">Module</a></div>
+<a class="list-group-item" href="#navigation-16259" data-toggle="collapse" data-parent="#navigation">Socialveo\Core <b class="caret"></b></a><div id="navigation-16259" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-16259-16260" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\behaviors <b class="caret"></b></a><div id="navigation-16259-16260" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-behaviors-hasassociations.html">HasAssociations</a>
+<a class="list-group-item" href="./socialveo-core-behaviors-isassociation.html">IsAssociation</a>
+<a class="list-group-item" href="./socialveo-core-behaviors-jsonbehavior.html">JsonBehavior</a>
+<a class="list-group-item" href="./socialveo-core-behaviors-locationbehavior.html">LocationBehavior</a></div>
+<a class="list-group-item" href="#navigation-16259-16261" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\exceptions <b class="caret"></b></a><div id="navigation-16259-16261" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-exceptions-httpexception.html">HttpException</a>
+<a class="list-group-item" href="./socialveo-core-exceptions-translatedexception.html">TranslatedException</a>
+<a class="list-group-item" href="./socialveo-core-exceptions-uploadexception.html">UploadException</a>
+<a class="list-group-item" href="./socialveo-core-exceptions-validateexception.html">ValidateException</a></div>
+<a class="list-group-item" href="#navigation-16259-16262" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\forms <b class="caret"></b></a><div id="navigation-16259-16262" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-forms-payment.html">Payment</a></div>
+<a class="list-group-item" href="#navigation-16259-16263" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\forms\element <b class="caret"></b></a><div id="navigation-16259-16263" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-forms-element-checkboxlist.html">CheckBoxList</a></div>
+<a class="list-group-item" href="#navigation-16259-16264" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\helpers <b class="caret"></b></a><div id="navigation-16259-16264" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-helpers-commentshelper.html">CommentsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-connectionshelper.html">ConnectionsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-datehelper.html">DateHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-formhelper.html">FormHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-karmahelpers.html">KarmaHelpers</a>
+<a class="list-group-item" href="./socialveo-core-helpers-locationhelper.html">LocationHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-mediahelper.html">MediaHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-mediauploaderhelper.html">MediaUploaderHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-messagesdialogshelper.html">MessagesDialogsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-messageshelper.html">MessagesHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-networkhelper.html">NetworkHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-postshelper.html">PostsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-spamhelper.html">SpamHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-tagshelper.html">TagsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-url.html">Url</a>
+<a class="list-group-item" href="./socialveo-core-helpers-usershelper.html">UsersHelper</a></div>
+<a class="list-group-item" href="#navigation-16259-16265" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\library <b class="caret"></b></a><div id="navigation-16259-16265" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-assetmanager.html">AssetManager</a>
+<a class="list-group-item" href="./socialveo-core-library-configmanager.html">ConfigManager</a>
+<a class="list-group-item" href="./socialveo-core-library-cssminfilter.html">CssminFilter</a>
+<a class="list-group-item" href="./socialveo-core-library-fileuploader.html">FileUploader</a>
+<a class="list-group-item" href="./socialveo-core-library-filesystem.html">Filesystem</a>
+<a class="list-group-item" href="./socialveo-core-library-formatphrase.html">FormatPhrase</a>
+<a class="list-group-item" href="./socialveo-core-library-gettext.html">Gettext</a>
+<a class="list-group-item" href="./socialveo-core-library-googleclientwrapper.html">GoogleClientWrapper</a>
+<a class="list-group-item" href="./socialveo-core-library-hybridauthwrapper.html">HybridAuthWrapper</a>
+<a class="list-group-item" href="./socialveo-core-library-oauth2storage.html">OAuth2Storage</a>
+<a class="list-group-item" href="./socialveo-core-library-sqllogger.html">SqlLogger</a>
+<a class="list-group-item" href="./socialveo-core-library-urlembed.html">UrlEmbed</a></div>
+<a class="list-group-item" href="#navigation-16259-16266" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\library\db <b class="caret"></b></a><div id="navigation-16259-16266" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-db-migration.html">Migration</a></div>
+<a class="list-group-item" href="#navigation-16259-16267" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\library\import <b class="caret"></b></a><div id="navigation-16259-16267" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-import-phpfoximporter.html">PhpfoxImporter</a>
+<a class="list-group-item" href="./socialveo-core-library-import-socialveoimporter.html">SocialveoImporter</a></div>
+<a class="list-group-item" href="#navigation-16259-16268" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\library\payment <b class="caret"></b></a><div id="navigation-16259-16268" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-payment.html">Payment</a></div>
+<a class="list-group-item" href="#navigation-16259-16269" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\library\payment\adapter <b class="caret"></b></a><div id="navigation-16259-16269" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-adapter-abstractadapter.html">AbstractAdapter</a>
+<a class="list-group-item" href="./socialveo-core-library-payment-adapter-interfaceadapter.html">InterfaceAdapter</a></div>
+<a class="list-group-item" href="#navigation-16259-16270" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\library\payment\adapter\PayPal <b class="caret"></b></a><div id="navigation-16259-16270" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-adapter-paypal-paypal.html">PayPal</a></div>
+<a class="list-group-item" href="#navigation-16259-16271" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\library\payment\adapter\Stripe <b class="caret"></b></a><div id="navigation-16259-16271" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-adapter-stripe-stripe.html">Stripe</a></div>
+<a class="list-group-item" href="#navigation-16259-16272" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\library\router <b class="caret"></b></a><div id="navigation-16259-16272" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-router-group.html">Group</a>
+<a class="list-group-item" href="./socialveo-core-library-router-route.html">Route</a></div>
+<a class="list-group-item" href="#navigation-16259-16273" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\library\view <b class="caret"></b></a><div id="navigation-16259-16273" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-view-view.html">View</a>
+<a class="list-group-item" href="./socialveo-core-library-view-volt.html">Volt</a>
+<a class="list-group-item" href="./socialveo-core-library-view-voltcompiler.html">VoltCompiler</a></div>
+<a class="list-group-item" href="#navigation-16259-16274" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\models <b class="caret"></b></a><div id="navigation-16259-16274" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-models-abstractquery.html">AbstractQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-circle.html">Circle</a>
+<a class="list-group-item" href="./socialveo-core-models-comment.html">Comment</a>
+<a class="list-group-item" href="./socialveo-core-models-connection.html">Connection</a>
+<a class="list-group-item" href="./socialveo-core-models-connectioncircle.html">ConnectionCircle</a>
+<a class="list-group-item" href="./socialveo-core-models-googlegeocodecache.html">GoogleGeocodeCache</a>
+<a class="list-group-item" href="./socialveo-core-models-googlemapcache.html">GoogleMapCache</a>
+<a class="list-group-item" href="./socialveo-core-models-index.html">Index</a>
+<a class="list-group-item" href="./socialveo-core-models-invitation.html">Invitation</a>
+<a class="list-group-item" href="./socialveo-core-models-karma.html">Karma</a>
+<a class="list-group-item" href="./socialveo-core-models-karmabadge.html">KarmaBadge</a>
+<a class="list-group-item" href="./socialveo-core-models-karmaquery.html">KarmaQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-lightmodel.html">LightModel</a>
+<a class="list-group-item" href="./socialveo-core-models-location.html">Location</a>
+<a class="list-group-item" href="./socialveo-core-models-locationcountry.html">LocationCountry</a>
+<a class="list-group-item" href="./socialveo-core-models-locationlocality.html">LocationLocality</a>
+<a class="list-group-item" href="./socialveo-core-models-locationregion.html">LocationRegion</a>
+<a class="list-group-item" href="./socialveo-core-models-log.html">Log</a>
+<a class="list-group-item" href="./socialveo-core-models-media.html">Media</a>
+<a class="list-group-item" href="./socialveo-core-models-mediaquery.html">MediaQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-messages.html">Messages</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogs.html">MessagesDialogs</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogsquery.html">MessagesDialogsQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogsusers.html">MessagesDialogsUsers</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogsusersquery.html">MessagesDialogsUsersQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-migration.html">Migration</a>
+<a class="list-group-item" href="./socialveo-core-models-network.html">Network</a>
+<a class="list-group-item" href="./socialveo-core-models-networkfields.html">NetworkFields</a>
+<a class="list-group-item" href="./socialveo-core-models-networkquery.html">NetworkQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-notification.html">Notification</a>
+<a class="list-group-item" href="./socialveo-core-models-oauth2accesstoken.html">OAuth2AccessToken</a>
+<a class="list-group-item" href="./socialveo-core-models-oauth2refreshtoken.html">OAuth2RefreshToken</a>
+<a class="list-group-item" href="./socialveo-core-models-passwordrecovery.html">PasswordRecovery</a>
+<a class="list-group-item" href="./socialveo-core-models-payment.html">Payment</a>
+<a class="list-group-item" href="./socialveo-core-models-post.html">Post</a>
+<a class="list-group-item" href="./socialveo-core-models-postquery.html">PostQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-socialveomodel.html">SocialveoModel</a>
+<a class="list-group-item" href="./socialveo-core-models-spam.html">Spam</a>
+<a class="list-group-item" href="./socialveo-core-models-staticpages.html">StaticPages</a>
+<a class="list-group-item" href="./socialveo-core-models-tag.html">Tag</a>
+<a class="list-group-item" href="./socialveo-core-models-tagassociation.html">TagAssociation</a>
+<a class="list-group-item" href="./socialveo-core-models-user.html">User</a>
+<a class="list-group-item" href="./socialveo-core-models-usersocialprofile.html">UserSocialProfile</a>
+<a class="list-group-item" href="./socialveo-core-models-webevent.html">WebEvent</a></div>
+<a class="list-group-item" href="#navigation-16259-16275" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\models\traits <b class="caret"></b></a><div id="navigation-16259-16275" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-models-traits-jsonproperties.html">JsonProperties</a></div>
+<a class="list-group-item" href="#navigation-16259-16276" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\plugins <b class="caret"></b></a><div id="navigation-16259-16276" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-plugins-autofollow.html">Autofollow</a>
+<a class="list-group-item" href="./socialveo-core-plugins-captcha.html">Captcha</a>
+<a class="list-group-item" href="./socialveo-core-plugins-exceptionlistener.html">ExceptionListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-karmalistener.html">KarmaListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-networklistener.html">NetworkListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-notificationslistener.html">NotificationsListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-sendy.html">Sendy</a>
+<a class="list-group-item" href="./socialveo-core-plugins-usernotificationslistener.html">UserNotificationsListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-webeventlistener.html">WebEventListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-wordpresslistener.html">WordPressListener</a></div>
+<a class="list-group-item" href="#navigation-16259-16277" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\session <b class="caret"></b></a><div id="navigation-16259-16277" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-session-fakesession.html">FakeSession</a>
+<a class="list-group-item" href="./socialveo-core-session-oauth2user.html">OAuth2User</a>
+<a class="list-group-item" href="./socialveo-core-session-user.html">User</a></div>
+<a class="list-group-item" href="#navigation-16259-16278" data-toggle="collapse" data-parent="#navigation-16259">Socialveo\Core\validation\validator <b class="caret"></b></a><div id="navigation-16259-16278" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-validation-validator-callback.html">Callback</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-exists.html">Exists</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-password.html">Password</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-uniquenesscirclename.html">UniquenessCircleName</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-uniquenessurl.html">UniquenessUrl</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-url.html">Url</a></div>
+<a class="list-group-item" href="./socialveo-core-acl.html">Acl</a>
+<a class="list-group-item" href="./socialveo-core-application.html">Application</a>
+<a class="list-group-item" href="./socialveo-core-classloader.html">ClassLoader</a>
+<a class="list-group-item" href="./socialveo-core-console.html">Console</a>
+<a class="list-group-item" href="./socialveo-core-cookies.html">Cookies</a>
+<a class="list-group-item" href="./socialveo-core-criteria.html">Criteria</a>
+<a class="list-group-item" href="./socialveo-core-dispatcher.html">Dispatcher</a>
+<a class="list-group-item" href="./socialveo-core-module.html">Module</a>
+<a class="list-group-item" href="./socialveo-core-router.html">Router</a>
+<a class="list-group-item" href="./socialveo-core-translatable.html">Translatable</a>
+<a class="list-group-item" href="./socialveo-core-url.html">Url</a></div>
+<a class="list-group-item" href="#navigation-16279" data-toggle="collapse" data-parent="#navigation">Socialveo\Frontend <b class="caret"></b></a><div id="navigation-16279" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-16279-16280" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\controllers <b class="caret"></b></a><div id="navigation-16279-16280" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-authcontroller.html">AuthController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-chatcontroller.html">ChatController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-circlecontroller.html">CircleController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-commentscontroller.html">CommentsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-connectionscontroller.html">ConnectionsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-frontendcontroller.html">FrontendController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-iframecontroller.html">IframeController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-indexcontroller.html">IndexController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-mediacontroller.html">MediaController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-networkscontroller.html">NetworksController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-postscontroller.html">PostsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-searchcontroller.html">SearchController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-staticpagescontroller.html">StaticPagesController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-userscontroller.html">UsersController</a></div>
+<a class="list-group-item" href="#navigation-16279-16281" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\controllers\api <b class="caret"></b></a><div id="navigation-16279-16281" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-api-jsoncontroller.html">JsonController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-mapscontroller.html">MapsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-notificationscontroller.html">NotificationsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-socketcontroller.html">SocketController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-translatorcontroller.html">TranslatorController</a></div>
+<a class="list-group-item" href="#navigation-16279-16282" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\controllers\payments <b class="caret"></b></a><div id="navigation-16279-16282" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-payments-paypalcontroller.html">PayPalController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-payments-paymentscontroller.html">PaymentsController</a></div>
+<a class="list-group-item" href="#navigation-16279-16283" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\controllers\users <b class="caret"></b></a><div id="navigation-16279-16283" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-users-blockscontroller.html">BlocksController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-users-followcontroller.html">FollowController</a></div>
+<a class="list-group-item" href="#navigation-16279-16284" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\forms <b class="caret"></b></a><div id="navigation-16279-16284" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-forms-changepassword.html">ChangePassword</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-forgotpassword.html">ForgotPassword</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-login.html">Login</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-network.html">Network</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-networkchangeavatar.html">NetworkChangeAvatar</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-networkchangecover.html">NetworkChangeCover</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-networkpayment.html">NetworkPayment</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-registration.html">Registration</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-settingchangeemail.html">SettingChangeEmail</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-settingchangepassword.html">SettingChangePassword</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-useravailability.html">UserAvailability</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-usersetting.html">UserSetting</a></div>
+<a class="list-group-item" href="#navigation-16279-16285" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\forms\user <b class="caret"></b></a><div id="navigation-16279-16285" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-forms-user-block.html">Block</a></div>
+<a class="list-group-item" href="#navigation-16279-16286" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\routes <b class="caret"></b></a><div id="navigation-16279-16286" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-routes-apiroutes.html">ApiRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-authroutes.html">AuthRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-chatroutes.html">ChatRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-circleroutes.html">CircleRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-commentsroutes.html">CommentsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-connectionsroutes.html">ConnectionsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-iframeroutes.html">IframeRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-indexroutes.html">IndexRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-mediaroutes.html">MediaRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-networksroutes.html">NetworksRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-paymentsroutes.html">PaymentsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-postsroutes.html">PostsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-searchroutes.html">SearchRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-staticpagesroutes.html">StaticPagesRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-usersroutes.html">UsersRoutes</a></div>
+<a class="list-group-item" href="#navigation-16279-16287" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets <b class="caret"></b></a><div id="navigation-16279-16287" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationswidget.html">NotificationsWidget</a>
+<a class="list-group-item" href="./socialveo-frontend-widgets-widgetbase.html">WidgetBase</a></div>
+<a class="list-group-item" href="#navigation-16279-16288" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\completeProfile <b class="caret"></b></a><div id="navigation-16279-16288" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-completeprofile-completeprofile.html">CompleteProfile</a></div>
+<a class="list-group-item" href="#navigation-16279-16289" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\conversations <b class="caret"></b></a><div id="navigation-16279-16289" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-conversations-conversations.html">Conversations</a></div>
+<a class="list-group-item" href="#navigation-16279-16290" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\maybeFriend <b class="caret"></b></a><div id="navigation-16279-16290" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-maybefriend-maybefriend.html">MaybeFriend</a></div>
+<a class="list-group-item" href="#navigation-16279-16291" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\maybeNetwork <b class="caret"></b></a><div id="navigation-16279-16291" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-maybenetwork-maybenetwork.html">MaybeNetwork</a></div>
+<a class="list-group-item" href="#navigation-16279-16292" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\notificationsConnection <b class="caret"></b></a><div id="navigation-16279-16292" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationsconnection-notificationsconnection.html">NotificationsConnection</a></div>
+<a class="list-group-item" href="#navigation-16279-16293" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\notificationsGeneric <b class="caret"></b></a><div id="navigation-16279-16293" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationsgeneric-notificationsgeneric.html">NotificationsGeneric</a></div>
+<a class="list-group-item" href="#navigation-16279-16294" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\notificationsMessages <b class="caret"></b></a><div id="navigation-16279-16294" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationsmessages-notificationsmessages.html">NotificationsMessages</a></div>
+<a class="list-group-item" href="#navigation-16279-16295" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\paginator <b class="caret"></b></a><div id="navigation-16279-16295" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-paginator-paginator.html">Paginator</a></div>
+<a class="list-group-item" href="#navigation-16279-16296" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\payment <b class="caret"></b></a><div id="navigation-16279-16296" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-payment-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-frontend-widgets-payment-payment.html">Payment</a></div>
+<a class="list-group-item" href="#navigation-16279-16297" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\posts <b class="caret"></b></a><div id="navigation-16279-16297" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-posts-posts.html">Posts</a></div>
+<a class="list-group-item" href="#navigation-16279-16298" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\search <b class="caret"></b></a><div id="navigation-16279-16298" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-search-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-16279-16299" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\staticPagesMenu <b class="caret"></b></a><div id="navigation-16279-16299" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-staticpagesmenu-staticpagesmenu.html">StaticPagesMenu</a></div>
+<a class="list-group-item" href="#navigation-16279-16300" data-toggle="collapse" data-parent="#navigation-16279">Socialveo\Frontend\widgets\usersOnline <b class="caret"></b></a><div id="navigation-16279-16300" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-usersonline-usersonline.html">UsersOnline</a></div>
+<a class="list-group-item" href="./socialveo-frontend-module.html">Module</a></div>
+<a class="list-group-item" href="#navigation-16301" data-toggle="collapse" data-parent="#navigation">Socialveo\Tasks <b class="caret"></b></a><div id="navigation-16301" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-tasks-basetask.html">BaseTask</a>
+<a class="list-group-item" href="./socialveo-tasks-calctask.html">CalcTask</a>
+<a class="list-group-item" href="./socialveo-tasks-connectiontask.html">ConnectionTask</a>
+<a class="list-group-item" href="./socialveo-tasks-converttask.html">ConvertTask</a>
+<a class="list-group-item" href="./socialveo-tasks-crontask.html">CronTask</a>
+<a class="list-group-item" href="./socialveo-tasks-dbtask.html">DbTask</a>
+<a class="list-group-item" href="./socialveo-tasks-extractlangtask.html">ExtractlangTask</a>
+<a class="list-group-item" href="./socialveo-tasks-generatemodeltask.html">GenerateModelTask</a>
+<a class="list-group-item" href="./socialveo-tasks-importtask.html">ImportTask</a>
+<a class="list-group-item" href="./socialveo-tasks-importertask.html">ImporterTask</a>
+<a class="list-group-item" href="./socialveo-tasks-indextask.html">IndexTask</a>
+<a class="list-group-item" href="./socialveo-tasks-karmatask.html">KarmaTask</a>
+<a class="list-group-item" href="./socialveo-tasks-migrationtask.html">MigrationTask</a>
+<a class="list-group-item" href="./socialveo-tasks-paymentstask.html">PaymentsTask</a>
+<a class="list-group-item" href="./socialveo-tasks-phpfoxmigratetask.html">PhpfoxmigrateTask</a>
+<a class="list-group-item" href="./socialveo-tasks-sitemaptask.html">SitemapTask</a>
+<a class="list-group-item" href="./socialveo-tasks-uploadtask.html">UploadTask</a></div>
+<a class="list-group-item" href="#navigation-16302" data-toggle="collapse" data-parent="#navigation">Socialveo\WebApi <b class="caret"></b></a><div id="navigation-16302" class="submenu panel-collapse collapse"><a class="list-group-item active" href="#navigation-16302-16303" data-toggle="collapse" data-parent="#navigation-16302">Socialveo\WebApi\Controllers <b class="caret"></b></a><div id="navigation-16302-16303" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./socialveo-webapi-controllers-chatcontroller.html">ChatController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-circlescontroller.html">CirclesController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-commentscontroller.html">CommentsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-connectionscontroller.html">ConnectionsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-indexcontroller.html">IndexController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-karmacontroller.html">KarmaController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-locationscontroller.html">LocationsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-mediacontroller.html">MediaController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-networkscontroller.html">NetworksController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-notificationscontroller.html">NotificationsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-paymentscontroller.html">PaymentsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-postscontroller.html">PostsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-restapicontroller.html">RestApiController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-searchcontroller.html">SearchController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-socialprofilescontroller.html">SocialProfilesController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-spamcontroller.html">SpamController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-staticpagescontroller.html">StaticPagesController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-tagassociationscontroller.html">TagAssociationsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-tagscontroller.html">TagsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-userblockscontroller.html">UserBlocksController</a>
+<a class="list-group-item active" href="./socialveo-webapi-controllers-userscontroller.html">UsersController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-webeventscontrollers.html">WebEventsControllers</a></div>
+<a class="list-group-item" href="./socialveo-webapi-module.html">Module</a></div></div>    </div>
+    <div class="col-md-9 api-content" role="main">
+        <h1>Class Socialveo\WebApi\Controllers\UsersController</h1>
+<div class="top-nav">
+    <a href="index.html">All Classes</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+            </div>
+
+<table class="summaryTable docClass table table-bordered">
+    <colgroup>
+        <col class="col-name" />
+        <col class="col-value" />
+    </colgroup>
+            <tr><th>Inheritance</th><td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a> &raquo;
+<a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a> &raquo;
+<a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\mvc\controller.zep">Phalcon\Mvc\Controller</a></td></tr>
+                        <tr><th>Uses Traits</th><td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td></tr>
+                            </table>
+
+<div class="class-description">
+    <p><strong>Class UsersController</strong></p>
+    
+    </div>
+
+<a id="properties"></a>
+
+<div class="summary doc-property">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr class="inherited" id="$mail">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#$mail-detail">$mail</a></td>
+        <td><a href="https://github.com/phalcon/incubator/blob/41383027bcf970f3ac194fcb46ef269dc0fa4cbd//Library/Phalcon/Mailer/Manager.php">\Phalcon\Mailer\Manager</a></td>
+        <td></td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="$network">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#$network-detail">$network</a></td>
+        <td><a href="socialveo-core-models-network.html">Socialveo\Core\models\Network</a></td>
+        <td></td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="$profileUser">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#$profileUser-detail">$profileUser</a></td>
+        <td><a href="socialveo-core-session-user.html">Socialveo\Core\session\User</a></td>
+        <td></td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="$showCount">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#$showCount-detail">$showCount</a></td>
+        <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
+        <td></td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="$status">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#$status-detail">$status</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.null">null</a></td>
+        <td></td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+    </table>
+</div>
+
+<a id="methods"></a>
+
+<div class="summary doc-method">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr class="inherited" id="_handleException()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#_handleException()-detail">_handleException()</a></td>
+        <td>Handle exceptions</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="_t()">
+        <td><a href="socialveo-core-translatable.html#_t()-detail">_t()</a></td>
+        <td>Gets translations</td>
+        <td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td>
+    </tr>
+            <tr id="activationLinkAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#activationLinkAction()-detail">activationLinkAction()</a></td>
+        <td>Activate user account by email</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="activationSmsAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#activationSmsAction()-detail">activationSmsAction()</a></td>
+        <td>Activate user account by SMS</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr class="inherited" id="afterExecuteRoute()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#afterExecuteRoute()-detail">afterExecuteRoute()</a></td>
+        <td>After execute route, change return value to json</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="beforeExecuteRoute()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#beforeExecuteRoute()-detail">beforeExecuteRoute()</a></td>
+        <td>Before execute route, remove extra params</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+                <tr id="connectionsAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#connectionsAction()-detail">connectionsAction()</a></td>
+        <td>Get user connections</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="createAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#createAction()-detail">createAction()</a></td>
+        <td>Create user (registration)</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="deleteAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#deleteAction()-detail">deleteAction()</a></td>
+        <td>Remove User resource</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="getAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#getAction()-detail">getAction()</a></td>
+        <td>Get user</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr class="inherited" id="getArrayFromParam()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getArrayFromParam()-detail">getArrayFromParam()</a></td>
+        <td>Returns array from params</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="getLanguage()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getLanguage()-detail">getLanguage()</a></td>
+        <td>Gets language code</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="getParams()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getParams()-detail">getParams()</a></td>
+        <td>Gets request params for Socialveo::filteredFind()</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="getRequiredParam()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequiredParam()-detail">getRequiredParam()</a></td>
+        <td>Get required param</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr id="getSocialProfilesAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#getSocialProfilesAction()-detail">getSocialProfilesAction()</a></td>
+        <td>Get user social profiles</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr class="inherited" id="getToken()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getToken()-detail">getToken()</a></td>
+        <td>Get token</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="getTranslation()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getTranslation()-detail">getTranslation()</a></td>
+        <td>Gets translations</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="handleError()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#handleError()-detail">handleError()</a></td>
+        <td>Handle errors</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="handleException()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#handleException()-detail">handleException()</a></td>
+        <td>Handle exceptions</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr id="importAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#importAction()-detail">importAction()</a></td>
+        <td>Import users, send email invitations to email addresses in an uploaded CSV file</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr class="inherited" id="initialize()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#initialize()-detail">initialize()</a></td>
+        <td>Initialize controller</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="invalidMethodAction()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#invalidMethodAction()-detail">invalidMethodAction()</a></td>
+        <td>Action trigger when invalid action tried run</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr id="invitationsAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#invitationsAction()-detail">invitationsAction()</a></td>
+        <td>Invite users to site via email</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="karmaAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#karmaAction()-detail">karmaAction()</a></td>
+        <td>Get user karma events</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="listAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#listAction()-detail">listAction()</a></td>
+        <td>Get public user profiles</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="meAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#meAction()-detail">meAction()</a></td>
+        <td>Get the currently logged in user resource</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="networksAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#networksAction()-detail">networksAction()</a></td>
+        <td>Get user networks</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr class="inherited" id="notFoundAction()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#notFoundAction()-detail">notFoundAction()</a></td>
+        <td>Not found action</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr id="notificationsAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#notificationsAction()-detail">notificationsAction()</a></td>
+        <td>Get user notifications</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+                <tr class="inherited" id="posts()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#posts()-detail">posts()</a></td>
+        <td>Gets posts</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr id="postsAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#postsAction()-detail">postsAction()</a></td>
+        <td>Get posts posted by user</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="recoveryPasswordAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#recoveryPasswordAction()-detail">recoveryPasswordAction()</a></td>
+        <td>Processes a password recovery request</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr class="inherited" id="replaceParam()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#replaceParam()-detail">replaceParam()</a></td>
+        <td>Replace param</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr id="resetPasswordAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#resetPasswordAction()-detail">resetPasswordAction()</a></td>
+        <td>Reset user password request</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr class="inherited" id="respondWithItem()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#respondWithItem()-detail">respondWithItem()</a></td>
+        <td>Response with item
+//     * @deprecated</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="sendJsonContent()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#sendJsonContent()-detail">sendJsonContent()</a></td>
+        <td>Send response as json content and exit</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="sendJsonContentRaw()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#sendJsonContentRaw()-detail">sendJsonContentRaw()</a></td>
+        <td>Send json content</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="sendJsonContentRawStatic()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#sendJsonContentRawStatic()-detail">sendJsonContentRawStatic()</a></td>
+        <td>Send json content static</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="setDefaultParam()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#setDefaultParam()-detail">setDefaultParam()</a></td>
+        <td>Set default option</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr class="inherited" id="t()">
+        <td><a href="socialveo-core-translatable.html#t()-detail">t()</a></td>
+        <td>Gets translations</td>
+        <td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td>
+    </tr>
+            <tr class="inherited" id="unsetParam()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#unsetParam()-detail">unsetParam()</a></td>
+        <td>Unset get param</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+            <tr id="updateAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#updateAction()-detail">updateAction()</a></td>
+        <td>Update user</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="updatePasswordAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#updatePasswordAction()-detail">updatePasswordAction()</a></td>
+        <td>Change User password</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="updateStatusAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#updateStatusAction()-detail">updateStatusAction()</a></td>
+        <td>Change user status</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="usersAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#usersAction()-detail">usersAction()</a></td>
+        <td>Get users connected to given users</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+    </table>
+</div>
+
+<div class="summary doc-method">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+                                <tr class="inherited" id="checkAccess()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#checkAccess()-detail">checkAccess()</a></td>
+        <td>Checks during the init of controller whether user is a guest.</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+                                                                                                        <tr class="inherited" id="objectsToArray()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#objectsToArray()-detail">objectsToArray()</a></td>
+        <td>Convert objects to arrays</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+                                                                    </table>
+</div>
+
+<a id="events"></a>
+
+<a id="constants"></a>
+
+<h2>Method Details</h2>
+
+<div class="method-doc">
+
+    <div class="detail-header h3" id="activationLinkAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#activationLinkAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        activationLinkAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Activate user account by email</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/activation</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user uuid</td>
+</tr>
+<tr>
+<td><strong>activation_code</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>activation code</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> bool</p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#activationLinkAction()-detail">activationLinkAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="activationSmsAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#activationSmsAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        activationSmsAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Activate user account by SMS</strong></p>
+
+        <div class="alert alert-danger">
+                    Notice. This action is disabled, the reasons can be: 
+                    not implemented, unsafe, duplicated or deprecated (autodetect: disabled in the router)</div><code class="hljs api">/users/{user_uuid}/activation</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user uuid</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> bool</p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> </p>
+
+This action produces no output.
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#activationSmsAction()-detail">activationSmsAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="connectionsAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#connectionsAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        connectionsAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get user connections</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/connections</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string, user uuid</td>
+</tr>
+<tr>
+<td><strong>page</strong> or <strong>offset</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer, page start or offset</td>
+</tr>
+<tr>
+<td><strong>limit</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer, page limit</td>
+</tr>
+<tr>
+<td><strong>sortby[property]=order</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>sort by property value, order either <em>desc</em> or <em>asc</em></td>
+</tr>
+<tr>
+<td><strong>filterby[property][operator]=value</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>filter by given property, operator <em>eq</em> (=), <em>gt</em> (&gt;), <em>ge</em>(&gt;=), <em>lt</em>(&lt;), <em>le</em>(&lt;=), <em>like</em></td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a>[]</p>
+
+
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":[
+        {"type": "connection", "uuid": "16813358-44c8-11e7-bc57-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "connection", "uuid": "e464dcec-45a0-11e7-b89e-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "connection", "uuid": "f36ed832-5694-11e7-842a-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "connection", "uuid": "5098aa9c-6ac2-11e7-8b6f-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        ...
+    ],
+    "count":{"offset": 0, "limit": 10, "total": 12},
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#connectionsAction()-detail">connectionsAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="createAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#createAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        createAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Create user (registration)</strong></p>
+
+        <code class="hljs api">/users/create</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>username</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>username (also called screenname), may contain only alphanumeric character, dashes, underscores and periods</td>
+</tr>
+<tr>
+<td><strong>password</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user password</td>
+</tr>
+<tr>
+<td><strong>email</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user email address</td>
+</tr>
+<tr>
+<td><strong>language_code</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>language code (example en_US, it_IT, de_DE)</td>
+</tr>
+<tr>
+<td><strong>firstname</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>user firstname</td>
+</tr>
+<tr>
+<td><strong>lastname</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>user firstname</td>
+</tr>
+<tr>
+<td><strong>language</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>language code</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":{
+        "type": "users",
+        "uuid": "52a705ec-6acf-11e7-803d-54bef75c7a3f",
+        "network_uuid": "52aae8d8-6acf-11e7-a6d0-54bef75c7a3f",
+        ...
+    },
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#createAction()-detail">createAction</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="deleteAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#deleteAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        deleteAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Remove User resource</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/delete</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user uuid</td>
+</tr>
+<tr>
+<td><strong>language</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>language code</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> bool</p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#deleteAction()-detail">deleteAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#getAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get user</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/get</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user uuid</td>
+</tr>
+<tr>
+<td><strong>language</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>language code</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":{
+        "type": "users",
+        "uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f",
+        "network_uuid": "4631a06c-27f8-11e6-94b3-54bef75c7a3f",
+        ...
+    },
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#getAction()-detail">getAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getSocialProfilesAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#getSocialProfilesAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getSocialProfilesAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get user social profiles</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/social-profiles</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string, user uuid</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-usersocialprofile.html" title="UserSocialProfile">UserSocialProfile</a>[]</p>
+
+
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":[
+        {"type": "user_social_profile", "uuid": "9a6f6dde-6b5f-11e7-9ee9-54bef75c7a3f", "provider": "Facebook",…},
+        {"type": "user_social_profile", "uuid": "b523f238-4efb-11e7-a4c3-54bef75c7a3f", "provider": "Facebook",…},
+        {"type": "user_social_profile", "uuid": "ad8d267a-4efb-11e7-ab85-54bef75c7a3f", "provider": "Google",…},
+        {"type": "user_social_profile", "uuid": "ad8d267a-4efb-11e7-ab85-54bef75c7a3f", "provider": "Google",…},
+        ...
+    ],
+    "count":{"total": 12},
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#getSocialProfilesAction()-detail">getSocialProfilesAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="importAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#importAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        importAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Import users, send email invitations to email addresses in an uploaded CSV file</strong></p>
+
+        <div class="alert alert-danger">
+                    Notice. This action is disabled, the reasons can be: 
+                    not implemented, unsafe, duplicated or deprecated (autodetect: disabled in the router)</div><code class="hljs api">/users/{user_uuid}/import</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
+<p style=" font-size: 17px;"><strong>CAUTION:</strong> Request content-type has to be *multipart/form-data*</p>
+
+
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>file</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>CSV file to be uploaded and processed</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    'status': 'OK',
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#importAction()-detail">importAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>The UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="invitationsAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#invitationsAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        invitationsAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Invite users to site via email</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/invitations</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string, user uuid</td>
+</tr>
+<tr>
+<td><strong>emails</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>array or come separated email addresses, to which invitations are to be sent</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    'status': 'OK'
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#invitationsAction()-detail">invitationsAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="karmaAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#karmaAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        karmaAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get user karma events</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/karma</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user uuid</td>
+</tr>
+<tr>
+<td><strong>page</strong> or <strong>offset</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer</td>
+<td>page start or offset</td>
+</tr>
+<tr>
+<td><strong>limit</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer</td>
+<td>page limit</td>
+</tr>
+<tr>
+<td><strong>sortby[property]=order</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>array</td>
+<td>sort by property value, order either <em>desc</em> or <em>asc</em></td>
+</tr>
+<tr>
+<td><strong>filterby[property][operator]=value</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>array</td>
+<td>filter by given property, operator <em>eq</em> (=), <em>gt</em> (&gt;), <em>ge</em>(&gt;=), <em>lt</em>(&lt;), <em>le</em>(&lt;=), <em>like</em></td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-karma.html" title="Karma">Karma</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-karma.html" title="Karma">Karma</a>[]</p>
+
+
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":[
+        {"type": "karma", "uuid": "9a6f6dde-6b5f-11e7-9ee9-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "karma", "uuid": "b523f238-4efb-11e7-a4c3-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "karma", "uuid": "ad8d267a-4efb-11e7-ab85-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "karma", "uuid": "2da8744c-4efa-11e7-92bf-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        ...
+    ]
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#karmaAction()-detail">karmaAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="listAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#listAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        listAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get public user profiles</strong></p>
+
+        <code class="hljs api">/users</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>uuids</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string or array</td>
+<td>users uuids separated by coma, or array with user uuids</td>
+</tr>
+<tr>
+<td><strong>page</strong> or <strong>offset</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer</td>
+<td>page start or offset</td>
+</tr>
+<tr>
+<td><strong>limit</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer</td>
+<td>page limit</td>
+</tr>
+<tr>
+<td><strong>sortby[property]=order</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>array</td>
+<td>sort by property value, order either <em>desc</em> or <em>asc</em></td>
+</tr>
+<tr>
+<td><strong>filterby[property][operator]=value</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>array</td>
+<td>filter by given property, operator <em>eq</em> (=), <em>gt</em> (&gt;), <em>ge</em>(&gt;=), <em>lt</em>(&lt;), <em>le</em>(&lt;=), <em>ne</em>(<>), <em>like</em></td>
+</tr>
+<tr>
+<td><strong>embed</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>mixed</td>
+<td>allows to include one or more child resource(s) in the response</td>
+</tr>
+<tr>
+<td><strong>uuids</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>array or string</td>
+<td>list of item UUIDs to fetch, array or string separated by commas. when used, no other parameters can be utilized</td>
+</tr>
+<tr>
+<td><strong>language</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>language code</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a>[]</p>
+
+
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":[
+        {"type": "users", "uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f", "network_uuid": "a66b8654-14a8-11e6-af87-54bef75c7a3f",…},
+        {"type": "users", "uuid": "5a15e760-27ed-11e6-8d4a-54bef75c7a3f", "network_uuid": "5ac94e9a-27ed-11e6-9916-54bef75c7a3f",…},
+        {"type": "users", "uuid": "0449c1f2-27f8-11e6-be68-54bef75c7a3f", "network_uuid": "04577e6e-27f8-11e6-b0cf-54bef75c7a3f",…},
+        {"type": "users", "uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f", "network_uuid": "4631a06c-27f8-11e6-94b3-54bef75c7a3f",…},
+        ...
+    ],
+    "count":{"offset": 0, "limit": 10, "total": 12},
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#listAction()-detail">listAction</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="meAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#meAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        meAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get the currently logged in user resource</strong></p>
+
+        <code class="hljs api">/users/me</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Logged</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>language</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>language code</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code>{
+    "status": "OK",
+    "data":{
+        "type": "users",
+        "uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",
+        "network_uuid": "a66b8654-14a8-11e6-af87-54bef75c7a3f",
+        ...
+    },
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#meAction()-detail">meAction</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="networksAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#networksAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        networksAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get user networks</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/networks</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string, user uuid</td>
+</tr>
+<tr>
+<td><strong>page</strong> or <strong>offset</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer, page start or offset</td>
+</tr>
+<tr>
+<td><strong>limit</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer, page limit</td>
+</tr>
+<tr>
+<td><strong>sortby[property]=order</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>sort by property value, order either <em>desc</em> or <em>asc</em></td>
+</tr>
+<tr>
+<td><strong>filterby[property][operator]=value</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>filter by given property, operator <em>eq</em> (=), <em>gt</em> (&gt;), <em>ge</em>(&gt;=), <em>lt</em>(&lt;), <em>le</em>(&lt;=), <em>like</em></td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a>[]</p>
+
+
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":[
+        {"type": "network", "uuid": "91c4efe4-cb17-11e6-ae6b-54bef75c7a3f", "user_uuid": "91c033fa-cb17-11e6-b903-54bef75c7a3f",…},
+        {"type": "network", "uuid": "25b857dc-8e22-11e6-b414-54bef75c7a3f", "user_uuid": "fba76d0c-8e21-11e6-baa1-54bef75c7a3f",…},
+        {"type": "network", "uuid": "220eb10c-7e38-11e6-97c2-54bef75c7a3f", "user_uuid": "20213018-7e38-11e6-9cfa-54bef75c7a3f",…},
+        {"type": "network", "uuid": "4364a38e-27fd-11e6-a56a-54bef75c7a3f", "user_uuid": "4306270a-27fd-11e6-9bba-54bef75c7a3f",…},
+        ...
+    ]
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#networksAction()-detail">networksAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="notificationsAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#notificationsAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        notificationsAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get user notifications</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/notifications</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string, user uuid</td>
+</tr>
+<tr>
+<td><strong>page</strong> or <strong>offset</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer, page start or offset</td>
+</tr>
+<tr>
+<td><strong>limit</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer, page limit</td>
+</tr>
+<tr>
+<td><strong>sortby[property]=order</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>sort by property value, order either <em>desc</em> or <em>asc</em></td>
+</tr>
+<tr>
+<td><strong>filterby[property][operator]=value</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>filter by given property, operator <em>eq</em> (=), <em>gt</em> (&gt;), <em>ge</em>(&gt;=), <em>lt</em>(&lt;), <em>le</em>(&lt;=), <em>like</em></td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a>[]</p>
+
+
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":[
+        {"type": "notification", "uuid": "c736726c-6b33-11e7-84d7-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "notification", "uuid": "93df5d7a-47fc-11e7-afa7-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "notification", "uuid": "0277ea8e-8b0d-11e6-9d45-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "notification", "uuid": "cbe4a70a-8b0c-11e6-b962-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        ...
+    ],
+    "count":{"offset": 0, "limit": 10, "total": 12},
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#notificationsAction()-detail">notificationsAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="postsAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#postsAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        postsAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get posts posted by user</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/posts</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user uuid</td>
+</tr>
+<tr>
+<td><strong>page</strong> or <strong>offset</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer</td>
+<td>page start or offset (page=3&amp;limit=10 the same as offset=20&amp;limit=10)</td>
+</tr>
+<tr>
+<td><strong>limit</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer</td>
+<td>page limit</td>
+</tr>
+<tr>
+<td><strong>sortby[property]=order</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>array</td>
+<td>sort by property value, order either <em>desc</em> or <em>asc</em></td>
+</tr>
+<tr>
+<td><strong>filterby[property][operator]=value</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>array</td>
+<td>filter by given property, operator <em>eq</em> (=), <em>gt</em> (&gt;), <em>ge</em>(&gt;=), <em>lt</em>(&lt;), <em>le</em>(&lt;=), <em>like</em></td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-post.html" title="Post">Post</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-post.html" title="Post">Post</a>[]</p>
+
+
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":[
+        {"type": "post", "uuid": "9a6f6dde-6b5f-11e7-9ee9-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "post", "uuid": "b523f238-4efb-11e7-a4c3-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "post", "uuid": "ad8d267a-4efb-11e7-ab85-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        {"type": "post", "uuid": "2da8744c-4efa-11e7-92bf-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
+        ...
+    ],
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#postsAction()-detail">postsAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="recoveryPasswordAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#recoveryPasswordAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        recoveryPasswordAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Processes a password recovery request</strong></p>
+
+        <code class="hljs api">/users/password-recovery/{password_recovery_uuid}</code>
+
+
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{password_recovery_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>password recovery uuid</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a></p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    'status': 'OK',
+    "data":{
+        "type": "password_recovery",
+        "uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f",
+        "user_uuid": "4631a06c-27f8-11e6-94b3-54bef75c7a3f",
+        ...
+    },
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#recoveryPasswordAction()-detail">recoveryPasswordAction</a></strong> ( <span style="color: #0000BB">$password_recovery_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$password_recovery_uuid</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Password recovery UUID is passed in the request URI.</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="resetPasswordAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#resetPasswordAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        resetPasswordAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Reset user password request</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/password-reset</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user uuid</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a></p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    'status': 'OK',
+    "data":{
+        "type": "password_recovery",
+        "uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f",
+        "user_uuid": "4631a06c-27f8-11e6-94b3-54bef75c7a3f",
+        ...
+    },
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#resetPasswordAction()-detail">resetPasswordAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI.</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="updateAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#updateAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        updateAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Update user</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/update</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user uuid</td>
+</tr>
+<tr>
+<td><strong>pass</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>user password</td>
+</tr>
+<tr>
+<td><strong>firstname</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>user firstname</td>
+</tr>
+<tr>
+<td><strong>lastname</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>user firstname</td>
+</tr>
+<tr>
+<td><strong>email</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>email</td>
+<td>user email address</td>
+</tr>
+<tr>
+<td><strong>language_code</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>language code</td>
+</tr>
+<tr>
+<td><strong>gender</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>gender (either 'male' or 'female')</td>
+</tr>
+<tr>
+<td><strong>availability</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>user availability status: <em>available</em> <em>unavailable</em> <em>away</em> <em>busy</em> <em>dnd</em></td>
+</tr>
+<tr>
+<td><strong>mobile</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>mobile phone number (non-numeric characters will be stripped)</td>
+</tr>
+<tr>
+<td><strong>birthdate</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>birthdate in YYYY-MM-DD format</td>
+</tr>
+<tr>
+<td><strong>about</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>text</td>
+<td>user about info</td>
+</tr>
+<tr>
+<td><strong>interests</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>text</td>
+<td>user interests</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":{
+        "type": "user",
+        "uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f",
+        "network_uuid": "4631a06c-27f8-11e6-94b3-54bef75c7a3f",
+        ...
+    },
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#updateAction()-detail">updateAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User uuid</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="updatePasswordAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#updatePasswordAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        updatePasswordAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Change User password</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/password-update</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user uuid</td>
+</tr>
+<tr>
+<td><strong>current_pass</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>current user password</td>
+</tr>
+<tr>
+<td><strong>new_pass</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>new password</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#updatePasswordAction()-detail">updatePasswordAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI. In order to process the password change request, both current and new password strings have to be provided in the body of the request.</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="updateStatusAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#updateStatusAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        updateStatusAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Change user status</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/status-update</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>user uuid</td>
+</tr>
+<tr>
+<td><strong>status</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>integer</td>
+<td>user status, 0 - inactive, 1 - active user, 2 - block user account, 3 - invisible (in search results), 4 - protected (only friends/followings can access profile)</td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    'status': 'OK',
+    "data":{
+        "type": "user",
+        "uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f",
+        "network_uuid": "4631a06c-27f8-11e6-94b3-54bef75c7a3f",
+        ...
+    },
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#updateStatusAction()-detail">updateStatusAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="usersAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#usersAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        usersAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get users connected to given users</strong></p>
+
+        <code class="hljs api">/users/{user_uuid}/users</code>
+<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
+<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
+<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{user_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string, user uuid</td>
+</tr>
+<tr>
+<td><strong>page</strong> or <strong>offset</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer, page start or offset</td>
+</tr>
+<tr>
+<td><strong>limit</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>integer, page limit</td>
+</tr>
+<tr>
+<td><strong>sortby[property]=order</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>sort by property value, order either <em>desc</em> or <em>asc</em></td>
+</tr>
+<tr>
+<td><strong>filterby[property][operator]=value</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>filter by given property, operator <em>eq</em> (=), <em>gt</em> (&gt;), <em>ge</em>(&gt;=), <em>lt</em>(&lt;), <em>le</em>(&lt;=), <em>like</em></td>
+</tr>
+</tbody>
+</table></p>
+
+<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
+<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a>[]</p>
+
+
+<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+    "status": "OK",
+    "data":[
+        {"type": "user", "uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f", "network_uuid": "4631a06c-27f8-11e6-94b3-54bef75c7a3f",…},
+        {"type": "user", "uuid": "4306270a-27fd-11e6-9bba-54bef75c7a3f", "network_uuid": "4364a38e-27fd-11e6-a56a-54bef75c7a3f",…}
+        {"type": "user", "uuid": "4306270a-27fd-11e6-9bba-54bef75c7a3f", "network_uuid": "4364a38e-27fd-11e6-a56a-54bef75c7a3f",…}
+        {"type": "user", "uuid": "4306270a-27fd-11e6-9bba-54bef75c7a3f", "network_uuid": "4364a38e-27fd-11e6-a56a-54bef75c7a3f",…}
+        ...
+    ],
+    "count":{"offset": 0, "limit": 10, "total": 12},
+    "timestamp": 1234567890
+}</code></pre></p>
+
+
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#usersAction()-detail">usersAction</a></strong> ( <span style="color: #0000BB">$user_uuid</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_uuid</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>User UUID is passed in the request URI</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+</div>
+        </div>
+</div>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    $("a.toggle").on('click', function () {
+        var $this = $(this);
+        if ($this.hasClass('properties-hidden')) {
+            $this.text($this.text().replace(/Show/,'Hide'));
+            $this.parents(".summary").find(".inherited").show();
+            $this.removeClass('properties-hidden');
+        } else {
+            $this.text($this.text().replace(/Hide/,'Show'));
+            $this.parents(".summary").find(".inherited").hide();
+            $this.addClass('properties-hidden');
+        }
+
+        return false;
+    });
+
+    var openNavigation = function($item) {
+        var $e = $item.parent();
+        if ($e[0] && $e.is(".submenu")) {
+            $e.addClass("in");
+            $e.prev().removeClass("active");
+            openNavigation($e);
+        }
+    }
+
+    $(document).ready(function() {
+        openNavigation($("#navigation .list-group-item.active"));
+        openNavigation($("#navigation .submenu.active"));
+
+        $('.list-group-item[data-toggle="collapse"] + .submenu.collapse').each(function() {
+            if (!$(this).is(".in")) {
+                $(this).prev().addClass("collapsed");
+            }
+        })
+    });
+    /*]]>*/
+</script>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Fri, 28 Jul 2017 13:41:38 +0000</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

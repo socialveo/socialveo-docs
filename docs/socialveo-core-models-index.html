@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/8686b79d/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/9428b0ca/solarized_light.css" rel="stylesheet">
+<link href="./assets/d7033ccd/style.css" rel="stylesheet">
+<script src="./assets/f11dae8d/jquery.js"></script>
+<script src="./assets/8686b79d/js/bootstrap.js"></script>
+<script src="./assets/d7033ccd/socialveo/custom.js"></script>
+<script src="./assets/b3b826a4/jssearch.js"></script>    <title>Index, Socialveo\Core\models\Index - Socialveo API Documentation</title>
+
+    <link rel='stylesheet' id='awesome-css' href='https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/font-awesome.min.css' type='text/css' media='all'/>
+    <link rel="stylesheet" id="bootstrap-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/bootstrap.min.css?ver=4.1.5" type="text/css" media="all"/>
+    <link rel="stylesheet" id="animations-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/animate.css?ver=4.1.5" type="text/css" media="all"/>
+    <link rel="stylesheet" id="main-style-css" href="https://socialveo.com/wp-content/themes/socialveo/style.css?ver=4.1.5" type="text/css" media="all"/>
+
+    <link href="./assets/socialveo/custom.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navigation navigation-header site-header" role="banner">
+        <div class="container">
+            <div class="rowx">
+                <div class="col-md-3">
+                    <div class="navigation-brand">
+                        <div class="brand-logo">
+                            <a href="https://socialveo.com/" class="logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 searchbox-col" role="search">
+                    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+                </div>
+                <button class="navigation-toggle visible-sm visible-xs" type="button" data-toggle="dropdown"
+                        data-target=".navigation-navbar"><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+                <div class="col-md-6">
+                    <nav id="site-navigation" class="main-navigation navigation-navbar navigation-bar-right"
+                         role="navigation">
+                        <div class="menu-menu-1-container">
+                            <ul id="menu-menu-1" class="nav-menu navigation-bar navigation-bar-right">
+                                <li class="menu-item"><a href="https://socialveo.com/help/"><i
+                                            class="fa fa-life-ring"></i> Home</a></li>
+                                <li class="menu-item"><a href="https://socialveo.com/go/kb/"><i
+                                            class="fa fa-question-circle"></i> Knowledge Base</a></li>
+                                <li class="menu-item"><a href="https://socialveo.com/help/restapi/"><i
+                                            class="fa fa-code"></i> Rest API</a></li>
+                                <li class="menu-item"><a href="https://socialveo.com/help/docs/"><i
+                                            class="fa fa-file-code-o"></i> Documentation</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="wrap">
+    <nav id="w7314" class="navbar-inverse navbar-fixed-top navbar"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w7314-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Socialveo API Documentation</a></div><div id="w7314-collapse" class="collapse navbar-collapse"><ul id="w7315" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li></ul></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-3">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-7254" data-toggle="collapse" data-parent="#navigation">Socialveo\Admin <b class="caret"></b></a><div id="navigation-7254" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-7254-7255" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\Controllers <b class="caret"></b></a><div id="navigation-7254-7255" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-controllers-admincontroller.html">AdminController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-authcontroller.html">AuthController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-commentscontroller.html">CommentsController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-indexcontroller.html">IndexController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-karmabadgecontroller.html">KarmabadgeController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-mediacontroller.html">MediaController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-networkscontroller.html">NetworksController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-postscontroller.html">PostsController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-settingscontroller.html">SettingsController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-spamcontroller.html">SpamController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-staticpagescontroller.html">StaticpagesController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-userscontroller.html">UsersController</a></div>
+<a class="list-group-item" href="#navigation-7254-7256" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\forms <b class="caret"></b></a><div id="navigation-7254-7256" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-abstractform.html">AbstractForm</a></div>
+<a class="list-group-item" href="#navigation-7254-7257" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\forms\auth <b class="caret"></b></a><div id="navigation-7254-7257" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-auth-login.html">Login</a></div>
+<a class="list-group-item" href="#navigation-7254-7258" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\forms\comments <b class="caret"></b></a><div id="navigation-7254-7258" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-comments-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-comments-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-7254-7259" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\forms\karmabadge <b class="caret"></b></a><div id="navigation-7254-7259" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-karmabadge-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-karmabadge-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-7254-7260" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\forms\media <b class="caret"></b></a><div id="navigation-7254-7260" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-media-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-media-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-7254-7261" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\forms\networks <b class="caret"></b></a><div id="navigation-7254-7261" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-networks-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-networks-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-7254-7262" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\forms\posts <b class="caret"></b></a><div id="navigation-7254-7262" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-posts-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-posts-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-7254-7263" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\forms\spam <b class="caret"></b></a><div id="navigation-7254-7263" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-spam-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-spam-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-7254-7264" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\forms\staticpages <b class="caret"></b></a><div id="navigation-7254-7264" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-staticpages-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-staticpages-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-7254-7265" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\forms\users <b class="caret"></b></a><div id="navigation-7254-7265" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-users-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-users-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-7254-7266" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\routes <b class="caret"></b></a><div id="navigation-7254-7266" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-routes-indexroutes.html">IndexRoutes</a>
+<a class="list-group-item" href="./socialveo-admin-routes-usersroutes.html">UsersRoutes</a></div>
+<a class="list-group-item" href="#navigation-7254-7267" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\widgets <b class="caret"></b></a><div id="navigation-7254-7267" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-widgets-widgetbase.html">WidgetBase</a></div>
+<a class="list-group-item" href="#navigation-7254-7268" data-toggle="collapse" data-parent="#navigation-7254">Socialveo\Admin\widgets\gridView <b class="caret"></b></a><div id="navigation-7254-7268" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-widgets-gridview-gridview.html">GridView</a></div>
+<a class="list-group-item" href="./socialveo-admin-module.html">Module</a></div>
+<a class="list-group-item" href="#navigation-7269" data-toggle="collapse" data-parent="#navigation">Socialveo\Core <b class="caret"></b></a><div id="navigation-7269" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-7269-7270" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\behaviors <b class="caret"></b></a><div id="navigation-7269-7270" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-behaviors-hasassociations.html">HasAssociations</a>
+<a class="list-group-item" href="./socialveo-core-behaviors-isassociation.html">IsAssociation</a>
+<a class="list-group-item" href="./socialveo-core-behaviors-jsonbehavior.html">JsonBehavior</a>
+<a class="list-group-item" href="./socialveo-core-behaviors-locationbehavior.html">LocationBehavior</a></div>
+<a class="list-group-item" href="#navigation-7269-7271" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\exceptions <b class="caret"></b></a><div id="navigation-7269-7271" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-exceptions-httpexception.html">HttpException</a>
+<a class="list-group-item" href="./socialveo-core-exceptions-translatedexception.html">TranslatedException</a>
+<a class="list-group-item" href="./socialveo-core-exceptions-uploadexception.html">UploadException</a>
+<a class="list-group-item" href="./socialveo-core-exceptions-validateexception.html">ValidateException</a></div>
+<a class="list-group-item" href="#navigation-7269-7272" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\forms <b class="caret"></b></a><div id="navigation-7269-7272" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-forms-payment.html">Payment</a></div>
+<a class="list-group-item" href="#navigation-7269-7273" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\forms\element <b class="caret"></b></a><div id="navigation-7269-7273" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-forms-element-checkboxlist.html">CheckBoxList</a></div>
+<a class="list-group-item" href="#navigation-7269-7274" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\helpers <b class="caret"></b></a><div id="navigation-7269-7274" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-helpers-commentshelper.html">CommentsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-connectionshelper.html">ConnectionsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-datehelper.html">DateHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-formhelper.html">FormHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-karmahelpers.html">KarmaHelpers</a>
+<a class="list-group-item" href="./socialveo-core-helpers-locationhelper.html">LocationHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-mediahelper.html">MediaHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-mediauploaderhelper.html">MediaUploaderHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-messagesdialogshelper.html">MessagesDialogsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-messageshelper.html">MessagesHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-networkhelper.html">NetworkHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-postshelper.html">PostsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-spamhelper.html">SpamHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-tagshelper.html">TagsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-url.html">Url</a>
+<a class="list-group-item" href="./socialveo-core-helpers-usershelper.html">UsersHelper</a></div>
+<a class="list-group-item" href="#navigation-7269-7275" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\library <b class="caret"></b></a><div id="navigation-7269-7275" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-assetmanager.html">AssetManager</a>
+<a class="list-group-item" href="./socialveo-core-library-configmanager.html">ConfigManager</a>
+<a class="list-group-item" href="./socialveo-core-library-cssminfilter.html">CssminFilter</a>
+<a class="list-group-item" href="./socialveo-core-library-fileuploader.html">FileUploader</a>
+<a class="list-group-item" href="./socialveo-core-library-filesystem.html">Filesystem</a>
+<a class="list-group-item" href="./socialveo-core-library-formatphrase.html">FormatPhrase</a>
+<a class="list-group-item" href="./socialveo-core-library-gettext.html">Gettext</a>
+<a class="list-group-item" href="./socialveo-core-library-googleclientwrapper.html">GoogleClientWrapper</a>
+<a class="list-group-item" href="./socialveo-core-library-hybridauthwrapper.html">HybridAuthWrapper</a>
+<a class="list-group-item" href="./socialveo-core-library-oauth2storage.html">OAuth2Storage</a>
+<a class="list-group-item" href="./socialveo-core-library-sqllogger.html">SqlLogger</a>
+<a class="list-group-item" href="./socialveo-core-library-urlembed.html">UrlEmbed</a></div>
+<a class="list-group-item" href="#navigation-7269-7276" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\library\db <b class="caret"></b></a><div id="navigation-7269-7276" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-db-migration.html">Migration</a></div>
+<a class="list-group-item" href="#navigation-7269-7277" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\library\import <b class="caret"></b></a><div id="navigation-7269-7277" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-import-phpfoximporter.html">PhpfoxImporter</a>
+<a class="list-group-item" href="./socialveo-core-library-import-socialveoimporter.html">SocialveoImporter</a></div>
+<a class="list-group-item" href="#navigation-7269-7278" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\library\payment <b class="caret"></b></a><div id="navigation-7269-7278" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-payment.html">Payment</a></div>
+<a class="list-group-item" href="#navigation-7269-7279" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\library\payment\adapter <b class="caret"></b></a><div id="navigation-7269-7279" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-adapter-abstractadapter.html">AbstractAdapter</a>
+<a class="list-group-item" href="./socialveo-core-library-payment-adapter-interfaceadapter.html">InterfaceAdapter</a></div>
+<a class="list-group-item" href="#navigation-7269-7280" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\library\payment\adapter\PayPal <b class="caret"></b></a><div id="navigation-7269-7280" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-adapter-paypal-paypal.html">PayPal</a></div>
+<a class="list-group-item" href="#navigation-7269-7281" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\library\payment\adapter\Stripe <b class="caret"></b></a><div id="navigation-7269-7281" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-adapter-stripe-stripe.html">Stripe</a></div>
+<a class="list-group-item" href="#navigation-7269-7282" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\library\router <b class="caret"></b></a><div id="navigation-7269-7282" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-router-group.html">Group</a>
+<a class="list-group-item" href="./socialveo-core-library-router-route.html">Route</a></div>
+<a class="list-group-item" href="#navigation-7269-7283" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\library\view <b class="caret"></b></a><div id="navigation-7269-7283" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-view-view.html">View</a>
+<a class="list-group-item" href="./socialveo-core-library-view-volt.html">Volt</a>
+<a class="list-group-item" href="./socialveo-core-library-view-voltcompiler.html">VoltCompiler</a></div>
+<a class="list-group-item active" href="#navigation-7269-7284" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\models <b class="caret"></b></a><div id="navigation-7269-7284" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./socialveo-core-models-abstractquery.html">AbstractQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-circle.html">Circle</a>
+<a class="list-group-item" href="./socialveo-core-models-comment.html">Comment</a>
+<a class="list-group-item" href="./socialveo-core-models-connection.html">Connection</a>
+<a class="list-group-item" href="./socialveo-core-models-connectioncircle.html">ConnectionCircle</a>
+<a class="list-group-item" href="./socialveo-core-models-googlegeocodecache.html">GoogleGeocodeCache</a>
+<a class="list-group-item" href="./socialveo-core-models-googlemapcache.html">GoogleMapCache</a>
+<a class="list-group-item active" href="./socialveo-core-models-index.html">Index</a>
+<a class="list-group-item" href="./socialveo-core-models-invitation.html">Invitation</a>
+<a class="list-group-item" href="./socialveo-core-models-karma.html">Karma</a>
+<a class="list-group-item" href="./socialveo-core-models-karmabadge.html">KarmaBadge</a>
+<a class="list-group-item" href="./socialveo-core-models-karmaquery.html">KarmaQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-lightmodel.html">LightModel</a>
+<a class="list-group-item" href="./socialveo-core-models-location.html">Location</a>
+<a class="list-group-item" href="./socialveo-core-models-locationcountry.html">LocationCountry</a>
+<a class="list-group-item" href="./socialveo-core-models-locationlocality.html">LocationLocality</a>
+<a class="list-group-item" href="./socialveo-core-models-locationregion.html">LocationRegion</a>
+<a class="list-group-item" href="./socialveo-core-models-log.html">Log</a>
+<a class="list-group-item" href="./socialveo-core-models-media.html">Media</a>
+<a class="list-group-item" href="./socialveo-core-models-mediaquery.html">MediaQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-messages.html">Messages</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogs.html">MessagesDialogs</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogsquery.html">MessagesDialogsQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogsusers.html">MessagesDialogsUsers</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogsusersquery.html">MessagesDialogsUsersQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-migration.html">Migration</a>
+<a class="list-group-item" href="./socialveo-core-models-network.html">Network</a>
+<a class="list-group-item" href="./socialveo-core-models-networkfields.html">NetworkFields</a>
+<a class="list-group-item" href="./socialveo-core-models-networkquery.html">NetworkQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-notification.html">Notification</a>
+<a class="list-group-item" href="./socialveo-core-models-oauth2accesstoken.html">OAuth2AccessToken</a>
+<a class="list-group-item" href="./socialveo-core-models-oauth2refreshtoken.html">OAuth2RefreshToken</a>
+<a class="list-group-item" href="./socialveo-core-models-passwordrecovery.html">PasswordRecovery</a>
+<a class="list-group-item" href="./socialveo-core-models-payment.html">Payment</a>
+<a class="list-group-item" href="./socialveo-core-models-post.html">Post</a>
+<a class="list-group-item" href="./socialveo-core-models-postquery.html">PostQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-socialveomodel.html">SocialveoModel</a>
+<a class="list-group-item" href="./socialveo-core-models-spam.html">Spam</a>
+<a class="list-group-item" href="./socialveo-core-models-staticpages.html">StaticPages</a>
+<a class="list-group-item" href="./socialveo-core-models-tag.html">Tag</a>
+<a class="list-group-item" href="./socialveo-core-models-tagassociation.html">TagAssociation</a>
+<a class="list-group-item" href="./socialveo-core-models-user.html">User</a>
+<a class="list-group-item" href="./socialveo-core-models-usersocialprofile.html">UserSocialProfile</a>
+<a class="list-group-item" href="./socialveo-core-models-webevent.html">WebEvent</a></div>
+<a class="list-group-item" href="#navigation-7269-7285" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\models\traits <b class="caret"></b></a><div id="navigation-7269-7285" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-models-traits-jsonproperties.html">JsonProperties</a></div>
+<a class="list-group-item" href="#navigation-7269-7286" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\plugins <b class="caret"></b></a><div id="navigation-7269-7286" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-plugins-autofollow.html">Autofollow</a>
+<a class="list-group-item" href="./socialveo-core-plugins-captcha.html">Captcha</a>
+<a class="list-group-item" href="./socialveo-core-plugins-exceptionlistener.html">ExceptionListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-karmalistener.html">KarmaListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-networklistener.html">NetworkListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-notificationslistener.html">NotificationsListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-sendy.html">Sendy</a>
+<a class="list-group-item" href="./socialveo-core-plugins-usernotificationslistener.html">UserNotificationsListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-webeventlistener.html">WebEventListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-wordpresslistener.html">WordPressListener</a></div>
+<a class="list-group-item" href="#navigation-7269-7287" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\session <b class="caret"></b></a><div id="navigation-7269-7287" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-session-fakesession.html">FakeSession</a>
+<a class="list-group-item" href="./socialveo-core-session-oauth2user.html">OAuth2User</a>
+<a class="list-group-item" href="./socialveo-core-session-user.html">User</a></div>
+<a class="list-group-item" href="#navigation-7269-7288" data-toggle="collapse" data-parent="#navigation-7269">Socialveo\Core\validation\validator <b class="caret"></b></a><div id="navigation-7269-7288" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-validation-validator-callback.html">Callback</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-exists.html">Exists</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-password.html">Password</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-uniquenesscirclename.html">UniquenessCircleName</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-uniquenessurl.html">UniquenessUrl</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-url.html">Url</a></div>
+<a class="list-group-item" href="./socialveo-core-acl.html">Acl</a>
+<a class="list-group-item" href="./socialveo-core-application.html">Application</a>
+<a class="list-group-item" href="./socialveo-core-classloader.html">ClassLoader</a>
+<a class="list-group-item" href="./socialveo-core-console.html">Console</a>
+<a class="list-group-item" href="./socialveo-core-cookies.html">Cookies</a>
+<a class="list-group-item" href="./socialveo-core-criteria.html">Criteria</a>
+<a class="list-group-item" href="./socialveo-core-dispatcher.html">Dispatcher</a>
+<a class="list-group-item" href="./socialveo-core-module.html">Module</a>
+<a class="list-group-item" href="./socialveo-core-router.html">Router</a>
+<a class="list-group-item" href="./socialveo-core-translatable.html">Translatable</a>
+<a class="list-group-item" href="./socialveo-core-url.html">Url</a></div>
+<a class="list-group-item" href="#navigation-7289" data-toggle="collapse" data-parent="#navigation">Socialveo\Frontend <b class="caret"></b></a><div id="navigation-7289" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-7289-7290" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\controllers <b class="caret"></b></a><div id="navigation-7289-7290" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-authcontroller.html">AuthController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-chatcontroller.html">ChatController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-circlecontroller.html">CircleController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-commentscontroller.html">CommentsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-connectionscontroller.html">ConnectionsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-frontendcontroller.html">FrontendController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-iframecontroller.html">IframeController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-indexcontroller.html">IndexController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-mediacontroller.html">MediaController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-networkscontroller.html">NetworksController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-postscontroller.html">PostsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-searchcontroller.html">SearchController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-staticpagescontroller.html">StaticPagesController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-userscontroller.html">UsersController</a></div>
+<a class="list-group-item" href="#navigation-7289-7291" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\controllers\api <b class="caret"></b></a><div id="navigation-7289-7291" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-api-jsoncontroller.html">JsonController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-mapscontroller.html">MapsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-notificationscontroller.html">NotificationsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-socketcontroller.html">SocketController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-translatorcontroller.html">TranslatorController</a></div>
+<a class="list-group-item" href="#navigation-7289-7292" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\controllers\payments <b class="caret"></b></a><div id="navigation-7289-7292" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-payments-paypalcontroller.html">PayPalController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-payments-paymentscontroller.html">PaymentsController</a></div>
+<a class="list-group-item" href="#navigation-7289-7293" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\controllers\users <b class="caret"></b></a><div id="navigation-7289-7293" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-users-blockscontroller.html">BlocksController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-users-followcontroller.html">FollowController</a></div>
+<a class="list-group-item" href="#navigation-7289-7294" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\forms <b class="caret"></b></a><div id="navigation-7289-7294" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-forms-changepassword.html">ChangePassword</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-forgotpassword.html">ForgotPassword</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-login.html">Login</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-network.html">Network</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-networkchangeavatar.html">NetworkChangeAvatar</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-networkchangecover.html">NetworkChangeCover</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-networkpayment.html">NetworkPayment</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-registration.html">Registration</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-settingchangeemail.html">SettingChangeEmail</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-settingchangepassword.html">SettingChangePassword</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-useravailability.html">UserAvailability</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-usersetting.html">UserSetting</a></div>
+<a class="list-group-item" href="#navigation-7289-7295" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\forms\user <b class="caret"></b></a><div id="navigation-7289-7295" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-forms-user-block.html">Block</a></div>
+<a class="list-group-item" href="#navigation-7289-7296" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\routes <b class="caret"></b></a><div id="navigation-7289-7296" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-routes-apiroutes.html">ApiRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-authroutes.html">AuthRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-chatroutes.html">ChatRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-circleroutes.html">CircleRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-commentsroutes.html">CommentsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-connectionsroutes.html">ConnectionsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-iframeroutes.html">IframeRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-indexroutes.html">IndexRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-mediaroutes.html">MediaRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-networksroutes.html">NetworksRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-paymentsroutes.html">PaymentsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-postsroutes.html">PostsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-searchroutes.html">SearchRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-staticpagesroutes.html">StaticPagesRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-usersroutes.html">UsersRoutes</a></div>
+<a class="list-group-item" href="#navigation-7289-7297" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets <b class="caret"></b></a><div id="navigation-7289-7297" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationswidget.html">NotificationsWidget</a>
+<a class="list-group-item" href="./socialveo-frontend-widgets-widgetbase.html">WidgetBase</a></div>
+<a class="list-group-item" href="#navigation-7289-7298" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\completeProfile <b class="caret"></b></a><div id="navigation-7289-7298" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-completeprofile-completeprofile.html">CompleteProfile</a></div>
+<a class="list-group-item" href="#navigation-7289-7299" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\conversations <b class="caret"></b></a><div id="navigation-7289-7299" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-conversations-conversations.html">Conversations</a></div>
+<a class="list-group-item" href="#navigation-7289-7300" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\maybeFriend <b class="caret"></b></a><div id="navigation-7289-7300" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-maybefriend-maybefriend.html">MaybeFriend</a></div>
+<a class="list-group-item" href="#navigation-7289-7301" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\maybeNetwork <b class="caret"></b></a><div id="navigation-7289-7301" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-maybenetwork-maybenetwork.html">MaybeNetwork</a></div>
+<a class="list-group-item" href="#navigation-7289-7302" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\notificationsConnection <b class="caret"></b></a><div id="navigation-7289-7302" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationsconnection-notificationsconnection.html">NotificationsConnection</a></div>
+<a class="list-group-item" href="#navigation-7289-7303" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\notificationsGeneric <b class="caret"></b></a><div id="navigation-7289-7303" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationsgeneric-notificationsgeneric.html">NotificationsGeneric</a></div>
+<a class="list-group-item" href="#navigation-7289-7304" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\notificationsMessages <b class="caret"></b></a><div id="navigation-7289-7304" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationsmessages-notificationsmessages.html">NotificationsMessages</a></div>
+<a class="list-group-item" href="#navigation-7289-7305" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\paginator <b class="caret"></b></a><div id="navigation-7289-7305" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-paginator-paginator.html">Paginator</a></div>
+<a class="list-group-item" href="#navigation-7289-7306" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\payment <b class="caret"></b></a><div id="navigation-7289-7306" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-payment-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-frontend-widgets-payment-payment.html">Payment</a></div>
+<a class="list-group-item" href="#navigation-7289-7307" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\posts <b class="caret"></b></a><div id="navigation-7289-7307" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-posts-posts.html">Posts</a></div>
+<a class="list-group-item" href="#navigation-7289-7308" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\search <b class="caret"></b></a><div id="navigation-7289-7308" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-search-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-7289-7309" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\staticPagesMenu <b class="caret"></b></a><div id="navigation-7289-7309" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-staticpagesmenu-staticpagesmenu.html">StaticPagesMenu</a></div>
+<a class="list-group-item" href="#navigation-7289-7310" data-toggle="collapse" data-parent="#navigation-7289">Socialveo\Frontend\widgets\usersOnline <b class="caret"></b></a><div id="navigation-7289-7310" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-usersonline-usersonline.html">UsersOnline</a></div>
+<a class="list-group-item" href="./socialveo-frontend-module.html">Module</a></div>
+<a class="list-group-item" href="#navigation-7311" data-toggle="collapse" data-parent="#navigation">Socialveo\Tasks <b class="caret"></b></a><div id="navigation-7311" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-tasks-basetask.html">BaseTask</a>
+<a class="list-group-item" href="./socialveo-tasks-calctask.html">CalcTask</a>
+<a class="list-group-item" href="./socialveo-tasks-connectiontask.html">ConnectionTask</a>
+<a class="list-group-item" href="./socialveo-tasks-converttask.html">ConvertTask</a>
+<a class="list-group-item" href="./socialveo-tasks-crontask.html">CronTask</a>
+<a class="list-group-item" href="./socialveo-tasks-dbtask.html">DbTask</a>
+<a class="list-group-item" href="./socialveo-tasks-extractlangtask.html">ExtractlangTask</a>
+<a class="list-group-item" href="./socialveo-tasks-generatemodeltask.html">GenerateModelTask</a>
+<a class="list-group-item" href="./socialveo-tasks-importtask.html">ImportTask</a>
+<a class="list-group-item" href="./socialveo-tasks-importertask.html">ImporterTask</a>
+<a class="list-group-item" href="./socialveo-tasks-indextask.html">IndexTask</a>
+<a class="list-group-item" href="./socialveo-tasks-karmatask.html">KarmaTask</a>
+<a class="list-group-item" href="./socialveo-tasks-migrationtask.html">MigrationTask</a>
+<a class="list-group-item" href="./socialveo-tasks-paymentstask.html">PaymentsTask</a>
+<a class="list-group-item" href="./socialveo-tasks-phpfoxmigratetask.html">PhpfoxmigrateTask</a>
+<a class="list-group-item" href="./socialveo-tasks-sitemaptask.html">SitemapTask</a>
+<a class="list-group-item" href="./socialveo-tasks-uploadtask.html">UploadTask</a></div>
+<a class="list-group-item" href="#navigation-7312" data-toggle="collapse" data-parent="#navigation">Socialveo\WebApi <b class="caret"></b></a><div id="navigation-7312" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-7312-7313" data-toggle="collapse" data-parent="#navigation-7312">Socialveo\WebApi\Controllers <b class="caret"></b></a><div id="navigation-7312-7313" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-webapi-controllers-chatcontroller.html">ChatController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-circlescontroller.html">CirclesController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-commentscontroller.html">CommentsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-connectionscontroller.html">ConnectionsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-indexcontroller.html">IndexController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-karmacontroller.html">KarmaController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-locationscontroller.html">LocationsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-mediacontroller.html">MediaController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-networkscontroller.html">NetworksController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-notificationscontroller.html">NotificationsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-paymentscontroller.html">PaymentsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-postscontroller.html">PostsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-restapicontroller.html">RestApiController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-searchcontroller.html">SearchController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-socialprofilescontroller.html">SocialProfilesController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-spamcontroller.html">SpamController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-staticpagescontroller.html">StaticPagesController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-tagassociationscontroller.html">TagAssociationsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-tagscontroller.html">TagsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-userblockscontroller.html">UserBlocksController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-userscontroller.html">UsersController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-webeventscontrollers.html">WebEventsControllers</a></div>
+<a class="list-group-item" href="./socialveo-webapi-module.html">Module</a></div></div>    </div>
+    <div class="col-md-9 api-content" role="main">
+        <h1>Class Socialveo\Core\models\Index</h1>
+<div class="top-nav">
+    <a href="index.html">All Classes</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+                    | <a href="#constants">Constants</a>
+    </div>
+
+<table class="summaryTable docClass table table-bordered">
+    <colgroup>
+        <col class="col-name" />
+        <col class="col-value" />
+    </colgroup>
+            <tr><th>Inheritance</th><td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a> &raquo;
+<a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a> &raquo;
+<a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\mvc\model.zep">Phalcon\Mvc\Model</a></td></tr>
+                        <tr><th>Uses Traits</th><td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td></tr>
+                            </table>
+
+<div class="class-description">
+    <p><strong>Class Index</strong></p>
+    
+    </div>
+
+<a id="properties"></a>
+
+<div class="summary doc-property">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr id="$active">
+        <td><a href="socialveo-core-models-index.html#$active-detail">$active</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+                <tr id="$content">
+        <td><a href="socialveo-core-models-index.html#$content-detail">$content</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr id="$created">
+        <td><a href="socialveo-core-models-index.html#$created-detail">$created</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr id="$id">
+        <td><a href="socialveo-core-models-index.html#$id-detail">$id</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+                    <tr id="$target_id">
+        <td><a href="socialveo-core-models-index.html#$target_id-detail">$target_id</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr id="$target_type">
+        <td><a href="socialveo-core-models-index.html#$target_type-detail">$target_type</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr id="$target_uuid">
+        <td><a href="socialveo-core-models-index.html#$target_uuid-detail">$target_uuid</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr id="$updated">
+        <td><a href="socialveo-core-models-index.html#$updated-detail">$updated</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr id="$user_id">
+        <td><a href="socialveo-core-models-index.html#$user_id-detail">$user_id</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr id="$user_uuid">
+        <td><a href="socialveo-core-models-index.html#$user_uuid-detail">$user_uuid</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr id="$uuid">
+        <td><a href="socialveo-core-models-index.html#$uuid-detail">$uuid</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+    </table>
+</div>
+
+<div class="summary doc-property">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+            <tr class="inherited" id="$changedColumns">
+        <td><a href="socialveo-core-models-socialveomodel.html#$changedColumns-detail">$changedColumns</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                        <tr class="inherited" id="$restrictedColumns">
+        <td><a href="socialveo-core-models-socialveomodel.html#$restrictedColumns-detail">$restrictedColumns</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="$scenario">
+        <td><a href="socialveo-core-models-socialveomodel.html#$scenario-detail">$scenario</a></td>
+        <td></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                                </table>
+</div>
+
+<a id="methods"></a>
+
+<div class="summary doc-method">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr class="inherited" id="__get()">
+        <td><a href="socialveo-core-models-socialveomodel.html#__get()-detail">__get()</a></td>
+        <td>Magic method to get related records using the relation alias as a property or getters defined by setGetter()</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="__set()">
+        <td><a href="socialveo-core-models-socialveomodel.html#__set()-detail">__set()</a></td>
+        <td>Magic method to set related records using the relation alias as a property or setters defined by setSetter()</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="_t()">
+        <td><a href="socialveo-core-translatable.html#_t()-detail">_t()</a></td>
+        <td>Gets translations</td>
+        <td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td>
+    </tr>
+                                        <tr class="inherited" id="behaviors()">
+        <td><a href="socialveo-core-models-socialveomodel.html#behaviors()-detail">behaviors()</a></td>
+        <td>Behaviors</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="behaviorsNotify()">
+        <td><a href="socialveo-core-models-socialveomodel.html#behaviorsNotify()-detail">behaviorsNotify()</a></td>
+        <td>Behavior notify</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="cachedFind()">
+        <td><a href="socialveo-core-models-socialveomodel.html#cachedFind()-detail">cachedFind()</a></td>
+        <td>Returns query results from cache (if set and not expired) or database</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="change()">
+        <td><a href="socialveo-core-models-socialveomodel.html#change()-detail">change()</a></td>
+        <td>Changes object attributes based on passed-in payload data, saves object and returns it</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="createObject()">
+        <td><a href="socialveo-core-models-socialveomodel.html#createObject()-detail">createObject()</a></td>
+        <td>Creates an object using passed-in payload data</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="deleteObject()">
+        <td><a href="socialveo-core-models-socialveomodel.html#deleteObject()-detail">deleteObject()</a></td>
+        <td>Deletes an object (soft-delete)</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="fetchObjects()">
+        <td><a href="socialveo-core-models-socialveomodel.html#fetchObjects()-detail">fetchObjects()</a></td>
+        <td>Fetches the provided objects and returns them in an array</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="filteredFind()">
+        <td><a href="socialveo-core-models-socialveomodel.html#filteredFind()-detail">filteredFind()</a></td>
+        <td>Returns query results filtered by GET user-parameters, optionaly cached</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="findFirstByUuid()">
+        <td><a href="socialveo-core-models-socialveomodel.html#findFirstByUuid()-detail">findFirstByUuid()</a></td>
+        <td>Find first model by uuid</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="fire()">
+        <td><a href="socialveo-core-models-socialveomodel.html#fire()-detail">fire()</a></td>
+        <td>Fire event</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="forUpdate()">
+        <td><a href="socialveo-core-models-socialveomodel.html#forUpdate()-detail">forUpdate()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getActivePaymentProcess()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getActivePaymentProcess()-detail">getActivePaymentProcess()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getAttributes()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getAttributes()-detail">getAttributes()</a></td>
+        <td>Get model meta data attributes</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getAttributesStatic()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getAttributesStatic()-detail">getAttributesStatic()</a></td>
+        <td>Get models metadata attributes</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getChangedFields()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getChangedFields()-detail">getChangedFields()</a></td>
+        <td>Returns a list of changed values</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getEventsManagerInstance()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getEventsManagerInstance()-detail">getEventsManagerInstance()</a></td>
+        <td>Returns models Events Manager</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getIsOwner()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getIsOwner()-detail">getIsOwner()</a></td>
+        <td>Check if user is owner of resource</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getLastQueryFullCount()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getLastQueryFullCount()-detail">getLastQueryFullCount()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getModel()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getModel()-detail">getModel()</a></td>
+        <td>Get model</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getObjectByParam()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getObjectByParam()-detail">getObjectByParam()</a></td>
+        <td>Fetches an object based on passed array</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getObjectTypeByParam()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getObjectTypeByParam()-detail">getObjectTypeByParam()</a></td>
+        <td>Returns an resource type based on request URI</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getResourceType()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getResourceType()-detail">getResourceType()</a></td>
+        <td>Returns a string resource name of the Object (singular form)</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getScenario()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getScenario()-detail">getScenario()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="getSource()">
+        <td><a href="socialveo-core-models-index.html#getSource()-detail">getSource()</a></td>
+        <td>Define table mapping</td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+                <tr id="getTarget()">
+        <td><a href="socialveo-core-models-index.html#getTarget()-detail">getTarget()</a></td>
+        <td>Returns target</td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr class="inherited" id="getTargetObject()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getTargetObject()-detail">getTargetObject()</a></td>
+        <td>Returns the target object by target_id and target_type</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getTargetObjectFromArray()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getTargetObjectFromArray()-detail">getTargetObjectFromArray()</a></td>
+        <td>Fetches an object based on passed array</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getTargetType()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getTargetType()-detail">getTargetType()</a></td>
+        <td>Returns target type</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="getTypes()">
+        <td><a href="socialveo-core-models-index.html#getTypes()-detail">getTypes()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+                <tr class="inherited" id="getUuidsObjects()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getUuidsObjects()-detail">getUuidsObjects()</a></td>
+        <td>Fetch objects passed in array</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="hasChanged()">
+        <td><a href="socialveo-core-models-socialveomodel.html#hasChanged()-detail">hasChanged()</a></td>
+        <td>Check if a specific attribute has changed
+This only works if the model is keeping data snapshots</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="hashtagSearch()">
+        <td><a href="socialveo-core-models-index.html#hashtagSearch()-detail">hashtagSearch()</a></td>
+        <td>Returns a result of search query by hashtag</td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr id="initialize()">
+        <td><a href="socialveo-core-models-index.html#initialize()-detail">initialize()</a></td>
+        <td>Initialize method for model</td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr class="inherited" id="isModel()">
+        <td><a href="socialveo-core-models-socialveomodel.html#isModel()-detail">isModel()</a></td>
+        <td>Check if called class and the model name is the same</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="isNew()">
+        <td><a href="socialveo-core-models-socialveomodel.html#isNew()-detail">isNew()</a></td>
+        <td>Checks whether model is new</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="isNewRecord()">
+        <td><a href="socialveo-core-models-socialveomodel.html#isNewRecord()-detail">isNewRecord()</a></td>
+        <td>Checks whether model is new</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="onConstruct()">
+        <td><a href="socialveo-core-models-socialveomodel.html#onConstruct()-detail">onConstruct()</a></td>
+        <td>OnConstruct event model</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="pluralize()">
+        <td><a href="socialveo-core-models-socialveomodel.html#pluralize()-detail">pluralize()</a></td>
+        <td>Transforms words from singular to plural</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="resourceToModel()">
+        <td><a href="socialveo-core-models-socialveomodel.html#resourceToModel()-detail">resourceToModel()</a></td>
+        <td>Transforms a resource name string to a Model name (if such model exists)</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="resultsetToJson()">
+        <td><a href="socialveo-core-models-socialveomodel.html#resultsetToJson()-detail">resultsetToJson()</a></td>
+        <td>Returns an array of typed arrays, ready to be json_encoded</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="retrieve()">
+        <td><a href="socialveo-core-models-socialveomodel.html#retrieve()-detail">retrieve()</a></td>
+        <td>Returns object from cache (if set and not expired) or database</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="search()">
+        <td><a href="socialveo-core-models-index.html#search()-detail">search()</a></td>
+        <td>Search query string</td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr class="inherited" id="setGetter()">
+        <td><a href="socialveo-core-models-socialveomodel.html#setGetter()-detail">setGetter()</a></td>
+        <td>Set getter</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="setScenario()">
+        <td><a href="socialveo-core-models-socialveomodel.html#setScenario()-detail">setScenario()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="setSetter()">
+        <td><a href="socialveo-core-models-socialveomodel.html#setSetter()-detail">setSetter()</a></td>
+        <td>Set setter</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="setTargetObject()">
+        <td><a href="socialveo-core-models-socialveomodel.html#setTargetObject()-detail">setTargetObject()</a></td>
+        <td>Set target_id and target_type</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="singularize()">
+        <td><a href="socialveo-core-models-socialveomodel.html#singularize()-detail">singularize()</a></td>
+        <td>Transforms words from plural to singular</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="stringSearch()">
+        <td><a href="socialveo-core-models-index.html#stringSearch()-detail">stringSearch()</a></td>
+        <td>Returns a result of search query by pain-string</td>
+        <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+    </tr>
+            <tr class="inherited" id="t()">
+        <td><a href="socialveo-core-translatable.html#t()-detail">t()</a></td>
+        <td>Gets translations</td>
+        <td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td>
+    </tr>
+            <tr class="inherited" id="toJson()">
+        <td><a href="socialveo-core-models-socialveomodel.html#toJson()-detail">toJson()</a></td>
+        <td>Returns a typed array ready to be json_encoded</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="userHasAccess()">
+        <td><a href="socialveo-core-models-socialveomodel.html#userHasAccess()-detail">userHasAccess()</a></td>
+        <td>Returns true if user has access to resource, otherwise false</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="validation()">
+        <td><a href="socialveo-core-models-socialveomodel.html#validation()-detail">validation()</a></td>
+        <td>Validations</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+    </table>
+</div>
+
+<div class="summary doc-method">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+                    <tr class="inherited" id="afterFetch()">
+        <td><a href="socialveo-core-models-socialveomodel.html#afterFetch()-detail">afterFetch()</a></td>
+        <td>After fetch hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="afterSave()">
+        <td><a href="socialveo-core-models-socialveomodel.html#afterSave()-detail">afterSave()</a></td>
+        <td>After save hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="afterUpdate()">
+        <td><a href="socialveo-core-models-socialveomodel.html#afterUpdate()-detail">afterUpdate()</a></td>
+        <td>After update hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="beforeCreate()">
+        <td><a href="socialveo-core-models-socialveomodel.html#beforeCreate()-detail">beforeCreate()</a></td>
+        <td>Before create hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="beforeDelete()">
+        <td><a href="socialveo-core-models-socialveomodel.html#beforeDelete()-detail">beforeDelete()</a></td>
+        <td>Before delete hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="beforeSave()">
+        <td><a href="socialveo-core-models-socialveomodel.html#beforeSave()-detail">beforeSave()</a></td>
+        <td>Before save hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="beforeUpdate()">
+        <td><a href="socialveo-core-models-socialveomodel.html#beforeUpdate()-detail">beforeUpdate()</a></td>
+        <td>Before update hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                                                                                                            <tr class="inherited" id="getSourceTable()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getSourceTable()-detail">getSourceTable()</a></td>
+        <td>Returns the source table</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                                <tr class="inherited" id="getUser()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getUser()-detail">getUser()</a></td>
+        <td>Returns user model of the currently logged in (or passed-in) user</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                                                                                                </table>
+</div>
+
+<a id="events"></a>
+
+<a id="constants"></a>
+<div class="summary doc-const">
+    <h2>Constants</h2>
+
+    <p><a href="#" class="toggle">Hide inherited constants</a></p>
+
+    <table class="summary-table table table-striped table-bordered table-hover">
+    <colgroup>
+        <col class="col-const" />
+        <col class="col-value" />
+        <col class="col-description" />
+        <col class="col-defined" />
+    </colgroup>
+    <tr>
+        <th>Constant</th><th>Value</th><th>Description</th><th>Defined By</th>
+    </tr>
+            <tr class="inherited" id="ACTIVE_DELETE">
+          <td id="ACTIVE_DELETE-detail">ACTIVE_DELETE</td>
+          <td>0</td>
+          <td>Delete
+                        </td>
+          <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+        </tr>
+            <tr class="inherited" id="ACTIVE_OK">
+          <td id="ACTIVE_OK-detail">ACTIVE_OK</td>
+          <td>1</td>
+          <td>Active
+                        </td>
+          <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+        </tr>
+            <tr class="inherited" id="ACTIVE_PROCESS_PAYMENT">
+          <td id="ACTIVE_PROCESS_PAYMENT-detail">ACTIVE_PROCESS_PAYMENT</td>
+          <td>2</td>
+          <td>Payment process
+                        </td>
+          <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+        </tr>
+            <tr class="inherited" id="SCENARIO_DEFAULT">
+          <td id="SCENARIO_DEFAULT-detail">SCENARIO_DEFAULT</td>
+          <td>'default'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+        </tr>
+            <tr id="TYPE_NETWORK">
+          <td id="TYPE_NETWORK-detail">TYPE_NETWORK</td>
+          <td>'network'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+        </tr>
+            <tr id="TYPE_POST">
+          <td id="TYPE_POST-detail">TYPE_POST</td>
+          <td>'post'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+        </tr>
+            <tr id="TYPE_USER">
+          <td id="TYPE_USER-detail">TYPE_USER</td>
+          <td>'user'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a></td>
+        </tr>
+        </table>
+</div>
+
+<h2>Property Details</h2>
+
+<div class="property-doc">
+
+    <div class="detail-header h3" id="$active-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$active-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $active        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-index.html#$active-detail">$active</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$content-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$content-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $content        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="socialveo-core-models-index.html#$content-detail">$content</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$created-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$created-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $created        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-index.html#$created-detail">$created</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$id-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$id-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $id        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-index.html#$id-detail">$id</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$target_id-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$target_id-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $target_id        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-index.html#$target_id-detail">$target_id</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$target_type-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$target_type-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $target_type        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="socialveo-core-models-index.html#$target_type-detail">$target_type</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$target_uuid-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$target_uuid-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $target_uuid        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="socialveo-core-models-index.html#$target_uuid-detail">$target_uuid</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$updated-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$updated-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $updated        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-index.html#$updated-detail">$updated</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$user_id-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$user_id-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $user_id        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-index.html#$user_id-detail">$user_id</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$user_uuid-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$user_uuid-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $user_uuid        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="socialveo-core-models-index.html#$user_uuid-detail">$user_uuid</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$uuid-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#$uuid-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $uuid        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="socialveo-core-models-index.html#$uuid-detail">$uuid</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+</div>
+<h2>Method Details</h2>
+
+<div class="method-doc">
+
+    <div class="detail-header h3" id="getSource()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#getSource()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getSource()
+        <span class="detail-header-tag small">
+            public                                    method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Define table mapping</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-models-index.html#getSource()-detail">getSource</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getTarget()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#getTarget()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getTarget()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Returns target</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="socialveo-core-models-network.html">Socialveo\Core\models\Network</a>|<a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a>|<a href="socialveo-core-models-post.html">Socialveo\Core\models\Post</a></span> <strong><a href="socialveo-core-models-index.html#getTarget()-detail">getTarget</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getTypes()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#getTypes()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getTypes()
+        <span class="detail-header-tag small">
+            public                        static            method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a></span> <strong><a href="socialveo-core-models-index.html#getTypes()-detail">getTypes</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="hashtagSearch()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#hashtagSearch()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        hashtagSearch()
+        <span class="detail-header-tag small">
+            public                        static            method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Returns a result of search query by hashtag</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a>|<a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\mvc\model\resultset\simple.zep">Phalcon\Mvc\Model\Resultset\Simple</a></span> <strong><a href="socialveo-core-models-index.html#hashtagSearch()-detail">hashtagSearch</a></strong> ( <span style="color: #0000BB">$hashtag</span>, <span style="color: #0000BB">$params</span>, <span class="signature-type"><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></span> <span style="color: #0000BB">$user&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$hashtag</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$params</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user</span></td>
+                  <td class="param-type-col"><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                    <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="http://www.php.net/class.exception">Exception</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                        </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="initialize()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#initialize()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        initialize()
+        <span class="detail-header-tag small">
+            public                                    method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Initialize method for model</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">void</a></span> <strong><a href="socialveo-core-models-index.html#initialize()-detail">initialize</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="search()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#search()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        search()
+        <span class="detail-header-tag small">
+            public                        static            method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Search query string</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a></span> <strong><a href="socialveo-core-models-index.html#search()-detail">search</a></strong> ( <span style="color: #0000BB">$q</span>, <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a></span> <span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">=&nbsp;[]</span>, <span class="signature-type"><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></span> <span style="color: #0000BB">$user&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span style="color: #0000BB">$type&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span class="signature-type"><a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\mvc\model\criteria.zep">Phalcon\Mvc\Model\Criteria</a></span> <span style="color: #0000BB">$criteria&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$q</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$params</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user</span></td>
+                  <td class="param-type-col"><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a>|<a href="http://www.php.net/language.types.null">null</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$type</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$criteria</span></td>
+                  <td class="param-type-col"><a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\mvc\model\criteria.zep">Phalcon\Mvc\Model\Criteria</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="stringSearch()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-index.html#stringSearch()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        stringSearch()
+        <span class="detail-header-tag small">
+            public                        static            method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Returns a result of search query by pain-string</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a>|<a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\mvc\model\resultset\simple.zep">Phalcon\Mvc\Model\Resultset\Simple</a></span> <strong><a href="socialveo-core-models-index.html#stringSearch()-detail">stringSearch</a></strong> ( <span style="color: #0000BB">$string</span>, <span style="color: #0000BB">$params</span>, <span class="signature-type"><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></span> <span style="color: #0000BB">$user&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span style="color: #0000BB">$type&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span class="signature-type"><a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\mvc\model\criteria.zep">Phalcon\Mvc\Model\Criteria</a></span> <span style="color: #0000BB">$criteria&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span style="color: #0000BB">$byWords&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span style="color: #0000BB">$whitespaces&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span style="color: #0000BB">$includeInactive&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span>, <b>&</b><span style="color: #0000BB">$count&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span style="color: #0000BB">$checkAccess&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$string</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$params</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user</span></td>
+                  <td class="param-type-col"><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a>|<a href="http://www.php.net/language.types.null">null</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$type</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.null">null</a>|<a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$criteria</span></td>
+                  <td class="param-type-col"><a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\mvc\model\criteria.zep">Phalcon\Mvc\Model\Criteria</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$byWords</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.null">null</a>|<a href="http://www.php.net/language.types.boolean">boolean</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$whitespaces</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.null">null</a>|<a href="http://www.php.net/language.types.boolean">boolean</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$includeInactive</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.boolean">boolean</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$count</span></td>
+                  <td class="param-type-col"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$checkAccess</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.boolean">boolean</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                                                    <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="http://www.php.net/class.exception">Exception</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                        </table>
+
+<!--	-->
+</div>
+        </div>
+</div>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    $("a.toggle").on('click', function () {
+        var $this = $(this);
+        if ($this.hasClass('properties-hidden')) {
+            $this.text($this.text().replace(/Show/,'Hide'));
+            $this.parents(".summary").find(".inherited").show();
+            $this.removeClass('properties-hidden');
+        } else {
+            $this.text($this.text().replace(/Hide/,'Show'));
+            $this.parents(".summary").find(".inherited").hide();
+            $this.addClass('properties-hidden');
+        }
+
+        return false;
+    });
+
+    var openNavigation = function($item) {
+        var $e = $item.parent();
+        if ($e[0] && $e.is(".submenu")) {
+            $e.addClass("in");
+            $e.prev().removeClass("active");
+            openNavigation($e);
+        }
+    }
+
+    $(document).ready(function() {
+        openNavigation($("#navigation .list-group-item.active"));
+        openNavigation($("#navigation .submenu.active"));
+
+        $('.list-group-item[data-toggle="collapse"] + .submenu.collapse').each(function() {
+            if (!$(this).is(".in")) {
+                $(this).prev().addClass("collapsed");
+            }
+        })
+    });
+    /*]]>*/
+</script>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Fri, 28 Jul 2017 13:40:05 +0000</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>
