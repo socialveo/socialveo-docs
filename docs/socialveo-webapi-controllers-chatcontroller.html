@@ -11,12 +11,10 @@
 <script src="./assets/8686b79d/js/bootstrap.js"></script>
 <script src="./assets/d7033ccd/socialveo/custom.js"></script>
 <script src="./assets/b3b826a4/jssearch.js"></script>    <title>ChatController, Socialveo\WebApi\Controllers\ChatController - Socialveo API Documentation</title>
-
-    <link rel='stylesheet' id='awesome-css' href='https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/font-awesome.min.css' type='text/css' media='all'/>
-    <link rel="stylesheet" id="bootstrap-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/bootstrap.min.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="animations-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/animate.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="main-style-css" href="https://socialveo.com/wp-content/themes/socialveo/style.css?ver=4.1.5" type="text/css" media="all"/>
-
+    <link href="./assets/socialveo/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/animate.css" rel="stylesheet">
+    <link href="./assets/socialveo/style.css" rel="stylesheet">
     <link href="./assets/socialveo/custom.css" rel="stylesheet">
 </head>
 <body>
@@ -487,6 +485,11 @@
         <td>Gets request params for Socialveo::filteredFind()</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
+            <tr class="inherited" id="getRequestData()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequestData()-detail">getRequestData()</a></td>
+        <td>Returns request data</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
             <tr class="inherited" id="getRequiredParam()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequiredParam()-detail">getRequiredParam()</a></td>
         <td>Get required param</td>
@@ -547,7 +550,7 @@
         <td>Returns messages of the dialog</td>
         <td><a href="socialveo-webapi-controllers-chatcontroller.html">Socialveo\WebApi\Controllers\ChatController</a></td>
     </tr>
-            <tr id="messageAction()">
+                <tr id="messageAction()">
         <td><a href="socialveo-webapi-controllers-chatcontroller.html#messageAction()-detail">messageAction()</a></td>
         <td>Returns message</td>
         <td><a href="socialveo-webapi-controllers-chatcontroller.html">Socialveo\WebApi\Controllers\ChatController</a></td>
@@ -640,7 +643,12 @@
         <td>Checks during the init of controller whether user is a guest.</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
-                                                                                                <tr class="inherited" id="objectsToArray()">
+                                                                                            <tr class="inherited" id="log()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#log()-detail">log()</a></td>
+        <td>Log full request data for debug</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+                    <tr class="inherited" id="objectsToArray()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#objectsToArray()-detail">objectsToArray()</a></td>
         <td>Convert objects to arrays</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
@@ -675,10 +683,10 @@
     <div class="doc-description">
         <p><strong>Create dialog to user</strong></p>
 
-        <code class="hljs api">/chat/dialogs/create</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserHasAccessUuids</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs/create</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Logged && UserHasAccessUuids</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -695,11 +703,15 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a></p>
-<div class="alert alert-info">Note. For avoiding multiple private chats between users, private chat will be created only once for each user.</div>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+, <a href="socialveo-core-models-notification.html" title="Notification">Notification</a>
+
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
+
+</p>
+<div class="alert alert-info">Note. For avoiding multiple private chats between users, private chat will be created only once for each user.</div><p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         "type": "messages_dialogs",
@@ -710,9 +722,6 @@
     ],
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -740,10 +749,10 @@
     <div class="doc-description">
         <p><strong>Create a message</strong></p>
 
-        <code class="hljs api">/chat/dialogs/({dialog_uuid})/messages/create</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> LoggedUserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs/({dialog_uuid})/messages/create</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> LoggedUserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -756,7 +765,7 @@
 <td><em>attributes</em></td>
 <td style="text-align: center;"><em>optional</em></td>
 <td>mixed</td>
-<td><a href="/socialveo-docs/docs/core/socialveo-core-models-messages.html" title="Messages">Messages</a> attributes</td>
+<td><a href="socialveo-core-models-messages.html" title="Messages">Messages</a> attributes</td>
 </tr>
 <tr>
 <td><strong>language</strong></td>
@@ -766,10 +775,13 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-messages.html" title="Messages">Messages</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messages.html" title="Messages">Messages</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messages.html" title="Messages">Messages</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messages.html" title="Messages">Messages</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         "type": "messages",
@@ -780,9 +792,6 @@
     ],
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -816,12 +825,10 @@
     <div class="doc-description">
         <p><strong>Get dialog</strong></p>
 
-        <code class="hljs api">/chat/dialogs/{dialog_uuid}</code>
-
-
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs/{dialog_uuid}</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Logged && UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -838,9 +845,10 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         "type": "messages_dialogs",
@@ -851,9 +859,6 @@
     ],
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -882,10 +887,10 @@
     <div class="doc-description">
         <p><strong>Returns users of dialog</strong></p>
 
-        <code class="hljs api">/chat/dialogs/{dialog_uuid}/users</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs/{dialog_uuid}/users</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Logged && UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -902,11 +907,10 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a>[]</p>
-
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         "type": "messages_dialogs",
@@ -917,9 +921,6 @@
     ],
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -948,10 +949,10 @@
     <div class="doc-description">
         <p><strong>Add user to group chat dialog</strong></p>
 
-        <code class="hljs api">/chat/dialogs/{dialog_uuid}/users/add</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserHasAccess && UserHasAccessUuids</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs/{dialog_uuid}/users/add</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Logged && UserHasAccess && UserHasAccessUuids</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -974,9 +975,10 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         "type": "messages_dialogs",
@@ -987,9 +989,6 @@
     ],
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1023,10 +1022,10 @@
     <div class="doc-description">
         <p><strong>Leave chat dialog</strong></p>
 
-        <code class="hljs api">/chat/dialogs/{dialog_uuid}/leave</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs/{dialog_uuid}/leave</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Logged && UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1043,15 +1042,13 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1083,9 +1080,12 @@
         <div class="alert alert-danger">
                     Notice. This action is disabled, the reasons can be: 
                     not implemented, unsafe, duplicated or deprecated (autodetect: disabled in the router)</div><code class="hljs api">/chat/messages</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<p><strong>Method:</strong> GET</p>
+
+<p><strong>Access:</strong> Logged</p>
+
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1126,12 +1126,15 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-messages.html" title="Messages">Messages</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messages.html" title="Messages">Messages</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messages.html" title="Messages">Messages</a>[]</p>
+</p>
 
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messages.html" title="Messages">Messages</a>
 
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "messages", "uuid": "cd2a302a-6f8c-11e7-925e-54bef75c7a3f", "user_uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f",…},
@@ -1143,9 +1146,6 @@
     "count":{"offset": 0, "limit": 10, "total": 5},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1168,10 +1168,10 @@
     <div class="doc-description">
         <p><strong>Get user chat dialogs</strong></p>
 
-        <code class="hljs api">/chat/dialogs</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Logged</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1206,12 +1206,13 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "messages_dialogs", "uuid": "ee5074c6-4822-11e7-86ee-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
@@ -1223,9 +1224,6 @@
     "count":{"offset": 0, "limit": 10, "total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1248,10 +1246,10 @@
     <div class="doc-description">
         <p><strong>Returns messages of the dialog</strong></p>
 
-        <code class="hljs api">/chat/dialogs/({dialog_uuid})/messages</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs/({dialog_uuid})/messages</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Logged && UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1292,12 +1290,13 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-messages.html" title="Messages">Messages</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messages.html" title="Messages">Messages</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messages.html" title="Messages">Messages</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messages.html" title="Messages">Messages</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "messages", "uuid": "cd2a302a-6f8c-11e7-925e-54bef75c7a3f", "user_uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f",…},
@@ -1309,9 +1308,6 @@
     "count":{"offset": 0, "limit": 10, "total": 5},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1344,12 +1340,10 @@
     <div class="doc-description">
         <p><strong>Returns message</strong></p>
 
-        <code class="hljs api">/chat/messages/{message_uuid}</code>
-
-
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/messages/{message_uuid}</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Logged && UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1366,9 +1360,10 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messages.html" title="Messages">Messages</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messages.html" title="Messages">Messages</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         "type": "messages",
@@ -1379,9 +1374,6 @@
     ],
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1449,10 +1441,10 @@
     <div class="doc-description">
         <p><strong>Touch dialog (marks dialog as read, removes notifications about unread messages)</strong></p>
 
-        <code class="hljs api">/chat/dialogs/{dialog_uuid}/touch</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs/{dialog_uuid}/touch</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Logged && UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1469,10 +1461,15 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+, <a href="socialveo-core-models-notification.html" title="Notification">Notification</a>
+
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         "type": "messages_dialogs",
@@ -1483,9 +1480,6 @@
     ],
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1514,10 +1508,10 @@
     <div class="doc-description">
         <p><strong>Get unread messages of dialog</strong></p>
 
-        <code class="hljs api">/chat/dialogs/{dialog_uuid}/messages/unread</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs/{dialog_uuid}/messages/unread</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Logged && UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1534,11 +1528,10 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messages.html" title="Messages">Messages</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messages.html" title="Messages">Messages</a>[]</p>
-
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
          {"type": "message", "uuid": "cd2a302a-6f8c-11e7-925e-54bef75c7a3f", "user_uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f",…},
@@ -1550,9 +1543,6 @@
      "count":{ "total": 12 },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1585,12 +1575,10 @@
     <div class="doc-description">
         <p><strong>Get or create (if it not exists) private dialog with user</strong></p>
 
-        <code class="hljs api">/chat/dialogs/users/{user_uuid}</code>
-
-
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged, UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/chat/dialogs/users/{user_uuid}</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Logged, UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1607,10 +1595,15 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+, <a href="socialveo-core-models-notification.html" title="Notification">Notification</a>
+
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-messagesdialogs.html" title="MessagesDialogs">MessagesDialogs</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         "type": "messages_dialogs",
@@ -1621,9 +1614,6 @@
     ],
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1689,7 +1679,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 31 Jul 2017 14:14:46 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 11 Aug 2017 10:08:02 +0000</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

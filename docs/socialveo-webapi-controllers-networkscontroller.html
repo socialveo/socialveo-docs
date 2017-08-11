@@ -11,12 +11,10 @@
 <script src="./assets/8686b79d/js/bootstrap.js"></script>
 <script src="./assets/d7033ccd/socialveo/custom.js"></script>
 <script src="./assets/b3b826a4/jssearch.js"></script>    <title>NetworksController, Socialveo\WebApi\Controllers\NetworksController - Socialveo API Documentation</title>
-
-    <link rel='stylesheet' id='awesome-css' href='https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/font-awesome.min.css' type='text/css' media='all'/>
-    <link rel="stylesheet" id="bootstrap-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/bootstrap.min.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="animations-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/animate.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="main-style-css" href="https://socialveo.com/wp-content/themes/socialveo/style.css?ver=4.1.5" type="text/css" media="all"/>
-
+    <link href="./assets/socialveo/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/animate.css" rel="stylesheet">
+    <link href="./assets/socialveo/style.css" rel="stylesheet">
     <link href="./assets/socialveo/custom.css" rel="stylesheet">
 </head>
 <body>
@@ -487,6 +485,11 @@
         <td>Gets request params for Socialveo::filteredFind()</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
+            <tr class="inherited" id="getRequestData()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequestData()-detail">getRequestData()</a></td>
+        <td>Returns request data</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
             <tr class="inherited" id="getRequiredParam()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequiredParam()-detail">getRequiredParam()</a></td>
         <td>Get required param</td>
@@ -527,7 +530,7 @@
         <td>Returns a list of networks</td>
         <td><a href="socialveo-webapi-controllers-networkscontroller.html">Socialveo\WebApi\Controllers\NetworksController</a></td>
     </tr>
-            <tr id="meAction()">
+                <tr id="meAction()">
         <td><a href="socialveo-webapi-controllers-networkscontroller.html#meAction()-detail">meAction()</a></td>
         <td>Returns the currently logged-in user's profile network</td>
         <td><a href="socialveo-webapi-controllers-networkscontroller.html">Socialveo\WebApi\Controllers\NetworksController</a></td>
@@ -640,7 +643,12 @@
         <td>Checks during the init of controller whether user is a guest.</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
-                                                                                <tr class="inherited" id="objectsToArray()">
+                                                                            <tr class="inherited" id="log()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#log()-detail">log()</a></td>
+        <td>Log full request data for debug</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+                    <tr class="inherited" id="objectsToArray()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#objectsToArray()-detail">objectsToArray()</a></td>
         <td>Convert objects to arrays</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
@@ -670,14 +678,14 @@
     <div class="doc-description">
         <p><strong>Returns a lists of connections associated with the network of any type (group, profile, conversation)</strong></p>
 
-        <code class="hljs api">/networks/{network_uuid}/connections</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner || UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/networks/{network_uuid}/connections</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner || UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
-<td>**{network_uuid}</td>
+<td><strong>{network_uuid}</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>string</td>
 <td>network uuid</td>
@@ -720,8 +728,7 @@
 </tr>
 </tbody>
 </table></p>
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "connection", "uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f", "network_uuid": "a66b8654-14a8-11e6-af87-54bef75c7a3f",…},
@@ -733,9 +740,6 @@
     "count":{"offset": 0, "limit": 10, "total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -764,10 +768,10 @@
     <div class="doc-description">
         <p><strong>Creates a network</strong></p>
 
-        <code class="hljs api">/networks/create</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/networks/create</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Logged</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -798,16 +802,18 @@
 <td><em>attributes</em></td>
 <td style="text-align: center;"><em>optional</em></td>
 <td>mixed</td>
-<td><a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a> attributes</td>
+<td><a href="socialveo-core-models-network.html" title="Network">Network</a> attributes</td>
 </tr>
 </tbody>
 </table></p>
+<p><strong>Notes:</strong> If network status is set to '3' (premium network), the nested premium properties become mandatory.</p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
 
-<p style=" font-size: 17px;"><strong>Notes:</strong> If network status is set to '3' (premium network), the nested premium properties become mandatory.</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         "type": "network",
@@ -818,9 +824,6 @@
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -843,29 +846,27 @@
     <div class="doc-description">
         <p><strong>Removes a network (soft-delete)</strong></p>
 
-        <code class="hljs api">/networks/{network_uuid}/delete</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/networks/{network_uuid}/delete</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
-<td>**{network_uuid}</td>
+<td><strong>{network_uuid}</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>string</td>
 <td>network uuid</td>
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -894,12 +895,10 @@
     <div class="doc-description">
         <p><strong>Returns a network</strong></p>
 
-        <code class="hljs api">/networks/{network_uuid}</code>
-
-
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/networks/{network_uuid}</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -916,8 +915,7 @@
 </tr>
 </tbody>
 </table></p>
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         'uuid': '32885ab2-b5e7-11e4-b16d-b88d1200a92c',
@@ -928,9 +926,6 @@
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -959,10 +954,10 @@
     <div class="doc-description">
         <p><strong>Returns a list of networks</strong></p>
 
-        <code class="hljs api">/networks</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/networks</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1003,14 +998,14 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Notes:</strong> When **uuids** param used then will be ignored others filter params</p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
 
-<p style=" font-size: 17px;"><strong>Notes:</strong> When **uuids** param used then will be ignored others filter params</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a>[]</p>
-
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "network", "uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f", "network_uuid": "a66b8654-14a8-11e6-af87-54bef75c7a3f",…},
@@ -1022,9 +1017,6 @@
     "count":{"offset": 0, "limit": 10, "total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1047,10 +1039,10 @@
     <div class="doc-description">
         <p><strong>Returns the currently logged-in user's profile network</strong></p>
 
-        <code class="hljs api">/networks/me</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/networks/me</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Logged</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1060,9 +1052,10 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         'uuid': '32885ab2-b5e7-11e4-b16d-b88d1200a92c',
@@ -1073,9 +1066,6 @@
     ],
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1101,27 +1091,26 @@
         <div class="alert alert-danger">
                     Notice. This action is disabled, the reasons can be: 
                     not implemented, unsafe, duplicated or deprecated (autodetect: disabled in the router)</div><code class="hljs api">/networks/{network_uuid}/payments</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<p><strong>Method:</strong> GET</p>
+
+<p><strong>Access:</strong> Logged</p>
+
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
-<td>**{network_uuid}</td>
+<td><strong>{network_uuid}</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>string</td>
 <td>network uuid</td>
 </tr>
 </tbody>
 </table></p>
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "paymentRedirectUrl": "http://www.paypal.com/pau?79475r0984232342232"
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1150,14 +1139,14 @@
     <div class="doc-description">
         <p><strong>Returns a lists of associated posts</strong></p>
 
-        <code class="hljs api">/networks/{network_uuid}/posts</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner || UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/networks/{network_uuid}/posts</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner || UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
-<td>**{network_uuid}</td>
+<td><strong>{network_uuid}</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>string</td>
 <td>network uuid</td>
@@ -1200,12 +1189,13 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-post.html" title="Post">Post</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-post.html" title="Post">Post</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-post.html" title="Post">Post</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-post.html" title="Post">Post</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "post", "uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f", "network_uuid": "a66b8654-14a8-11e6-af87-54bef75c7a3f",…},
@@ -1217,9 +1207,6 @@
     "count":{"offset": 0, "limit": 10, "total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1289,30 +1276,33 @@
     <div class="doc-description">
         <p><strong>Updates a network</strong></p>
 
-        <code class="hljs api">/networks/{network_uuid}/update</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/networks/{network_uuid}/update</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
-<td>**{network_uuid}</td>
+<td><strong>{network_uuid}</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>string</td>
 <td>network uuid</td>
 </tr>
 <tr>
-<td>_attributes__</td>
+<td><em>attributes</em></td>
 <td style="text-align: center;"><em>optional</em></td>
 <td>mixed</td>
-<td><a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a> attributes</td>
+<td><a href="socialveo-core-models-network.html" title="Network">Network</a> attributes</td>
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         'uuid': '32885ab2-b5e7-11e4-b16d-b88d1200a92c',
@@ -1323,9 +1313,6 @@
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1353,15 +1340,16 @@
     <div class="doc-description">
         <p><strong>Uploads network profile avatar</strong></p>
 
-        <code class="hljs api">/networks/{network_uuid}/upload-avatar</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<div class="alert alert-info">Note. Request content-type have to be *multipart/form-data*</div>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/networks/{network_uuid}/upload-avatar</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Owner</p>
+<p>There are two ways to uploading images</p>
+<p>1) Regular uploading with <code>Content-Type: multipart/form-data</code></p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
-<td>**{network_uuid}</td>
+<td><strong>{network_uuid}</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>string</td>
 <td>network uuid</td>
@@ -1370,14 +1358,52 @@
 <td><strong>avatar</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>file</td>
-<td>image file to be uploaded</td>
+<td>image file</td>
 </tr>
 </tbody>
 </table></p>
+<p><strong>Sample request:</strong> <pre><code>Headers:
+Content-Type: multipart/form-data; boundary=----RandomFormBoundaryEk21BCjGskAweNnK
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+Body:
+------RandomFormBoundaryEk21BCjGskAweNnK
+Content-Disposition: form-data; name="avatar"; filename="basename.png"
+Content-Type: image/png
+
+------RandomFormBoundaryEk21BCjGskAweNnK
+[raw file contents]
+
+------RandomFormBoundaryEk21BCjGskAweNnK--</code></pre></p>
+<p>2) Putting file into body and sending with the file content type</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{network_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>network uuid</td>
+</tr>
+<tr>
+<td><strong>filename</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>image basename via GET query</td>
+</tr>
+</tbody>
+</table></p>
+<p><strong>Sample request:</strong> <pre><code>Headers:
+Content-Type: image/png
+
+Body:
+[raw file contents]</code></pre></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
+
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         'uuid': '32885ab2-b5e7-11e4-b16d-b88d1200a92c',
@@ -1388,9 +1414,6 @@
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1419,15 +1442,17 @@
     <div class="doc-description">
         <p><strong>Uploads network profile cover</strong></p>
 
-        <code class="hljs api">/networks/{network_uuid}/upload-cover</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
+        <p><code class="hljs api">/networks/{network_uuid}/upload-cover</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Owner</p>
 <div class="alert alert-info">Note. Request content-type have to be *multipart/form-data*</div>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+<p>There are two ways to uploading images</p>
+<p>1) Regular uploading with <code>Content-Type: multipart/form-data</code></p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
-<td>**{network_uuid}</td>
+<td><strong>{network_uuid}</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>string</td>
 <td>network uuid</td>
@@ -1436,14 +1461,52 @@
 <td><strong>cover</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>file</td>
-<td>image file to be uploaded</td>
+<td>image file</td>
 </tr>
 </tbody>
 </table></p>
+<p><strong>Sample request:</strong> <pre><code>Headers:
+Content-Type: multipart/form-data; boundary=----RandomFormBoundaryEk21BCjGskAweNnK
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+Body:
+------RandomFormBoundaryEk21BCjGskAweNnK
+Content-Disposition: form-data; name="cover"; filename="basename.png"
+Content-Type: image/png
+
+------RandomFormBoundaryEk21BCjGskAweNnK
+[raw file contents]
+
+------RandomFormBoundaryEk21BCjGskAweNnK--</code></pre></p>
+<p>2) Putting file into body and sending with the file content type</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>{network_uuid}</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>network uuid</td>
+</tr>
+<tr>
+<td><strong>filename</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>image basename via GET query</td>
+</tr>
+</tbody>
+</table></p>
+<p><strong>Sample request:</strong> <pre><code>Headers:
+Content-Type: image/png
+
+Body:
+[raw file contents]</code></pre></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
+
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         'uuid': '32885ab2-b5e7-11e4-b16d-b88d1200a92c',
@@ -1454,9 +1517,6 @@
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1485,14 +1545,14 @@
     <div class="doc-description">
         <p><strong>Returns a lists of users associated with the given network</strong></p>
 
-        <code class="hljs api">/networks/{network_uuid}/users</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner || UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/networks/{network_uuid}/users</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner || UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
-<td>**{network_uuid}</td>
+<td><strong>{network_uuid}</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>string</td>
 <td>network uuid</td>
@@ -1535,12 +1595,13 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "user", "uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f", "network_uuid": "a66b8654-14a8-11e6-af87-54bef75c7a3f",…},
@@ -1552,9 +1613,6 @@
     "count":{"offset": 0, "limit": 10, "total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1615,7 +1673,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 31 Jul 2017 14:14:42 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 11 Aug 2017 10:07:57 +0000</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

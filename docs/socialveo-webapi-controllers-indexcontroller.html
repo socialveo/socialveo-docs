@@ -11,12 +11,10 @@
 <script src="./assets/8686b79d/js/bootstrap.js"></script>
 <script src="./assets/d7033ccd/socialveo/custom.js"></script>
 <script src="./assets/b3b826a4/jssearch.js"></script>    <title>IndexController, Socialveo\WebApi\Controllers\IndexController - Socialveo API Documentation</title>
-
-    <link rel='stylesheet' id='awesome-css' href='https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/font-awesome.min.css' type='text/css' media='all'/>
-    <link rel="stylesheet" id="bootstrap-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/bootstrap.min.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="animations-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/animate.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="main-style-css" href="https://socialveo.com/wp-content/themes/socialveo/style.css?ver=4.1.5" type="text/css" media="all"/>
-
+    <link href="./assets/socialveo/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/animate.css" rel="stylesheet">
+    <link href="./assets/socialveo/style.css" rel="stylesheet">
     <link href="./assets/socialveo/custom.css" rel="stylesheet">
 </head>
 <body>
@@ -487,6 +485,11 @@
         <td>Gets request params for Socialveo::filteredFind()</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
+            <tr class="inherited" id="getRequestData()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequestData()-detail">getRequestData()</a></td>
+        <td>Returns request data</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
             <tr class="inherited" id="getRequiredParam()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequiredParam()-detail">getRequiredParam()</a></td>
         <td>Get required param</td>
@@ -527,7 +530,7 @@
         <td>Action trigger when invalid action tried run</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
-            <tr id="newsFeedAction()">
+                <tr id="newsFeedAction()">
         <td><a href="socialveo-webapi-controllers-indexcontroller.html#newsFeedAction()-detail">newsFeedAction()</a></td>
         <td>News feed posts</td>
         <td><a href="socialveo-webapi-controllers-indexcontroller.html">Socialveo\WebApi\Controllers\IndexController</a></td>
@@ -625,7 +628,12 @@
         <td>Checks during the init of controller whether user is a guest.</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
-                                                                    <tr class="inherited" id="objectsToArray()">
+                                                                <tr class="inherited" id="log()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#log()-detail">log()</a></td>
+        <td>Log full request data for debug</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+                    <tr class="inherited" id="objectsToArray()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#objectsToArray()-detail">objectsToArray()</a></td>
         <td>Convert objects to arrays</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
@@ -655,10 +663,10 @@
     <div class="doc-description">
         <p><strong>Handles HybridAuth authorization flows with various providers.</strong></p>
 
-        <code class="hljs api">/auth</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/auth</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -669,13 +677,12 @@
 </tr>
 </tbody>
 </table></p>
-
-
-This endpoint is capable of handling oAuth redirects. <p style=" font-size: 17px;"><strong>There are four possible cases:</strong> 1) There is a "provider" and "token" set in the request query, it means this is the start of an oAuth authorization flow</p>
-2) There is a "provider" and "token" session variable in $_SESSION,
- it means this is the end of an oAuth authorization flow (we are redirected back by the provider)
-3) There is only a "provider" set in the request query, it means this is a "login with socialprovider" flow
-4) There is only a "provider" session variable in $_SESSION, it means this is the end of a "login" flow
+<p>This endpoint is capable of handling oAuth redirects. There are four possible cases:
+1) There is a &quot;provider&quot; and &quot;token&quot; set in the request query, it means this is the start of an oAuth authorization flow
+2) There is a &quot;provider&quot; and &quot;token&quot; session variable in $_SESSION,
+it means this is the end of an oAuth authorization flow (we are redirected back by the provider)
+3) There is only a &quot;provider&quot; set in the request query, it means this is a &quot;login with socialprovider&quot; flow
+4) There is only a &quot;provider&quot; session variable in $_SESSION, it means this is the end of a &quot;login&quot; flow</p>
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -698,10 +705,10 @@ This endpoint is capable of handling oAuth redirects. <p style=" font-size: 17px
     <div class="doc-description">
         <p><strong>Handles oAuth2 authorization flow with Google API, only to be used by admin user (YouTube account authorization)</strong></p>
 
-        <code class="hljs api">/auth/google</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/auth/google</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -712,12 +719,9 @@ This endpoint is capable of handling oAuth redirects. <p style=" font-size: 17px
 </tr>
 </tbody>
 </table></p>
-
-In order to use this endpoint and authorize with Google, admin user has to pass his/her access token in the request
-query (`?token=xxxxxxxxxxxxx`), <p style=" font-size: 17px;"><strong>this will initiate the authorization flow
-
-Sample response:</strong> This action produces no output.</p>
-
+<p>In order to use this endpoint and authorize with Google, admin user has to pass his/her access token in the request
+query (<code>?token=xxxxxxxxxxxxx</code>), this will initiate the authorization flow</p>
+<p><strong>Sample response:</strong> This action produces no output.</p>
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -740,13 +744,11 @@ Sample response:</strong> This action produces no output.</p>
     <div class="doc-description">
         <p><strong>Handles HybridAuth redirects (for technical purposes only)</strong></p>
 
-        <code class="hljs api">/auth/redirect</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> This action accepts no parameters</p>
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> This action produces no output.</p>
-
+        <p><code class="hljs api">/auth/redirect</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> This action accepts no parameters</p>
+<p><strong>Sample response:</strong> This action produces no output.</p>
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -769,10 +771,10 @@ Sample response:</strong> This action produces no output.</p>
     <div class="doc-description">
         <p><strong>Parses embed urls</strong></p>
 
-        <code class="hljs api">/embed</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/embed</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -789,9 +791,8 @@ Sample response:</strong> This action produces no output.</p>
 </tr>
 </tbody>
 </table></p>
-
-<p style=" font-size: 17px;"><strong>Returns:</strong> array</p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Returns:</strong> array</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data": {
         "title": "Test Post",
@@ -802,9 +803,6 @@ Sample response:</strong> This action produces no output.</p>
         ...
     }
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -855,10 +853,10 @@ Sample response:</strong> This action produces no output.</p>
     <div class="doc-description">
         <p><strong>News feed posts</strong></p>
 
-        <code class="hljs api">/feed</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/feed</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -898,12 +896,13 @@ Sample response:</strong> This action produces no output.</p>
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-post.html" title="Post">Post</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-post.html" title="Post">Post</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-post.html" title="Post">Post</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-post.html" title="Post">Post</a>
 
-
-Internal filters (used by filter param):
+[]</p>
+<p>Internal filters (used by filter param):</p>
 <table class="summary-table table table-striped  table-bordered table-hover">
 <tbody>
 <tr>
@@ -939,8 +938,7 @@ Internal filters (used by filter param):
 </tr>
 </tbody>
 </table>
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "post", "uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f", "network_uuid": "a66b8654-14a8-11e6-af87-54bef75c7a3f",…},
@@ -951,9 +949,6 @@ Internal filters (used by filter param):
     ],
     "count":{"offset": 0, "limit": 10, "total": 12}
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1008,12 +1003,12 @@ Internal filters (used by filter param):
                     Notice. This action is disabled, the reasons can be: 
                     not implemented, unsafe, duplicated or deprecated (autodetect: disabled in the router)</div><code class="hljs api">/paypal/status/{status}/{token}</code>
 
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> This action accepts no parameters</p>
+<p><strong>Method:</strong> GET</p>
 
-<p style=" font-size: 17px;"><strong>Sample response:</strong> This action renders a view.</p>
+<p><strong>Access:</strong> Public</p>
 
+<p><strong>Parameters:</strong> This action accepts no parameters</p>
+<p><strong>Sample response:</strong> This action renders a view.</p>
         <p>See also <a href="https://developer.paypal.com/docs/classic/ipn/gs_IPN/">https://developer.paypal.com/docs/classic/ipn/gs_IPN/</a>.</p>    </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1046,10 +1041,10 @@ Internal filters (used by filter param):
     <div class="doc-description">
         <p><strong>Invalidates access tokens (handles log-out)</strong></p>
 
-        <code class="hljs api">/token/revoke</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/token/revoke</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1066,14 +1061,10 @@ Internal filters (used by filter param):
 </tr>
 </tbody>
 </table></p>
-
-<p style=" font-size: 17px;"><strong>Affects:</strong> OAuth2AccessToken, OAuth2RefreshToken</p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Affects:</strong> OAuth2AccessToken, OAuth2RefreshToken</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     'status': 'success'
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1096,10 +1087,10 @@ Internal filters (used by filter param):
     <div class="doc-description">
         <p><strong>Generates access tokens (user login)</strong></p>
 
-        <code class="hljs api">/token</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/token</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1140,10 +1131,9 @@ Internal filters (used by filter param):
 </tr>
 </tbody>
 </table></p>
-
-<p style=" font-size: 17px;"><strong>Affects:</strong> OAuth2AccessToken, OAuth2RefreshToken</p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> array</p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Affects:</strong> OAuth2AccessToken, OAuth2RefreshToken</p>
+<p><strong>Returns:</strong> array</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "access_token": "6cefad589f3700d6257fca6fd3260c3c43f10ee8",
     "expires_in": "360000000",
@@ -1152,9 +1142,6 @@ Internal filters (used by filter param):
     "refresh_token": "2af17e93578e353a36c9000341235490d55933b1",
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1209,7 +1196,7 @@ Internal filters (used by filter param):
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 31 Jul 2017 14:14:48 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 11 Aug 2017 10:08:04 +0000</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

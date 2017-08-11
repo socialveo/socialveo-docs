@@ -11,12 +11,10 @@
 <script src="./assets/8686b79d/js/bootstrap.js"></script>
 <script src="./assets/d7033ccd/socialveo/custom.js"></script>
 <script src="./assets/b3b826a4/jssearch.js"></script>    <title>RestApiController, Socialveo\WebApi\Controllers\RestApiController - Socialveo API Documentation</title>
-
-    <link rel='stylesheet' id='awesome-css' href='https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/font-awesome.min.css' type='text/css' media='all'/>
-    <link rel="stylesheet" id="bootstrap-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/bootstrap.min.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="animations-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/animate.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="main-style-css" href="https://socialveo.com/wp-content/themes/socialveo/style.css?ver=4.1.5" type="text/css" media="all"/>
-
+    <link href="./assets/socialveo/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/animate.css" rel="stylesheet">
+    <link href="./assets/socialveo/style.css" rel="stylesheet">
     <link href="./assets/socialveo/custom.css" rel="stylesheet">
 </head>
 <body>
@@ -467,6 +465,11 @@
         <td>Gets request params for Socialveo::filteredFind()</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
+            <tr id="getRequestData()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequestData()-detail">getRequestData()</a></td>
+        <td>Returns request data</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
             <tr id="getRequiredParam()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequiredParam()-detail">getRequiredParam()</a></td>
         <td>Get required param</td>
@@ -502,7 +505,7 @@
         <td>Action trigger when invalid action tried run</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
-            <tr id="notFoundAction()">
+                <tr id="notFoundAction()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#notFoundAction()-detail">notFoundAction()</a></td>
         <td>Not found action</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
@@ -575,7 +578,12 @@
         <td>Checks during the init of controller whether user is a guest.</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
-                                                        <tr id="objectsToArray()">
+                                                        <tr id="log()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#log()-detail">log()</a></td>
+        <td>Log full request data for debug</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+                <tr id="objectsToArray()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#objectsToArray()-detail">objectsToArray()</a></td>
         <td>Convert objects to arrays</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
@@ -872,6 +880,29 @@
 
 <!--	-->
 
+    <div class="detail-header h3" id="getRequestData()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-restapicontroller.html#getRequestData()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getRequestData()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Returns request data</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a></span> <strong><a href="socialveo-webapi-controllers-restapicontroller.html#getRequestData()-detail">getRequestData</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="getRequiredParam()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="socialveo-webapi-controllers-restapicontroller.html#getRequiredParam()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -1082,6 +1113,29 @@
                   <td class="param-desc-col"></td>
                 </tr>
                         </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="log()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-restapicontroller.html#log()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        log()
+        <span class="detail-header-tag small">
+            protected                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Log full request data for debug</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">protected</span> <span class="signature-type">void</span> <strong><a href="socialveo-webapi-controllers-restapicontroller.html#log()-detail">log</a></strong> ( )</td></tr>
+            </table>
 
 <!--	-->
 
@@ -1434,7 +1488,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 31 Jul 2017 14:14:45 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 11 Aug 2017 10:08:00 +0000</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

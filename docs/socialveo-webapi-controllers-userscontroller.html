@@ -11,12 +11,10 @@
 <script src="./assets/8686b79d/js/bootstrap.js"></script>
 <script src="./assets/d7033ccd/socialveo/custom.js"></script>
 <script src="./assets/b3b826a4/jssearch.js"></script>    <title>UsersController, Socialveo\WebApi\Controllers\UsersController - Socialveo API Documentation</title>
-
-    <link rel='stylesheet' id='awesome-css' href='https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/font-awesome.min.css' type='text/css' media='all'/>
-    <link rel="stylesheet" id="bootstrap-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/bootstrap.min.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="animations-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/animate.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="main-style-css" href="https://socialveo.com/wp-content/themes/socialveo/style.css?ver=4.1.5" type="text/css" media="all"/>
-
+    <link href="./assets/socialveo/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/animate.css" rel="stylesheet">
+    <link href="./assets/socialveo/style.css" rel="stylesheet">
     <link href="./assets/socialveo/custom.css" rel="stylesheet">
 </head>
 <body>
@@ -507,6 +505,11 @@
         <td>Gets request params for Socialveo::filteredFind()</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
+            <tr class="inherited" id="getRequestData()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequestData()-detail">getRequestData()</a></td>
+        <td>Returns request data</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
             <tr class="inherited" id="getRequiredParam()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequiredParam()-detail">getRequiredParam()</a></td>
         <td>Get required param</td>
@@ -567,7 +570,7 @@
         <td>Get public user profiles</td>
         <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
     </tr>
-            <tr id="meAction()">
+                <tr id="meAction()">
         <td><a href="socialveo-webapi-controllers-userscontroller.html#meAction()-detail">meAction()</a></td>
         <td>Get the currently logged in user resource</td>
         <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
@@ -690,7 +693,12 @@
         <td>Checks during the init of controller whether user is a guest.</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
-                                                                                                                <tr class="inherited" id="objectsToArray()">
+                                                                                                    <tr class="inherited" id="log()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#log()-detail">log()</a></td>
+        <td>Log full request data for debug</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+                            <tr class="inherited" id="objectsToArray()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#objectsToArray()-detail">objectsToArray()</a></td>
         <td>Convert objects to arrays</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
@@ -720,10 +728,10 @@
     <div class="doc-description">
         <p><strong>Activate user account by email</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/activation</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/activation</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -740,16 +748,14 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> bool</p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Returns:</strong> bool</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -781,9 +787,12 @@
         <div class="alert alert-danger">
                     Notice. This action is disabled, the reasons can be: 
                     not implemented, unsafe, duplicated or deprecated (autodetect: disabled in the router)</div><code class="hljs api">/users/{user_uuid}/activation</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<p><strong>Method:</strong> POST</p>
+
+<p><strong>Access:</strong> Owner</p>
+
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -794,10 +803,13 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> bool</p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> </p>
+</p>
+
+<p><strong>Returns:</strong> bool</p>
+
+<p><strong>Sample response:</strong> </p>
 
 This action produces no output.
             </div>
@@ -828,12 +840,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Confirm user email</strong></p>
 
-        <code class="hljs api">/users/confirm-email/{validation_code}</code>
-
-
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/confirm-email/{validation_code}</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Logged</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -850,14 +860,10 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -886,10 +892,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Sends new confirmation mail to logged user</strong></p>
 
-        <code class="hljs api">/users/confirm-email/repeat</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/confirm-email/repeat</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Logged</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -900,14 +906,10 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -930,10 +932,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Get user connections</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/connections</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/connections</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner, UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -963,12 +965,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "connection", "uuid": "16813358-44c8-11e7-bc57-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
@@ -980,9 +983,6 @@ This action produces no output.
     "count":{"offset": 0, "limit": 10, "total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1011,10 +1011,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Create user (registration)</strong></p>
 
-        <code class="hljs api">/users/create</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/create</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1061,10 +1061,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         "type": "users",
@@ -1074,9 +1077,6 @@ This action produces no output.
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1099,10 +1099,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Remove User resource</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/delete</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/delete</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1119,16 +1119,14 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> bool</p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Returns:</strong> bool</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1157,10 +1155,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Get user</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/get</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/get</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner, UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1177,9 +1175,10 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         "type": "users",
@@ -1189,9 +1188,6 @@ This action produces no output.
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1220,10 +1216,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Get user social profiles</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/social-profiles</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/social-profiles</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1233,11 +1229,10 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-usersocialprofile.html" title="UserSocialProfile">UserSocialProfile</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-usersocialprofile.html" title="UserSocialProfile">UserSocialProfile</a>[]</p>
-
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "user_social_profile", "uuid": "9a6f6dde-6b5f-11e7-9ee9-54bef75c7a3f", "provider": "Facebook",…},
@@ -1249,9 +1244,6 @@ This action produces no output.
     "count":{"total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1283,11 +1275,12 @@ This action produces no output.
         <div class="alert alert-danger">
                     Notice. This action is disabled, the reasons can be: 
                     not implemented, unsafe, duplicated or deprecated (autodetect: disabled in the router)</div><code class="hljs api">/users/{user_uuid}/import</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>CAUTION:</strong> Request content-type has to be *multipart/form-data*</p>
 
+<p><strong>Method:</strong> POST</p>
 
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+<p><strong>CAUTION:</strong> Request content-type has to be *multipart/form-data*</p>
+
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1297,14 +1290,10 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     'status': 'OK',
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1333,10 +1322,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Invite users to site via email</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/invitations</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/invitations</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1351,14 +1340,10 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     'status': 'OK'
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1387,10 +1372,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Get user karma events</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/karma</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/karma</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner, UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1425,12 +1410,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-karma.html" title="Karma">Karma</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-karma.html" title="Karma">Karma</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-karma.html" title="Karma">Karma</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-karma.html" title="Karma">Karma</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "karma", "uuid": "9a6f6dde-6b5f-11e7-9ee9-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
@@ -1441,9 +1427,6 @@ This action produces no output.
     ]
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1472,10 +1455,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Get public user profiles</strong></p>
 
-        <code class="hljs api">/users</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1528,12 +1511,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "users", "uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f", "network_uuid": "a66b8654-14a8-11e6-af87-54bef75c7a3f",…},
@@ -1545,9 +1529,6 @@ This action produces no output.
     "count":{"offset": 0, "limit": 10, "total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1570,10 +1551,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Get the currently logged in user resource</strong></p>
 
-        <code class="hljs api">/users/me</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/me</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Logged</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1584,9 +1565,10 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code>{
+</p>
+<p><strong>Sample response:</strong> <pre><code>{
     "status": "OK",
     "data":{
         "type": "users",
@@ -1596,9 +1578,6 @@ This action produces no output.
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1621,10 +1600,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Get user networks</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/networks</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/networks</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner, UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1654,12 +1633,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-network.html" title="Network">Network</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "network", "uuid": "91c4efe4-cb17-11e6-ae6b-54bef75c7a3f", "user_uuid": "91c033fa-cb17-11e6-b903-54bef75c7a3f",…},
@@ -1670,9 +1650,6 @@ This action produces no output.
     ]
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1701,10 +1678,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Get user notifications</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/notifications</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/notifications</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1734,12 +1711,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-notification.html" title="Notification">Notification</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-notification.html" title="Notification">Notification</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "notification", "uuid": "c736726c-6b33-11e7-84d7-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
@@ -1751,9 +1729,6 @@ This action produces no output.
     "count":{"offset": 0, "limit": 10, "total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1782,10 +1757,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Get posts posted by user</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/posts</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/posts</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner, UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1820,12 +1795,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-post.html" title="Post">Post</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-post.html" title="Post">Post</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-post.html" title="Post">Post</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-post.html" title="Post">Post</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "post", "uuid": "9a6f6dde-6b5f-11e7-9ee9-54bef75c7a3f", "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",…},
@@ -1836,9 +1812,6 @@ This action produces no output.
     ],
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1867,12 +1840,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Processes a password recovery request</strong></p>
 
-        <code class="hljs api">/users/password-recovery/{password_recovery_uuid}</code>
-
-
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/password-recovery/{password_recovery_uuid}</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1883,10 +1854,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     'status': 'OK',
     "data":{
         "type": "password_recovery",
@@ -1896,9 +1870,6 @@ This action produces no output.
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1927,10 +1898,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Reset user password request</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/password-reset</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Public</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/password-reset</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Public</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1941,10 +1912,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-passwordrecovery.html" title="PasswordRecovery">PasswordRecovery</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     'status': 'OK',
     "data":{
         "type": "password_recovery",
@@ -1954,9 +1928,6 @@ This action produces no output.
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1985,10 +1956,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Update user</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/update</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/update</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -2065,10 +2036,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         "type": "user",
@@ -2078,9 +2052,6 @@ This action produces no output.
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -2109,10 +2080,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Change User password</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/password-update</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/password-update</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -2135,15 +2106,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -2172,10 +2141,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Change user status</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/status-update</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/status-update</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -2192,10 +2161,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     'status': 'OK',
     "data":{
         "type": "user",
@@ -2205,9 +2177,6 @@ This action produces no output.
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -2236,10 +2205,10 @@ This action produces no output.
     <div class="doc-description">
         <p><strong>Get users connected to given users</strong></p>
 
-        <code class="hljs api">/users/{user_uuid}/users</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Owner, UserHasAccess</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/users/{user_uuid}/users</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Owner, UserHasAccess</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -2269,12 +2238,13 @@ This action produces no output.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-user.html" title="User">User</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "user", "uuid": "4622f77e-27f8-11e6-98d1-54bef75c7a3f", "network_uuid": "4631a06c-27f8-11e6-94b3-54bef75c7a3f",…},
@@ -2286,9 +2256,6 @@ This action produces no output.
     "count":{"offset": 0, "limit": 10, "total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -2349,7 +2316,7 @@ This action produces no output.
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 31 Jul 2017 14:14:53 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 11 Aug 2017 10:08:10 +0000</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

@@ -11,12 +11,10 @@
 <script src="./assets/8686b79d/js/bootstrap.js"></script>
 <script src="./assets/d7033ccd/socialveo/custom.js"></script>
 <script src="./assets/b3b826a4/jssearch.js"></script>    <title>ConnectionsController, Socialveo\WebApi\Controllers\ConnectionsController - Socialveo API Documentation</title>
-
-    <link rel='stylesheet' id='awesome-css' href='https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/font-awesome.min.css' type='text/css' media='all'/>
-    <link rel="stylesheet" id="bootstrap-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/bootstrap.min.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="animations-css" href="https://socialveo.com/wp-content/themes/socialveo/assets/css/lib/animate.css?ver=4.1.5" type="text/css" media="all"/>
-    <link rel="stylesheet" id="main-style-css" href="https://socialveo.com/wp-content/themes/socialveo/style.css?ver=4.1.5" type="text/css" media="all"/>
-
+    <link href="./assets/socialveo/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/animate.css" rel="stylesheet">
+    <link href="./assets/socialveo/style.css" rel="stylesheet">
     <link href="./assets/socialveo/custom.css" rel="stylesheet">
 </head>
 <body>
@@ -487,6 +485,11 @@
         <td>Gets request params for Socialveo::filteredFind()</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
+            <tr class="inherited" id="getRequestData()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequestData()-detail">getRequestData()</a></td>
+        <td>Returns request data</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
             <tr class="inherited" id="getRequiredParam()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#getRequiredParam()-detail">getRequiredParam()</a></td>
         <td>Get required param</td>
@@ -532,7 +535,7 @@
         <td>Get connections list</td>
         <td><a href="socialveo-webapi-controllers-connectionscontroller.html">Socialveo\WebApi\Controllers\ConnectionsController</a></td>
     </tr>
-            <tr class="inherited" id="notFoundAction()">
+                <tr class="inherited" id="notFoundAction()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#notFoundAction()-detail">notFoundAction()</a></td>
         <td>Not found action</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
@@ -620,7 +623,12 @@
         <td>Checks during the init of controller whether user is a guest.</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
-                                                                                <tr class="inherited" id="objectsToArray()">
+                                                                                <tr class="inherited" id="log()">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#log()-detail">log()</a></td>
+        <td>Log full request data for debug</td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
+                <tr class="inherited" id="objectsToArray()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#objectsToArray()-detail">objectsToArray()</a></td>
         <td>Convert objects to arrays</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
@@ -650,12 +658,10 @@
     <div class="doc-description">
         <p><strong>Disconnect joined network</strong></p>
 
-        <code class="hljs api">/connections/networks/{networks_uuid}/disconnect</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserHasAccess (<a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a>)</p>
-
-
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/connections/networks/{networks_uuid}/disconnect</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Logged && UserHasAccess (<a href="socialveo-core-models-network.html" title="Network">Network</a>)</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -672,15 +678,15 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+, <a href="socialveo-core-models-notification.html" title="Notification">Notification</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -714,12 +720,10 @@
     <div class="doc-description">
         <p><strong>Follow user (add to first circle and create connection).</strong></p>
 
-        <code class="hljs api">/connections/users/{user_uuid}/follow</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> LoggedUserHasAccess (<a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a> passed by <i>{user_uuid}</i>)</p>
-
-
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/connections/users/{user_uuid}/follow</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-user.html" title="User">User</a> passed by <i>{user_uuid}</i>)</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -736,11 +740,19 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-circle.html" title="Circle">Circle</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-connectioncircle.html" title="ConnectionCircle">ConnectionCircle</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a></p>
-<div class="alert alert-info">Note. If user already has connection with current user, this user will be removed from other circles and added in the first active circle.</div>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+, <a href="socialveo-core-models-circle.html" title="Circle">Circle</a>
+
+, <a href="socialveo-core-models-connectioncircle.html" title="ConnectionCircle">ConnectionCircle</a>
+
+, <a href="socialveo-core-models-notification.html" title="Notification">Notification</a>
+
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
+
+</p>
+<div class="alert alert-info">Note. If user already has connection with current user, this user will be removed from other circles and added in the first active circle.</div><p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         "type": "connection",
@@ -755,9 +767,6 @@
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -818,14 +827,10 @@
     <div class="doc-description">
         <p><strong>Returns a connection</strong></p>
 
-        <code class="hljs api">/connections/{connection_uuid}</code>
-
-
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> LoggedUserHasAccess (<a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a> passed by <i>{connection_uuid}</i>)</p>
-
-
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/connections/{connection_uuid}</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-connection.html" title="Connection">Connection</a> passed by <i>{connection_uuid}</i>)</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -842,9 +847,10 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         "type": "connection",
@@ -859,9 +865,6 @@
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -889,12 +892,10 @@
     <div class="doc-description">
         <p><strong>Join public networks or ask to join closed networks or join into invited network</strong></p>
 
-        <code class="hljs api">/connections/networks/{networks_uuid}/join</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged && UserNotLocked (by owner of <a href="/socialveo-docs/docs/core/socialveo-core-models-network.html" title="Network">Network</a>)</p>
-
-
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/connections/networks/{networks_uuid}/join</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Logged && UserNotLocked (by owner of <a href="socialveo-core-models-network.html" title="Network">Network</a>)</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -911,10 +912,15 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+, <a href="socialveo-core-models-notification.html" title="Notification">Notification</a>
+
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         "type": "connection",
@@ -925,9 +931,6 @@
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -961,10 +964,10 @@
     <div class="doc-description">
         <p><strong>Get connections list</strong></p>
 
-        <code class="hljs api">/connections</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> Logged</p>
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/connections</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> Logged</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -999,12 +1002,13 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Filter by:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-<p style=" font-size: 17px;"><strong>Filter by:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a>[]</p>
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+[]</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":[
         {"type": "connection", "uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f", "network_uuid": "a66b8654-14a8-11e6-af87-54bef75c7a3f",…},
@@ -1016,9 +1020,6 @@
     "count":{"offset": 0, "limit": 10, "total": 12},
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1041,12 +1042,10 @@
     <div class="doc-description">
         <p><strong>Unfollow user (removes from circles and removes connection).</strong></p>
 
-        <code class="hljs api">/connections/users/{user_uuid}/unfollow</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> LoggedUserHasAccess (<a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a> passed by <i>{user_uuid}</i>)</p>
-
-
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/connections/users/{user_uuid}/unfollow</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-user.html" title="User">User</a> passed by <i>{user_uuid}</i>)</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1063,15 +1062,19 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-circle.html" title="Circle">Circle</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-connectioncircle.html" title="ConnectionCircle">ConnectionCircle</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+, <a href="socialveo-core-models-circle.html" title="Circle">Circle</a>
+
+, <a href="socialveo-core-models-connectioncircle.html" title="ConnectionCircle">ConnectionCircle</a>
+
+, <a href="socialveo-core-models-notification.html" title="Notification">Notification</a>
+
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1104,12 +1107,10 @@
     <div class="doc-description">
         <p><strong>Create/update/remove connection with user (add user circles and create connection or remove).</strong></p>
 
-        <code class="hljs api">/connections/users/{user_uuid}/update</code>
-<p style=" font-size: 17px;"><strong>Method:</strong> POST</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> LoggedUserHasAccess (<a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a> passed by <i>{user_uuid}</i>) and UserHasAccessUuids (<a href="/socialveo-docs/docs/core/socialveo-core-models-circle.html" title="Circle">Circle</a>[] passed by <i>circle_uuids[]</i>)</p>
-
-
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/connections/users/{user_uuid}/update</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-user.html" title="User">User</a> passed by <i>{user_uuid}</i>) and UserHasAccessUuids (<a href="socialveo-core-models-circle.html" title="Circle">Circle</a>[] passed by <i>circle_uuids[]</i>)</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1132,31 +1133,38 @@
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-<p style=" font-size: 17px;"><strong>Affects:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-circle.html" title="Circle">Circle</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-connectioncircle.html" title="ConnectionCircle">ConnectionCircle</a>, <a href="/socialveo-docs/docs/core/socialveo-core-models-notification.html" title="Notification">Notification</a></p>
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a>|null</p>
-<p style=" font-size: 17px;"><strong>Usage:</strong> * Follow. For add some user to logged user circles need to send request with <i>circle_uuids</i> in which</p>
-circles want to add user.
-* Unfollow. Send request without or empty <i>circle_uuids</i> will removes user from circles and remove connection.
+, <a href="socialveo-core-models-circle.html" title="Circle">Circle</a>
 
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
-    "status": "OK",
-    "data":{
-        "type": "connection",
-        "uuid": "6cbf3926-6e72-11e7-a385-54bef75c7a3f",
-        "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",
-        "network_uuid": "4631a06c-27f8-11e6-94b3-54bef75c7a3f",
-        ...
-        "connectionCircle":[
-            {"type": "connection_circle", "uuid": "6cc2dab8-6e72-11e7-beda-54bef75c7a3f", "connection_uuid": "6cbf3926-6e72-11e7-a385-54bef75c7a3f",…},
-            {"type": "connection_circle", "uuid": "6cc37b4e-6e72-11e7-9acc-54bef75c7a3f", "connection_uuid": "6cbf3926-6e72-11e7-a385-54bef75c7a3f",…}
-        ]
-    },
-    "timestamp": 1234567890
-}</code></pre></p>
+, <a href="socialveo-core-models-connectioncircle.html" title="ConnectionCircle">ConnectionCircle</a>
 
+, <a href="socialveo-core-models-notification.html" title="Notification">Notification</a>
 
+</p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
+|null</p>
+<p><strong>Usage:</strong> * Follow. For add some user to logged user circles need to send request with <i>circle_uuids</i> in which</p>
+<p>circles want to add user.</p>
+<ul>
+<li>Unfollow. Send request without or empty <i>circle_uuids</i> will removes user from circles and remove connection.
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
+"status": "OK",
+"data":{
+    "type": "connection",
+    "uuid": "6cbf3926-6e72-11e7-a385-54bef75c7a3f",
+    "user_uuid": "a479b438-14a8-11e6-ac83-54bef75c7a3f",
+    "network_uuid": "4631a06c-27f8-11e6-94b3-54bef75c7a3f",
+    ...
+    "connectionCircle":[
+        {"type": "connection_circle", "uuid": "6cc2dab8-6e72-11e7-beda-54bef75c7a3f", "connection_uuid": "6cbf3926-6e72-11e7-a385-54bef75c7a3f",…},
+        {"type": "connection_circle", "uuid": "6cc37b4e-6e72-11e7-9acc-54bef75c7a3f", "connection_uuid": "6cbf3926-6e72-11e7-a385-54bef75c7a3f",…}
+    ]
+},
+"timestamp": 1234567890
+}</code></pre></p></li>
+</ul>
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1195,14 +1203,10 @@ circles want to add user.
     <div class="doc-description">
         <p><strong>Get connection with user</strong></p>
 
-        <code class="hljs api">/connections/users/{user_uuid}</code>
-
-
-<p style=" font-size: 17px;"><strong>Method:</strong> GET</p>
-<p style=" font-size: 17px;"><strong>Access:</strong> LoggedUserHasAccess (to <a href="/socialveo-docs/docs/core/socialveo-core-models-user.html" title="User">User</a>)</p>
-
-
-<p style=" font-size: 17px;"><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+        <p><code class="hljs api">/connections/users/{user_uuid}</code></p>
+<p><strong>Method:</strong> GET</p>
+<p><strong>Access:</strong> LoggedUserHasAccess (to <a href="socialveo-core-models-user.html" title="User">User</a>)</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
 <tr>
@@ -1219,9 +1223,10 @@ circles want to add user.
 </tr>
 </tbody>
 </table></p>
+<p><strong>Returns:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
-<p style=" font-size: 17px;"><strong>Returns:</strong> <a href="/socialveo-docs/docs/core/socialveo-core-models-connection.html" title="Connection">Connection</a></p>
-<p style=" font-size: 17px;"><strong>Sample response:</strong> <pre><code class="language-json">{
+</p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data":{
         "type": "connection",
@@ -1236,9 +1241,6 @@ circles want to add user.
     },
     "timestamp": 1234567890
 }</code></pre></p>
-
-
-
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1303,7 +1305,7 @@ circles want to add user.
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 31 Jul 2017 14:14:46 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 11 Aug 2017 10:08:01 +0000</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
