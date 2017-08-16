@@ -1,0 +1,13 @@
+{
+    "name": "socialveo/socialveo-docs",
+    "description": "API Documentation generator for the Socialveo",
+    "keywords": ["socialveo", "phpdoc", "apidoc", "api", "documentation"],
+    "license": "proprietary",
+    "copyrights": "Copyright (C) 2017 Socialveo Sagl - All Rights Reserved",
+    "authors": [
+        {
+            "name": "Andrey Izman",
+            "email": "izmanw@gmail.com"
+        }
+    ]
+}
