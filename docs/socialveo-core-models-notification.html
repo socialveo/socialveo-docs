@@ -116,7 +116,8 @@
 <a class="list-group-item" href="./socialveo-core-exceptions-validateexception.html">ValidateException</a></div>
 <a class="list-group-item" href="#navigation-8457-8460" data-toggle="collapse" data-parent="#navigation-8457">Socialveo\Core\forms <b class="caret"></b></a><div id="navigation-8457-8460" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-forms-payment.html">Payment</a></div>
 <a class="list-group-item" href="#navigation-8457-8461" data-toggle="collapse" data-parent="#navigation-8457">Socialveo\Core\forms\element <b class="caret"></b></a><div id="navigation-8457-8461" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-forms-element-checkboxlist.html">CheckBoxList</a></div>
-<a class="list-group-item" href="#navigation-8457-8462" data-toggle="collapse" data-parent="#navigation-8457">Socialveo\Core\helpers <b class="caret"></b></a><div id="navigation-8457-8462" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-helpers-commentshelper.html">CommentsHelper</a>
+<a class="list-group-item" href="#navigation-8457-8462" data-toggle="collapse" data-parent="#navigation-8457">Socialveo\Core\helpers <b class="caret"></b></a><div id="navigation-8457-8462" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-helpers-circlehelper.html">CircleHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-commentshelper.html">CommentsHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-connectionshelper.html">ConnectionsHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-datehelper.html">DateHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-formhelper.html">FormHelper</a>
@@ -402,6 +403,18 @@
         <td></td>
         <td><a href="socialveo-core-models-notification.html">Socialveo\Core\models\Notification</a></td>
     </tr>
+            <tr id="$location_id">
+        <td><a href="socialveo-core-models-notification.html#$location_id-detail">$location_id</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-notification.html">Socialveo\Core\models\Notification</a></td>
+    </tr>
+            <tr id="$location_uuid">
+        <td><a href="socialveo-core-models-notification.html#$location_uuid-detail">$location_uuid</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-notification.html">Socialveo\Core\models\Notification</a></td>
+    </tr>
             <tr id="$network_id">
         <td><a href="socialveo-core-models-notification.html#$network_id-detail">$network_id</a></td>
         <td><a href="http://www.php.net/language.types.integer">integer</a></td>
@@ -492,7 +505,7 @@
         <td></td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
-                                    <tr class="inherited" id="$restrictedColumns">
+                                            <tr class="inherited" id="$restrictedColumns">
         <td><a href="socialveo-core-models-socialveomodel.html#$restrictedColumns-detail">$restrictedColumns</a></td>
         <td><a href="http://www.php.net/language.types.array">array</a></td>
         <td></td>
@@ -642,6 +655,16 @@
         <td><a href="socialveo-core-models-socialveomodel.html#getLastQueryFullCount()-detail">getLastQueryFullCount()</a></td>
         <td></td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="getLocationAddress()">
+        <td><a href="socialveo-core-models-notification.html#getLocationAddress()-detail">getLocationAddress()</a></td>
+        <td>Location address depending on current request</td>
+        <td><a href="socialveo-core-models-notification.html">Socialveo\Core\models\Notification</a></td>
+    </tr>
+            <tr id="getLocationPlaceId()">
+        <td><a href="socialveo-core-models-notification.html#getLocationPlaceId()-detail">getLocationPlaceId()</a></td>
+        <td>Location google place id</td>
+        <td><a href="socialveo-core-models-notification.html">Socialveo\Core\models\Notification</a></td>
     </tr>
             <tr id="getMessage()">
         <td><a href="socialveo-core-models-notification.html#getMessage()-detail">getMessage()</a></td>
@@ -881,7 +904,7 @@ This only works if the model is keeping data snapshots</td>
         <td>Before update hook</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
-                                                                                                                                    <tr class="inherited" id="getSourceTable()">
+                                                                                                                                            <tr class="inherited" id="getSourceTable()">
         <td><a href="socialveo-core-models-socialveomodel.html#getSourceTable()-detail">getSourceTable()</a></td>
         <td>Returns the source table</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
@@ -1104,6 +1127,40 @@ This only works if the model is keeping data snapshots</td>
             </div>
 
     <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-notification.html#$id-detail">$id</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$location_id-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-notification.html#$location_id-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $location_id        <span class="detail-header-tag small">
+            public                                                property
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-notification.html#$location_id-detail">$location_id</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$location_uuid-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-notification.html#$location_uuid-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $location_uuid        <span class="detail-header-tag small">
+            public                                                property
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="socialveo-core-models-notification.html#$location_uuid-detail">$location_uuid</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
 
 
     <div class="detail-header h3" id="$network_id-detail">
@@ -1423,6 +1480,54 @@ This only works if the model is keeping data snapshots</td>
 
 <!--	-->
 
+    <div class="detail-header h3" id="getLocationAddress()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-notification.html#getLocationAddress()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getLocationAddress()
+        <span class="detail-header-tag small">
+            public                                    method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Location address depending on current request</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-models-notification.html#getLocationAddress()-detail">getLocationAddress</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getLocationPlaceId()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-notification.html#getLocationPlaceId()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getLocationPlaceId()
+        <span class="detail-header-tag small">
+            public                                    method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Location google place id</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-models-notification.html#getLocationPlaceId()-detail">getLocationPlaceId</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="getMessage()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="socialveo-core-models-notification.html#getMessage()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -1650,7 +1755,7 @@ This only works if the model is keeping data snapshots</td>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 05 Sep 2017 16:20:25 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 08 Sep 2017 00:35:25 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
