@@ -142,6 +142,7 @@
 <a class="list-group-item" href="./socialveo-core-library-gettext.html">Gettext</a>
 <a class="list-group-item" href="./socialveo-core-library-googleclientwrapper.html">GoogleClientWrapper</a>
 <a class="list-group-item" href="./socialveo-core-library-hybridauthwrapper.html">HybridAuthWrapper</a>
+<a class="list-group-item" href="./socialveo-core-library-inviter.html">Inviter</a>
 <a class="list-group-item" href="./socialveo-core-library-mailer.html">Mailer</a>
 <a class="list-group-item" href="./socialveo-core-library-oauth2storage.html">OAuth2Storage</a>
 <a class="list-group-item" href="./socialveo-core-library-sqllogger.html">SqlLogger</a>
@@ -207,6 +208,7 @@
 <a class="list-group-item" href="#navigation-16143-16160" data-toggle="collapse" data-parent="#navigation-16143">Socialveo\Core\plugins <b class="caret"></b></a><div id="navigation-16143-16160" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-plugins-autofollow.html">Autofollow</a>
 <a class="list-group-item" href="./socialveo-core-plugins-captcha.html">Captcha</a>
 <a class="list-group-item" href="./socialveo-core-plugins-exceptionlistener.html">ExceptionListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-invitationlistener.html">InvitationListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-karmalistener.html">KarmaListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-networklistener.html">NetworkListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-notificationslistener.html">NotificationsListener</a>
@@ -390,6 +392,12 @@
         <td></td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
+            <tr class="inherited" id="$logger">
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html#$logger-detail">$logger</a></td>
+        <td><a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\logger\adapter.zep">Phalcon\Logger\Adapter</a></td>
+        <td></td>
+        <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
+    </tr>
             <tr class="inherited" id="$mail">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#$mail-detail">$mail</a></td>
         <td><a href="https://github.com/phalcon/incubator/blob/41383027bcf970f3ac194fcb46ef269dc0fa4cbd//Library/Phalcon/Mailer/Manager.php">\Phalcon\Mailer\Manager</a></td>
@@ -469,7 +477,12 @@
         <td>Before execute route, remove extra params</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
-                <tr id="confirmEmailAction()">
+                <tr id="checkEmailsAction()">
+        <td><a href="socialveo-webapi-controllers-userscontroller.html#checkEmailsAction()-detail">checkEmailsAction()</a></td>
+        <td>Check if emails is already registered</td>
+        <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
+    </tr>
+            <tr id="confirmEmailAction()">
         <td><a href="socialveo-webapi-controllers-userscontroller.html#confirmEmailAction()-detail">confirmEmailAction()</a></td>
         <td>Confirm user email</td>
         <td><a href="socialveo-webapi-controllers-userscontroller.html">Socialveo\WebApi\Controllers\UsersController</a></td>
@@ -712,7 +725,7 @@
         <td>Checks during the init of controller whether user is a guest.</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
     </tr>
-                                                                                                            <tr class="inherited" id="log()">
+                                                                                                                <tr class="inherited" id="log()">
         <td><a href="socialveo-webapi-controllers-restapicontroller.html#log()-detail">log()</a></td>
         <td>Log full request data for debug</td>
         <td><a href="socialveo-webapi-controllers-restapicontroller.html">Socialveo\WebApi\Controllers\RestApiController</a></td>
@@ -842,6 +855,50 @@ This action produces no output.
 </td>
                 </tr>
                                                 </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="checkEmailsAction()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-webapi-controllers-userscontroller.html#checkEmailsAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        checkEmailsAction()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Check if emails is already registered</strong></p>
+
+        <p><code class="hljs api">/users/checkEmails</code></p>
+<p><strong>Method:</strong> POST</p>
+<p><strong>Access:</strong> Owner</p>
+<p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>emails</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>array or come separated email addresses, to which invitations are to be sent</td>
+</tr>
+</tbody>
+</table></p>
+<p><strong>Sample response:</strong> <pre><code class="language-json">{
+    'status': 'OK',
+    "data":[
+        {"email": "john-doe@hotmail.com", "status": "registered"},
+        {"email": "jane-doe@hotmail.com", "status": "invited"},
+        ...
+    ]
+    "timestamp": 1234567890
+}</code></pre></p>
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-userscontroller.html#checkEmailsAction()-detail">checkEmailsAction</a></strong> ( )</td></tr>
+            </table>
 
 <!--	-->
 
@@ -2497,7 +2554,7 @@ This action produces no output.
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Fri, 08 Sep 2017 00:35:32 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 11 Sep 2017 16:48:56 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 

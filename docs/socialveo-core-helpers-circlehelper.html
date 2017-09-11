@@ -142,6 +142,7 @@
 <a class="list-group-item" href="./socialveo-core-library-gettext.html">Gettext</a>
 <a class="list-group-item" href="./socialveo-core-library-googleclientwrapper.html">GoogleClientWrapper</a>
 <a class="list-group-item" href="./socialveo-core-library-hybridauthwrapper.html">HybridAuthWrapper</a>
+<a class="list-group-item" href="./socialveo-core-library-inviter.html">Inviter</a>
 <a class="list-group-item" href="./socialveo-core-library-mailer.html">Mailer</a>
 <a class="list-group-item" href="./socialveo-core-library-oauth2storage.html">OAuth2Storage</a>
 <a class="list-group-item" href="./socialveo-core-library-sqllogger.html">SqlLogger</a>
@@ -207,6 +208,7 @@
 <a class="list-group-item" href="#navigation-16836-16853" data-toggle="collapse" data-parent="#navigation-16836">Socialveo\Core\plugins <b class="caret"></b></a><div id="navigation-16836-16853" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-plugins-autofollow.html">Autofollow</a>
 <a class="list-group-item" href="./socialveo-core-plugins-captcha.html">Captcha</a>
 <a class="list-group-item" href="./socialveo-core-plugins-exceptionlistener.html">ExceptionListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-invitationlistener.html">InvitationListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-karmalistener.html">KarmaListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-networklistener.html">NetworkListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-notificationslistener.html">NotificationsListener</a>
@@ -392,6 +394,11 @@
         <td>Set/unset circles (connection)</td>
         <td><a href="socialveo-core-helpers-circlehelper.html">Socialveo\Core\helpers\CircleHelper</a></td>
     </tr>
+            <tr id="makeFriend()">
+        <td><a href="socialveo-core-helpers-circlehelper.html#makeFriend()-detail">makeFriend()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-helpers-circlehelper.html">Socialveo\Core\helpers\CircleHelper</a></td>
+    </tr>
             <tr class="inherited" id="t()">
         <td><a href="socialveo-core-translatable.html#t()-detail">t()</a></td>
         <td>Gets translations</td>
@@ -426,11 +433,12 @@
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a></span> <strong><a href="socialveo-core-helpers-circlehelper.html#handle()-detail">handle</a></strong> ( <span style="color: #0000BB">$user</span>, <span style="color: #0000BB">$friend</span>, <span style="color: #0000BB">$firstCircle&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span>, <span style="color: #0000BB">$circlesUuids&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span> )</td></tr>
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a></span> <strong><a href="socialveo-core-helpers-circlehelper.html#handle()-detail">handle</a></strong> ( <span style="color: #0000BB">$user</span>, <span style="color: #0000BB">$friend</span>, <span style="color: #0000BB">$firstCircle&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span>, <span style="color: #0000BB">$circlesUuids&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span> )</td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$user</span></td>
-                  <td class="param-type-col"></td>
-                  <td class="param-desc-col"></td>
+                  <td class="param-type-col"><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a>|<a href="http://www.php.net/language.types.null">null</a></td>
+                  <td class="param-desc-col"><p>[optional] Returns reference to friend</p>
+</td>
                 </tr>
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$friend</span></td>
@@ -443,6 +451,50 @@
                   <td class="param-type-col"><a href="http://www.php.net/language.types.boolean">boolean</a></td>
                   <td class="param-desc-col"><p>[optional] True for connect and put in the first circle, otherwise will create circles from <code>circles</code> get param</p>
 </td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$circlesUuids</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.boolean">boolean</a></td>
+                  <td class="param-desc-col"><p>[optional] False for connect and put in the first circle, otherwise will create circles from this circles uuids</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="makeFriend()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-helpers-circlehelper.html#makeFriend()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        makeFriend()
+        <span class="detail-header-tag small">
+            public                        static            method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type">void</span> <strong><a href="socialveo-core-helpers-circlehelper.html#makeFriend()-detail">makeFriend</a></strong> ( <span style="color: #0000BB">$user</span>, <span style="color: #0000BB">$friend</span>, <span style="color: #0000BB">$firstCircle&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span>, <span style="color: #0000BB">$circlesUuids&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$friend</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$firstCircle</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
                 </tr>
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$circlesUuids</span></td>
@@ -499,7 +551,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Fri, 08 Sep 2017 00:35:33 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 11 Sep 2017 16:48:57 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 

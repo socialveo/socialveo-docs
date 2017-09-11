@@ -142,6 +142,7 @@
 <a class="list-group-item" href="./socialveo-core-library-gettext.html">Gettext</a>
 <a class="list-group-item" href="./socialveo-core-library-googleclientwrapper.html">GoogleClientWrapper</a>
 <a class="list-group-item" href="./socialveo-core-library-hybridauthwrapper.html">HybridAuthWrapper</a>
+<a class="list-group-item" href="./socialveo-core-library-inviter.html">Inviter</a>
 <a class="list-group-item" href="./socialveo-core-library-mailer.html">Mailer</a>
 <a class="list-group-item" href="./socialveo-core-library-oauth2storage.html">OAuth2Storage</a>
 <a class="list-group-item" href="./socialveo-core-library-sqllogger.html">SqlLogger</a>
@@ -207,6 +208,7 @@
 <a class="list-group-item" href="#navigation-6882-6899" data-toggle="collapse" data-parent="#navigation-6882">Socialveo\Core\plugins <b class="caret"></b></a><div id="navigation-6882-6899" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-plugins-autofollow.html">Autofollow</a>
 <a class="list-group-item" href="./socialveo-core-plugins-captcha.html">Captcha</a>
 <a class="list-group-item" href="./socialveo-core-plugins-exceptionlistener.html">ExceptionListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-invitationlistener.html">InvitationListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-karmalistener.html">KarmaListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-networklistener.html">NetworkListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-notificationslistener.html">NotificationsListener</a>
@@ -360,7 +362,7 @@
             <tr><th>Inheritance</th><td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a> &raquo;
 <a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\mvc\model.zep">Phalcon\Mvc\Model</a></td></tr>
                         <tr><th>Uses Traits</th><td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td></tr>
-                <tr><th>Subclasses</th><td><a href="socialveo-core-models-circle.html">Socialveo\Core\models\Circle</a>, <a href="socialveo-core-models-comment.html">Socialveo\Core\models\Comment</a>, <a href="socialveo-core-models-connection.html">Socialveo\Core\models\Connection</a>, <a href="socialveo-core-models-connectioncircle.html">Socialveo\Core\models\ConnectionCircle</a>, <a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a>, <a href="socialveo-core-models-karma.html">Socialveo\Core\models\Karma</a>, <a href="socialveo-core-models-karmabadge.html">Socialveo\Core\models\KarmaBadge</a>, <a href="socialveo-core-models-location.html">Socialveo\Core\models\Location</a>, <a href="socialveo-core-models-locationcountry.html">Socialveo\Core\models\LocationCountry</a>, <a href="socialveo-core-models-locationlocality.html">Socialveo\Core\models\LocationLocality</a>, <a href="socialveo-core-models-locationregion.html">Socialveo\Core\models\LocationRegion</a>, <a href="socialveo-core-models-log.html">Socialveo\Core\models\Log</a>, <a href="socialveo-core-models-media.html">Socialveo\Core\models\Media</a>, <a href="socialveo-core-models-mediaquery.html">Socialveo\Core\models\MediaQuery</a>, <a href="socialveo-core-models-messages.html">Socialveo\Core\models\Messages</a>, <a href="socialveo-core-models-messagesdialogs.html">Socialveo\Core\models\MessagesDialogs</a>, <a href="socialveo-core-models-messagesdialogsusers.html">Socialveo\Core\models\MessagesDialogsUsers</a>, <a href="socialveo-core-models-network.html">Socialveo\Core\models\Network</a>, <a href="socialveo-core-models-networkfields.html">Socialveo\Core\models\NetworkFields</a>, <a href="socialveo-core-models-notification.html">Socialveo\Core\models\Notification</a>, <a href="socialveo-core-models-oauth2refreshtoken.html">Socialveo\Core\models\OAuth2RefreshToken</a>, <a href="socialveo-core-models-passwordrecovery.html">Socialveo\Core\models\PasswordRecovery</a>, <a href="socialveo-core-models-payment.html">Socialveo\Core\models\Payment</a>, <a href="socialveo-core-models-post.html">Socialveo\Core\models\Post</a>, <a href="socialveo-core-models-spam.html">Socialveo\Core\models\Spam</a>, <a href="socialveo-core-models-staticpages.html">Socialveo\Core\models\StaticPages</a>, <a href="socialveo-core-models-tag.html">Socialveo\Core\models\Tag</a>, <a href="socialveo-core-models-tagassociation.html">Socialveo\Core\models\TagAssociation</a>, <a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a>, <a href="socialveo-core-models-usersocialprofile.html">Socialveo\Core\models\UserSocialProfile</a>, <a href="socialveo-core-models-webevent.html">Socialveo\Core\models\WebEvent</a></td></tr>
+                <tr><th>Subclasses</th><td><a href="socialveo-core-models-circle.html">Socialveo\Core\models\Circle</a>, <a href="socialveo-core-models-comment.html">Socialveo\Core\models\Comment</a>, <a href="socialveo-core-models-connection.html">Socialveo\Core\models\Connection</a>, <a href="socialveo-core-models-connectioncircle.html">Socialveo\Core\models\ConnectionCircle</a>, <a href="socialveo-core-models-index.html">Socialveo\Core\models\Index</a>, <a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a>, <a href="socialveo-core-models-karma.html">Socialveo\Core\models\Karma</a>, <a href="socialveo-core-models-karmabadge.html">Socialveo\Core\models\KarmaBadge</a>, <a href="socialveo-core-models-location.html">Socialveo\Core\models\Location</a>, <a href="socialveo-core-models-locationcountry.html">Socialveo\Core\models\LocationCountry</a>, <a href="socialveo-core-models-locationlocality.html">Socialveo\Core\models\LocationLocality</a>, <a href="socialveo-core-models-locationregion.html">Socialveo\Core\models\LocationRegion</a>, <a href="socialveo-core-models-log.html">Socialveo\Core\models\Log</a>, <a href="socialveo-core-models-media.html">Socialveo\Core\models\Media</a>, <a href="socialveo-core-models-mediaquery.html">Socialveo\Core\models\MediaQuery</a>, <a href="socialveo-core-models-messages.html">Socialveo\Core\models\Messages</a>, <a href="socialveo-core-models-messagesdialogs.html">Socialveo\Core\models\MessagesDialogs</a>, <a href="socialveo-core-models-messagesdialogsusers.html">Socialveo\Core\models\MessagesDialogsUsers</a>, <a href="socialveo-core-models-network.html">Socialveo\Core\models\Network</a>, <a href="socialveo-core-models-networkfields.html">Socialveo\Core\models\NetworkFields</a>, <a href="socialveo-core-models-notification.html">Socialveo\Core\models\Notification</a>, <a href="socialveo-core-models-oauth2refreshtoken.html">Socialveo\Core\models\OAuth2RefreshToken</a>, <a href="socialveo-core-models-passwordrecovery.html">Socialveo\Core\models\PasswordRecovery</a>, <a href="socialveo-core-models-payment.html">Socialveo\Core\models\Payment</a>, <a href="socialveo-core-models-post.html">Socialveo\Core\models\Post</a>, <a href="socialveo-core-models-spam.html">Socialveo\Core\models\Spam</a>, <a href="socialveo-core-models-staticpages.html">Socialveo\Core\models\StaticPages</a>, <a href="socialveo-core-models-tag.html">Socialveo\Core\models\Tag</a>, <a href="socialveo-core-models-tagassociation.html">Socialveo\Core\models\TagAssociation</a>, <a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a>, <a href="socialveo-core-models-usersocialprofile.html">Socialveo\Core\models\UserSocialProfile</a>, <a href="socialveo-core-models-webevent.html">Socialveo\Core\models\WebEvent</a></td></tr>
                         </table>
 
 <div class="class-description">
@@ -1281,37 +1283,38 @@ This only works if the model is keeping data snapshots</td>
 
     [subclasses] => Array
         (
-            [0] => Socialveo\Core\models\Payment
-            [1] => Socialveo\Core\models\Karma
-            [2] => Socialveo\Core\models\OAuth2RefreshToken
-            [3] => Socialveo\Core\models\MediaQuery
-            [4] => Socialveo\Core\models\Circle
-            [5] => Socialveo\Core\models\StaticPages
-            [6] => Socialveo\Core\models\TagAssociation
-            [7] => Socialveo\Core\models\LocationCountry
-            [8] => Socialveo\Core\models\PasswordRecovery
-            [9] => Socialveo\Core\models\NetworkFields
-            [10] => Socialveo\Core\models\UserSocialProfile
-            [11] => Socialveo\Core\models\Location
-            [12] => Socialveo\Core\models\Messages
-            [13] => Socialveo\Core\models\WebEvent
-            [14] => Socialveo\Core\models\MessagesDialogs
-            [15] => Socialveo\Core\models\User
-            [16] => Socialveo\Core\models\Index
-            [17] => Socialveo\Core\models\Post
-            [18] => Socialveo\Core\models\Log
-            [19] => Socialveo\Core\models\Network
-            [20] => Socialveo\Core\models\Comment
-            [21] => Socialveo\Core\models\Tag
-            [22] => Socialveo\Core\models\LocationLocality
-            [23] => Socialveo\Core\models\ConnectionCircle
-            [24] => Socialveo\Core\models\Connection
-            [25] => Socialveo\Core\models\Notification
-            [26] => Socialveo\Core\models\MessagesDialogsUsers
-            [27] => Socialveo\Core\models\KarmaBadge
-            [28] => Socialveo\Core\models\Spam
-            [29] => Socialveo\Core\models\Media
-            [30] => Socialveo\Core\models\LocationRegion
+            [0] => Socialveo\Core\models\Invitation
+            [1] => Socialveo\Core\models\Payment
+            [2] => Socialveo\Core\models\Karma
+            [3] => Socialveo\Core\models\OAuth2RefreshToken
+            [4] => Socialveo\Core\models\MediaQuery
+            [5] => Socialveo\Core\models\Circle
+            [6] => Socialveo\Core\models\StaticPages
+            [7] => Socialveo\Core\models\TagAssociation
+            [8] => Socialveo\Core\models\LocationCountry
+            [9] => Socialveo\Core\models\PasswordRecovery
+            [10] => Socialveo\Core\models\NetworkFields
+            [11] => Socialveo\Core\models\UserSocialProfile
+            [12] => Socialveo\Core\models\Location
+            [13] => Socialveo\Core\models\Messages
+            [14] => Socialveo\Core\models\WebEvent
+            [15] => Socialveo\Core\models\MessagesDialogs
+            [16] => Socialveo\Core\models\User
+            [17] => Socialveo\Core\models\Index
+            [18] => Socialveo\Core\models\Post
+            [19] => Socialveo\Core\models\Log
+            [20] => Socialveo\Core\models\Network
+            [21] => Socialveo\Core\models\Comment
+            [22] => Socialveo\Core\models\Tag
+            [23] => Socialveo\Core\models\LocationLocality
+            [24] => Socialveo\Core\models\ConnectionCircle
+            [25] => Socialveo\Core\models\Connection
+            [26] => Socialveo\Core\models\Notification
+            [27] => Socialveo\Core\models\MessagesDialogsUsers
+            [28] => Socialveo\Core\models\KarmaBadge
+            [29] => Socialveo\Core\models\Spam
+            [30] => Socialveo\Core\models\Media
+            [31] => Socialveo\Core\models\LocationRegion
         )
 
     [events] => Array
@@ -16766,37 +16769,38 @@ This only works if the model is keeping data snapshots
 
     [subclasses] => Array
         (
-            [0] => Socialveo\Core\models\Payment
-            [1] => Socialveo\Core\models\Karma
-            [2] => Socialveo\Core\models\OAuth2RefreshToken
-            [3] => Socialveo\Core\models\MediaQuery
-            [4] => Socialveo\Core\models\Circle
-            [5] => Socialveo\Core\models\StaticPages
-            [6] => Socialveo\Core\models\TagAssociation
-            [7] => Socialveo\Core\models\LocationCountry
-            [8] => Socialveo\Core\models\PasswordRecovery
-            [9] => Socialveo\Core\models\NetworkFields
-            [10] => Socialveo\Core\models\UserSocialProfile
-            [11] => Socialveo\Core\models\Location
-            [12] => Socialveo\Core\models\Messages
-            [13] => Socialveo\Core\models\WebEvent
-            [14] => Socialveo\Core\models\MessagesDialogs
-            [15] => Socialveo\Core\models\User
-            [16] => Socialveo\Core\models\Index
-            [17] => Socialveo\Core\models\Post
-            [18] => Socialveo\Core\models\Log
-            [19] => Socialveo\Core\models\Network
-            [20] => Socialveo\Core\models\Comment
-            [21] => Socialveo\Core\models\Tag
-            [22] => Socialveo\Core\models\LocationLocality
-            [23] => Socialveo\Core\models\ConnectionCircle
-            [24] => Socialveo\Core\models\Connection
-            [25] => Socialveo\Core\models\Notification
-            [26] => Socialveo\Core\models\MessagesDialogsUsers
-            [27] => Socialveo\Core\models\KarmaBadge
-            [28] => Socialveo\Core\models\Spam
-            [29] => Socialveo\Core\models\Media
-            [30] => Socialveo\Core\models\LocationRegion
+            [0] => Socialveo\Core\models\Invitation
+            [1] => Socialveo\Core\models\Payment
+            [2] => Socialveo\Core\models\Karma
+            [3] => Socialveo\Core\models\OAuth2RefreshToken
+            [4] => Socialveo\Core\models\MediaQuery
+            [5] => Socialveo\Core\models\Circle
+            [6] => Socialveo\Core\models\StaticPages
+            [7] => Socialveo\Core\models\TagAssociation
+            [8] => Socialveo\Core\models\LocationCountry
+            [9] => Socialveo\Core\models\PasswordRecovery
+            [10] => Socialveo\Core\models\NetworkFields
+            [11] => Socialveo\Core\models\UserSocialProfile
+            [12] => Socialveo\Core\models\Location
+            [13] => Socialveo\Core\models\Messages
+            [14] => Socialveo\Core\models\WebEvent
+            [15] => Socialveo\Core\models\MessagesDialogs
+            [16] => Socialveo\Core\models\User
+            [17] => Socialveo\Core\models\Index
+            [18] => Socialveo\Core\models\Post
+            [19] => Socialveo\Core\models\Log
+            [20] => Socialveo\Core\models\Network
+            [21] => Socialveo\Core\models\Comment
+            [22] => Socialveo\Core\models\Tag
+            [23] => Socialveo\Core\models\LocationLocality
+            [24] => Socialveo\Core\models\ConnectionCircle
+            [25] => Socialveo\Core\models\Connection
+            [26] => Socialveo\Core\models\Notification
+            [27] => Socialveo\Core\models\MessagesDialogsUsers
+            [28] => Socialveo\Core\models\KarmaBadge
+            [29] => Socialveo\Core\models\Spam
+            [30] => Socialveo\Core\models\Media
+            [31] => Socialveo\Core\models\LocationRegion
         )
 
     [events] => Array
@@ -32280,37 +32284,38 @@ This only works if the model is keeping data snapshots
 
     [subclasses] => Array
         (
-            [0] => Socialveo\Core\models\Payment
-            [1] => Socialveo\Core\models\Karma
-            [2] => Socialveo\Core\models\OAuth2RefreshToken
-            [3] => Socialveo\Core\models\MediaQuery
-            [4] => Socialveo\Core\models\Circle
-            [5] => Socialveo\Core\models\StaticPages
-            [6] => Socialveo\Core\models\TagAssociation
-            [7] => Socialveo\Core\models\LocationCountry
-            [8] => Socialveo\Core\models\PasswordRecovery
-            [9] => Socialveo\Core\models\NetworkFields
-            [10] => Socialveo\Core\models\UserSocialProfile
-            [11] => Socialveo\Core\models\Location
-            [12] => Socialveo\Core\models\Messages
-            [13] => Socialveo\Core\models\WebEvent
-            [14] => Socialveo\Core\models\MessagesDialogs
-            [15] => Socialveo\Core\models\User
-            [16] => Socialveo\Core\models\Index
-            [17] => Socialveo\Core\models\Post
-            [18] => Socialveo\Core\models\Log
-            [19] => Socialveo\Core\models\Network
-            [20] => Socialveo\Core\models\Comment
-            [21] => Socialveo\Core\models\Tag
-            [22] => Socialveo\Core\models\LocationLocality
-            [23] => Socialveo\Core\models\ConnectionCircle
-            [24] => Socialveo\Core\models\Connection
-            [25] => Socialveo\Core\models\Notification
-            [26] => Socialveo\Core\models\MessagesDialogsUsers
-            [27] => Socialveo\Core\models\KarmaBadge
-            [28] => Socialveo\Core\models\Spam
-            [29] => Socialveo\Core\models\Media
-            [30] => Socialveo\Core\models\LocationRegion
+            [0] => Socialveo\Core\models\Invitation
+            [1] => Socialveo\Core\models\Payment
+            [2] => Socialveo\Core\models\Karma
+            [3] => Socialveo\Core\models\OAuth2RefreshToken
+            [4] => Socialveo\Core\models\MediaQuery
+            [5] => Socialveo\Core\models\Circle
+            [6] => Socialveo\Core\models\StaticPages
+            [7] => Socialveo\Core\models\TagAssociation
+            [8] => Socialveo\Core\models\LocationCountry
+            [9] => Socialveo\Core\models\PasswordRecovery
+            [10] => Socialveo\Core\models\NetworkFields
+            [11] => Socialveo\Core\models\UserSocialProfile
+            [12] => Socialveo\Core\models\Location
+            [13] => Socialveo\Core\models\Messages
+            [14] => Socialveo\Core\models\WebEvent
+            [15] => Socialveo\Core\models\MessagesDialogs
+            [16] => Socialveo\Core\models\User
+            [17] => Socialveo\Core\models\Index
+            [18] => Socialveo\Core\models\Post
+            [19] => Socialveo\Core\models\Log
+            [20] => Socialveo\Core\models\Network
+            [21] => Socialveo\Core\models\Comment
+            [22] => Socialveo\Core\models\Tag
+            [23] => Socialveo\Core\models\LocationLocality
+            [24] => Socialveo\Core\models\ConnectionCircle
+            [25] => Socialveo\Core\models\Connection
+            [26] => Socialveo\Core\models\Notification
+            [27] => Socialveo\Core\models\MessagesDialogsUsers
+            [28] => Socialveo\Core\models\KarmaBadge
+            [29] => Socialveo\Core\models\Spam
+            [30] => Socialveo\Core\models\Media
+            [31] => Socialveo\Core\models\LocationRegion
         )
 
     [events] => Array
@@ -48147,37 +48152,38 @@ This only works if the model is keeping data snapshots</strong></p>
 
     [subclasses] => Array
         (
-            [0] => Socialveo\Core\models\Payment
-            [1] => Socialveo\Core\models\Karma
-            [2] => Socialveo\Core\models\OAuth2RefreshToken
-            [3] => Socialveo\Core\models\MediaQuery
-            [4] => Socialveo\Core\models\Circle
-            [5] => Socialveo\Core\models\StaticPages
-            [6] => Socialveo\Core\models\TagAssociation
-            [7] => Socialveo\Core\models\LocationCountry
-            [8] => Socialveo\Core\models\PasswordRecovery
-            [9] => Socialveo\Core\models\NetworkFields
-            [10] => Socialveo\Core\models\UserSocialProfile
-            [11] => Socialveo\Core\models\Location
-            [12] => Socialveo\Core\models\Messages
-            [13] => Socialveo\Core\models\WebEvent
-            [14] => Socialveo\Core\models\MessagesDialogs
-            [15] => Socialveo\Core\models\User
-            [16] => Socialveo\Core\models\Index
-            [17] => Socialveo\Core\models\Post
-            [18] => Socialveo\Core\models\Log
-            [19] => Socialveo\Core\models\Network
-            [20] => Socialveo\Core\models\Comment
-            [21] => Socialveo\Core\models\Tag
-            [22] => Socialveo\Core\models\LocationLocality
-            [23] => Socialveo\Core\models\ConnectionCircle
-            [24] => Socialveo\Core\models\Connection
-            [25] => Socialveo\Core\models\Notification
-            [26] => Socialveo\Core\models\MessagesDialogsUsers
-            [27] => Socialveo\Core\models\KarmaBadge
-            [28] => Socialveo\Core\models\Spam
-            [29] => Socialveo\Core\models\Media
-            [30] => Socialveo\Core\models\LocationRegion
+            [0] => Socialveo\Core\models\Invitation
+            [1] => Socialveo\Core\models\Payment
+            [2] => Socialveo\Core\models\Karma
+            [3] => Socialveo\Core\models\OAuth2RefreshToken
+            [4] => Socialveo\Core\models\MediaQuery
+            [5] => Socialveo\Core\models\Circle
+            [6] => Socialveo\Core\models\StaticPages
+            [7] => Socialveo\Core\models\TagAssociation
+            [8] => Socialveo\Core\models\LocationCountry
+            [9] => Socialveo\Core\models\PasswordRecovery
+            [10] => Socialveo\Core\models\NetworkFields
+            [11] => Socialveo\Core\models\UserSocialProfile
+            [12] => Socialveo\Core\models\Location
+            [13] => Socialveo\Core\models\Messages
+            [14] => Socialveo\Core\models\WebEvent
+            [15] => Socialveo\Core\models\MessagesDialogs
+            [16] => Socialveo\Core\models\User
+            [17] => Socialveo\Core\models\Index
+            [18] => Socialveo\Core\models\Post
+            [19] => Socialveo\Core\models\Log
+            [20] => Socialveo\Core\models\Network
+            [21] => Socialveo\Core\models\Comment
+            [22] => Socialveo\Core\models\Tag
+            [23] => Socialveo\Core\models\LocationLocality
+            [24] => Socialveo\Core\models\ConnectionCircle
+            [25] => Socialveo\Core\models\Connection
+            [26] => Socialveo\Core\models\Notification
+            [27] => Socialveo\Core\models\MessagesDialogsUsers
+            [28] => Socialveo\Core\models\KarmaBadge
+            [29] => Socialveo\Core\models\Spam
+            [30] => Socialveo\Core\models\Media
+            [31] => Socialveo\Core\models\LocationRegion
         )
 
     [events] => Array
@@ -63697,7 +63703,7 @@ This only works if the model is keeping data snapshots
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Fri, 08 Sep 2017 00:35:22 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 11 Sep 2017 16:48:46 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 

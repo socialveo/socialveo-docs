@@ -142,6 +142,7 @@
 <a class="list-group-item" href="./socialveo-core-library-gettext.html">Gettext</a>
 <a class="list-group-item" href="./socialveo-core-library-googleclientwrapper.html">GoogleClientWrapper</a>
 <a class="list-group-item" href="./socialveo-core-library-hybridauthwrapper.html">HybridAuthWrapper</a>
+<a class="list-group-item" href="./socialveo-core-library-inviter.html">Inviter</a>
 <a class="list-group-item" href="./socialveo-core-library-mailer.html">Mailer</a>
 <a class="list-group-item" href="./socialveo-core-library-oauth2storage.html">OAuth2Storage</a>
 <a class="list-group-item" href="./socialveo-core-library-sqllogger.html">SqlLogger</a>
@@ -207,6 +208,7 @@
 <a class="list-group-item" href="#navigation-6378-6395" data-toggle="collapse" data-parent="#navigation-6378">Socialveo\Core\plugins <b class="caret"></b></a><div id="navigation-6378-6395" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-plugins-autofollow.html">Autofollow</a>
 <a class="list-group-item" href="./socialveo-core-plugins-captcha.html">Captcha</a>
 <a class="list-group-item" href="./socialveo-core-plugins-exceptionlistener.html">ExceptionListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-invitationlistener.html">InvitationListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-karmalistener.html">KarmaListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-networklistener.html">NetworkListener</a>
 <a class="list-group-item" href="./socialveo-core-plugins-notificationslistener.html">NotificationsListener</a>
@@ -347,15 +349,19 @@
         <h1>Class Socialveo\Core\models\Invitation</h1>
 <div class="top-nav">
     <a href="index.html">All Classes</a>
+            | <a href="#properties">Properties</a>
                 | <a href="#methods">Methods</a>
-            </div>
+                    | <a href="#constants">Constants</a>
+    </div>
 
 <table class="summaryTable docClass table table-bordered">
     <colgroup>
         <col class="col-name" />
         <col class="col-value" />
     </colgroup>
-            <tr><th>Inheritance</th><td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td></tr>
+            <tr><th>Inheritance</th><td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a> &raquo;
+<a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a> &raquo;
+<a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\mvc\model.zep">Phalcon\Mvc\Model</a></td></tr>
                         <tr><th>Uses Traits</th><td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td></tr>
                             </table>
 
@@ -365,6 +371,114 @@
     </div>
 
 <a id="properties"></a>
+
+<div class="summary doc-property">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr id="$active">
+        <td><a href="socialveo-core-models-invitation.html#$active-detail">$active</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
+                <tr id="$created">
+        <td><a href="socialveo-core-models-invitation.html#$created-detail">$created</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
+            <tr id="$email">
+        <td><a href="socialveo-core-models-invitation.html#$email-detail">$email</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
+            <tr id="$id">
+        <td><a href="socialveo-core-models-invitation.html#$id-detail">$id</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
+                    <tr id="$status">
+        <td><a href="socialveo-core-models-invitation.html#$status-detail">$status</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
+            <tr id="$updated">
+        <td><a href="socialveo-core-models-invitation.html#$updated-detail">$updated</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
+            <tr id="$user_id">
+        <td><a href="socialveo-core-models-invitation.html#$user_id-detail">$user_id</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
+            <tr id="$user_uuid">
+        <td><a href="socialveo-core-models-invitation.html#$user_uuid-detail">$user_uuid</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
+            <tr id="$uuid">
+        <td><a href="socialveo-core-models-invitation.html#$uuid-detail">$uuid</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
+    </table>
+</div>
+
+<div class="summary doc-property">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+            <tr class="inherited" id="$changedColumns">
+        <td><a href="socialveo-core-models-socialveomodel.html#$changedColumns-detail">$changedColumns</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                        <tr class="inherited" id="$restrictedColumns">
+        <td><a href="socialveo-core-models-socialveomodel.html#$restrictedColumns-detail">$restrictedColumns</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="$scenario">
+        <td><a href="socialveo-core-models-socialveomodel.html#$scenario-detail">$scenario</a></td>
+        <td></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                        </table>
+</div>
 
 <a id="methods"></a>
 
@@ -382,125 +496,655 @@
 <tr>
   <th>Method</th><th>Description</th><th>Defined By</th>
 </tr>
-        <tr id="__construct()">
-        <td><a href="socialveo-core-models-invitation.html#__construct()-detail">__construct()</a></td>
-        <td>Constructor method</td>
-        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+        <tr class="inherited" id="__get()">
+        <td><a href="socialveo-core-models-socialveomodel.html#__get()-detail">__get()</a></td>
+        <td>Magic method to get related records using the relation alias as a property or getters defined by setGetter()</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
-            <tr class="inherited" id="_t()">
+            <tr class="inherited" id="__set()">
+        <td><a href="socialveo-core-models-socialveomodel.html#__set()-detail">__set()</a></td>
+        <td>Magic method to set related records using the relation alias as a property or setters defined by setSetter()</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                    <tr class="inherited" id="_t()">
         <td><a href="socialveo-core-translatable.html#_t()-detail">_t()</a></td>
         <td>Gets translations</td>
         <td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td>
     </tr>
-            <tr id="sendInvitationToConnect()">
-        <td><a href="socialveo-core-models-invitation.html#sendInvitationToConnect()-detail">sendInvitationToConnect()</a></td>
-        <td>Sends an invitation to connect to another user or closed group owner</td>
+                                        <tr class="inherited" id="behaviors()">
+        <td><a href="socialveo-core-models-socialveomodel.html#behaviors()-detail">behaviors()</a></td>
+        <td>Behaviors</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="behaviorsNotify()">
+        <td><a href="socialveo-core-models-socialveomodel.html#behaviorsNotify()-detail">behaviorsNotify()</a></td>
+        <td>Behavior notify</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="cachedFind()">
+        <td><a href="socialveo-core-models-socialveomodel.html#cachedFind()-detail">cachedFind()</a></td>
+        <td>Returns query results from cache (if set and not expired) or database</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="change()">
+        <td><a href="socialveo-core-models-socialveomodel.html#change()-detail">change()</a></td>
+        <td>Changes object attributes based on passed-in payload data, saves object and returns it</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="createObject()">
+        <td><a href="socialveo-core-models-socialveomodel.html#createObject()-detail">createObject()</a></td>
+        <td>Creates an object using passed-in payload data</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="deleteObject()">
+        <td><a href="socialveo-core-models-socialveomodel.html#deleteObject()-detail">deleteObject()</a></td>
+        <td>Deletes an object (soft-delete)</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="deleteTargetIndex()">
+        <td><a href="socialveo-core-models-socialveomodel.html#deleteTargetIndex()-detail">deleteTargetIndex()</a></td>
+        <td>Delete target index</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="fetchObjects()">
+        <td><a href="socialveo-core-models-socialveomodel.html#fetchObjects()-detail">fetchObjects()</a></td>
+        <td>Fetches the provided objects and returns them in an array</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="filteredFind()">
+        <td><a href="socialveo-core-models-socialveomodel.html#filteredFind()-detail">filteredFind()</a></td>
+        <td>Returns query results filtered by GET user-parameters, optionaly cached</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="findFirstByUuid()">
+        <td><a href="socialveo-core-models-socialveomodel.html#findFirstByUuid()-detail">findFirstByUuid()</a></td>
+        <td>Find first model by uuid</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="fire()">
+        <td><a href="socialveo-core-models-socialveomodel.html#fire()-detail">fire()</a></td>
+        <td>Fire event</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="forUpdate()">
+        <td><a href="socialveo-core-models-socialveomodel.html#forUpdate()-detail">forUpdate()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getActivePaymentProcess()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getActivePaymentProcess()-detail">getActivePaymentProcess()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getAttributes()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getAttributes()-detail">getAttributes()</a></td>
+        <td>Get model meta data attributes</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getAttributesStatic()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getAttributesStatic()-detail">getAttributesStatic()</a></td>
+        <td>Get models metadata attributes</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="getByUuid()">
+        <td><a href="socialveo-core-models-invitation.html#getByUuid()-detail">getByUuid()</a></td>
+        <td>Get invitation by uuid</td>
         <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
     </tr>
-            <tr id="sendInvitationToConversation()">
-        <td><a href="socialveo-core-models-invitation.html#sendInvitationToConversation()-detail">sendInvitationToConversation()</a></td>
-        <td>Sends an invitation to join a conversation (read private message)</td>
+            <tr class="inherited" id="getChangedFields()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getChangedFields()-detail">getChangedFields()</a></td>
+        <td>Returns a list of changed values</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getEventsManagerInstance()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getEventsManagerInstance()-detail">getEventsManagerInstance()</a></td>
+        <td>Returns models Events Manager</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="getInviteByEmail()">
+        <td><a href="socialveo-core-models-invitation.html#getInviteByEmail()-detail">getInviteByEmail()</a></td>
+        <td>Get invitation by email and user_id</td>
         <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
     </tr>
-            <tr id="sendInvitationToNetwork()">
-        <td><a href="socialveo-core-models-invitation.html#sendInvitationToNetwork()-detail">sendInvitationToNetwork()</a></td>
-        <td>Sends an invitation to a user, inviting him/her to join a group</td>
+            <tr class="inherited" id="getIsOwner()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getIsOwner()-detail">getIsOwner()</a></td>
+        <td>Check if user is owner of resource</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getLastQueryFullCount()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getLastQueryFullCount()-detail">getLastQueryFullCount()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getModel()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getModel()-detail">getModel()</a></td>
+        <td>Get model</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getObjectByParam()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getObjectByParam()-detail">getObjectByParam()</a></td>
+        <td>Fetches an object based on passed array</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getObjectTypeByParam()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getObjectTypeByParam()-detail">getObjectTypeByParam()</a></td>
+        <td>Returns an resource type based on request URI</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getResourceType()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getResourceType()-detail">getResourceType()</a></td>
+        <td>Returns a string resource name of the Object (singular form)</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getScenario()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getScenario()-detail">getScenario()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="getSource()">
+        <td><a href="socialveo-core-models-invitation.html#getSource()-detail">getSource()</a></td>
+        <td>Define table mapping</td>
         <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
     </tr>
-            <tr id="sendInvitationToSite()">
-        <td><a href="socialveo-core-models-invitation.html#sendInvitationToSite()-detail">sendInvitationToSite()</a></td>
-        <td>Sends an invitation to join site, to a provided email addresses</td>
+                <tr class="inherited" id="getTargetObject()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getTargetObject()-detail">getTargetObject()</a></td>
+        <td>Returns the target object by target_id and target_type</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getTargetObjectFromArray()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getTargetObjectFromArray()-detail">getTargetObjectFromArray()</a></td>
+        <td>Fetches an object based on passed array</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="getTargetType()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getTargetType()-detail">getTargetType()</a></td>
+        <td>Returns target type</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                <tr class="inherited" id="getUuidsObjects()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getUuidsObjects()-detail">getUuidsObjects()</a></td>
+        <td>Fetch objects passed in array</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="hasChanged()">
+        <td><a href="socialveo-core-models-socialveomodel.html#hasChanged()-detail">hasChanged()</a></td>
+        <td>Check if a specific attribute has changed
+This only works if the model is keeping data snapshots</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="initialize()">
+        <td><a href="socialveo-core-models-invitation.html#initialize()-detail">initialize()</a></td>
+        <td>Initialize method for model</td>
         <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
+            <tr class="inherited" id="isModel()">
+        <td><a href="socialveo-core-models-socialveomodel.html#isModel()-detail">isModel()</a></td>
+        <td>Check if called class and the model name is the same</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="isNew()">
+        <td><a href="socialveo-core-models-socialveomodel.html#isNew()-detail">isNew()</a></td>
+        <td>Checks whether model is new</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="isNewRecord()">
+        <td><a href="socialveo-core-models-socialveomodel.html#isNewRecord()-detail">isNewRecord()</a></td>
+        <td>Checks whether model is new</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="onConstruct()">
+        <td><a href="socialveo-core-models-socialveomodel.html#onConstruct()-detail">onConstruct()</a></td>
+        <td>OnConstruct event model</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="pluralize()">
+        <td><a href="socialveo-core-models-socialveomodel.html#pluralize()-detail">pluralize()</a></td>
+        <td>Transforms words from singular to plural</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="resourceToModel()">
+        <td><a href="socialveo-core-models-socialveomodel.html#resourceToModel()-detail">resourceToModel()</a></td>
+        <td>Transforms a resource name string to a Model name (if such model exists)</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="resultsetToJson()">
+        <td><a href="socialveo-core-models-socialveomodel.html#resultsetToJson()-detail">resultsetToJson()</a></td>
+        <td>Returns an array of typed arrays, ready to be json_encoded</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="retrieve()">
+        <td><a href="socialveo-core-models-socialveomodel.html#retrieve()-detail">retrieve()</a></td>
+        <td>Returns object from cache (if set and not expired) or database</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="setGetter()">
+        <td><a href="socialveo-core-models-socialveomodel.html#setGetter()-detail">setGetter()</a></td>
+        <td>Set getter</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="setScenario()">
+        <td><a href="socialveo-core-models-socialveomodel.html#setScenario()-detail">setScenario()</a></td>
+        <td></td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="setSetter()">
+        <td><a href="socialveo-core-models-socialveomodel.html#setSetter()-detail">setSetter()</a></td>
+        <td>Set setter</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="setTargetObject()">
+        <td><a href="socialveo-core-models-socialveomodel.html#setTargetObject()-detail">setTargetObject()</a></td>
+        <td>Set target_id and target_type</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="singularize()">
+        <td><a href="socialveo-core-models-socialveomodel.html#singularize()-detail">singularize()</a></td>
+        <td>Transforms words from plural to singular</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
             <tr class="inherited" id="t()">
         <td><a href="socialveo-core-translatable.html#t()-detail">t()</a></td>
         <td>Gets translations</td>
         <td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td>
     </tr>
+            <tr class="inherited" id="toJson()">
+        <td><a href="socialveo-core-models-socialveomodel.html#toJson()-detail">toJson()</a></td>
+        <td>Returns a typed array ready to be json_encoded</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="userHasAccess()">
+        <td><a href="socialveo-core-models-socialveomodel.html#userHasAccess()-detail">userHasAccess()</a></td>
+        <td>Returns true if user has access to resource, otherwise false</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="validation()">
+        <td><a href="socialveo-core-models-invitation.html#validation()-detail">validation()</a></td>
+        <td>Validations</td>
+        <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+    </tr>
     </table>
+</div>
+
+<div class="summary doc-method">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+                <tr class="inherited" id="_postSaveRelatedRecords()">
+        <td><a href="socialveo-core-models-socialveomodel.html#_postSaveRelatedRecords()-detail">_postSaveRelatedRecords()</a></td>
+        <td>Override default method for turn off auto-updating related records</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="_preSaveRelatedRecords()">
+        <td><a href="socialveo-core-models-socialveomodel.html#_preSaveRelatedRecords()-detail">_preSaveRelatedRecords()</a></td>
+        <td>Override default method for turn off auto-updating related records</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                <tr class="inherited" id="afterFetch()">
+        <td><a href="socialveo-core-models-socialveomodel.html#afterFetch()-detail">afterFetch()</a></td>
+        <td>After fetch hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="afterSave()">
+        <td><a href="socialveo-core-models-socialveomodel.html#afterSave()-detail">afterSave()</a></td>
+        <td>After save hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="afterUpdate()">
+        <td><a href="socialveo-core-models-socialveomodel.html#afterUpdate()-detail">afterUpdate()</a></td>
+        <td>After update hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="beforeCreate()">
+        <td><a href="socialveo-core-models-socialveomodel.html#beforeCreate()-detail">beforeCreate()</a></td>
+        <td>Before create hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="beforeDelete()">
+        <td><a href="socialveo-core-models-socialveomodel.html#beforeDelete()-detail">beforeDelete()</a></td>
+        <td>Before delete hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="beforeSave()">
+        <td><a href="socialveo-core-models-socialveomodel.html#beforeSave()-detail">beforeSave()</a></td>
+        <td>Before save hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr class="inherited" id="beforeUpdate()">
+        <td><a href="socialveo-core-models-socialveomodel.html#beforeUpdate()-detail">beforeUpdate()</a></td>
+        <td>Before update hook</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                                                                                                                        <tr class="inherited" id="getSourceTable()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getSourceTable()-detail">getSourceTable()</a></td>
+        <td>Returns the source table</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                        <tr class="inherited" id="getUser()">
+        <td><a href="socialveo-core-models-socialveomodel.html#getUser()-detail">getUser()</a></td>
+        <td>Returns user model of the currently logged in (or passed-in) user</td>
+        <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+                                                                                    </table>
 </div>
 
 <a id="events"></a>
 
 <a id="constants"></a>
+<div class="summary doc-const">
+    <h2>Constants</h2>
 
+    <p><a href="#" class="toggle">Hide inherited constants</a></p>
+
+    <table class="summary-table table table-striped table-bordered table-hover">
+    <colgroup>
+        <col class="col-const" />
+        <col class="col-value" />
+        <col class="col-description" />
+        <col class="col-defined" />
+    </colgroup>
+    <tr>
+        <th>Constant</th><th>Value</th><th>Description</th><th>Defined By</th>
+    </tr>
+            <tr class="inherited" id="ACTIVE_DELETE">
+          <td id="ACTIVE_DELETE-detail">ACTIVE_DELETE</td>
+          <td>0</td>
+          <td>Delete
+                        </td>
+          <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+        </tr>
+            <tr class="inherited" id="ACTIVE_OK">
+          <td id="ACTIVE_OK-detail">ACTIVE_OK</td>
+          <td>1</td>
+          <td>Active
+                        </td>
+          <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+        </tr>
+            <tr class="inherited" id="ACTIVE_PROCESS_PAYMENT">
+          <td id="ACTIVE_PROCESS_PAYMENT-detail">ACTIVE_PROCESS_PAYMENT</td>
+          <td>2</td>
+          <td>Payment process
+                        </td>
+          <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+        </tr>
+            <tr class="inherited" id="SCENARIO_DEFAULT">
+          <td id="SCENARIO_DEFAULT-detail">SCENARIO_DEFAULT</td>
+          <td>'default'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+        </tr>
+            <tr id="STATUS_ACCEPTED">
+          <td id="STATUS_ACCEPTED-detail">STATUS_ACCEPTED</td>
+          <td>2</td>
+          <td>Invite status accepted
+                        </td>
+          <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+        </tr>
+            <tr id="STATUS_PENDING">
+          <td id="STATUS_PENDING-detail">STATUS_PENDING</td>
+          <td>1</td>
+          <td>Invite status pending
+                        </td>
+          <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+        </tr>
+            <tr id="STATUS_REFUSED">
+          <td id="STATUS_REFUSED-detail">STATUS_REFUSED</td>
+          <td>0</td>
+          <td>Invite status refused
+                        </td>
+          <td><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></td>
+        </tr>
+        </table>
+</div>
+
+<h2>Property Details</h2>
+
+<div class="property-doc">
+
+    <div class="detail-header h3" id="$active-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#$active-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $active        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-invitation.html#$active-detail">$active</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$created-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#$created-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $created        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-invitation.html#$created-detail">$created</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$email-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#$email-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $email        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-invitation.html#$email-detail">$email</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$id-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#$id-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $id        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-invitation.html#$id-detail">$id</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$status-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#$status-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $status        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-invitation.html#$status-detail">$status</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$updated-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#$updated-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $updated        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-invitation.html#$updated-detail">$updated</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$user_id-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#$user_id-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $user_id        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.integer">integer</a></span> <a href="socialveo-core-models-invitation.html#$user_id-detail">$user_id</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$user_uuid-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#$user_uuid-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $user_uuid        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="socialveo-core-models-invitation.html#$user_uuid-detail">$user_uuid</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$uuid-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#$uuid-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $uuid        <span class="detail-header-tag small">
+            public                                                property
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="socialveo-core-models-invitation.html#$uuid-detail">$uuid</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+</div>
 <h2>Method Details</h2>
 
 <div class="method-doc">
 
-    <div class="detail-header h3" id="__construct()-detail">
+    <div class="detail-header h3" id="getByUuid()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
-        <a class="tool-link hash" href="socialveo-core-models-invitation.html#__construct()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#getByUuid()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
         
-        __construct()
+        getByUuid()
         <span class="detail-header-tag small">
-            public                                    method
+            public                        static            method
                             (available since version 1.0)
                     </span>
     </div>
 
     
     <div class="doc-description">
-        <p><strong>Constructor method</strong></p>
+        <p><strong>Get invitation by uuid</strong></p>
 
         
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="socialveo-core-models-invitation.html#__construct()-detail">__construct</a></strong> ( <span style="color: #0000BB">$user</span> )</td></tr>
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></span> <strong><a href="socialveo-core-models-invitation.html#getByUuid()-detail">getByUuid</a></strong> ( <span style="color: #0000BB">$uuid</span> )</td></tr>
                                     <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$user</span></td>
+                  <td class="param-name-col"><span style="color: #0000BB">$uuid</span></td>
                   <td class="param-type-col"></td>
                   <td class="param-desc-col"></td>
                 </tr>
-                                                    <tr>
-                  <th class="param-name-col">throws</th>
-                  <td class="param-type-col"><a href="http://www.php.net/class.exception">Exception</a></td>
-                  <td class="param-desc-col"></td>
-                </tr>
-                        </table>
+                                                </table>
 
 <!--	-->
 
-    <div class="detail-header h3" id="sendInvitationToConnect()-detail">
+    <div class="detail-header h3" id="getInviteByEmail()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
-        <a class="tool-link hash" href="socialveo-core-models-invitation.html#sendInvitationToConnect()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#getInviteByEmail()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
         
-        sendInvitationToConnect()
+        getInviteByEmail()
         <span class="detail-header-tag small">
-            public                                    method
+            public                        static            method
                             (available since version 1.0)
                     </span>
     </div>
 
     
     <div class="doc-description">
-        <p><strong>Sends an invitation to connect to another user or closed group owner</strong></p>
+        <p><strong>Get invitation by email and user_id</strong></p>
 
         
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a></span> <strong><a href="socialveo-core-models-invitation.html#sendInvitationToConnect()-detail">sendInvitationToConnect</a></strong> ( <span style="color: #0000BB">$connection</span>, <span style="color: #0000BB">$notification</span> )</td></tr>
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="socialveo-core-models-invitation.html">Socialveo\Core\models\Invitation</a></span> <strong><a href="socialveo-core-models-invitation.html#getInviteByEmail()-detail">getInviteByEmail</a></strong> ( <span style="color: #0000BB">$email</span>, <span style="color: #0000BB">$user_id</span> )</td></tr>
                                     <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$connection</span></td>
-                  <td class="param-type-col"></td>
+                  <td class="param-name-col"><span style="color: #0000BB">$email</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
                   <td class="param-desc-col"></td>
                 </tr>
                             <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$notification</span></td>
-                  <td class="param-type-col"></td>
+                  <td class="param-name-col"><span style="color: #0000BB">$user_id</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.integer">integer</a></td>
                   <td class="param-desc-col"></td>
                 </tr>
                                                 </table>
 
 <!--	-->
 
-    <div class="detail-header h3" id="sendInvitationToConversation()-detail">
+    <div class="detail-header h3" id="getSource()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
-        <a class="tool-link hash" href="socialveo-core-models-invitation.html#sendInvitationToConversation()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#getSource()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
         
-        sendInvitationToConversation()
+        getSource()
         <span class="detail-header-tag small">
             public                                    method
                             (available since version 1.0)
@@ -509,32 +1153,22 @@
 
     
     <div class="doc-description">
-        <p><strong>Sends an invitation to join a conversation (read private message)</strong></p>
+        <p><strong>Define table mapping</strong></p>
 
         
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a></span> <strong><a href="socialveo-core-models-invitation.html#sendInvitationToConversation()-detail">sendInvitationToConversation</a></strong> ( <span style="color: #0000BB">$connection</span>, <span style="color: #0000BB">$dialog_uuid</span> )</td></tr>
-                                    <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$connection</span></td>
-                  <td class="param-type-col"></td>
-                  <td class="param-desc-col"></td>
-                </tr>
-                            <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$dialog_uuid</span></td>
-                  <td class="param-type-col"></td>
-                  <td class="param-desc-col"></td>
-                </tr>
-                                                </table>
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-models-invitation.html#getSource()-detail">getSource</a></strong> ( )</td></tr>
+            </table>
 
 <!--	-->
 
-    <div class="detail-header h3" id="sendInvitationToNetwork()-detail">
+    <div class="detail-header h3" id="initialize()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
-        <a class="tool-link hash" href="socialveo-core-models-invitation.html#sendInvitationToNetwork()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#initialize()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
         
-        sendInvitationToNetwork()
+        initialize()
         <span class="detail-header-tag small">
             public                                    method
                             (available since version 1.0)
@@ -543,32 +1177,22 @@
 
     
     <div class="doc-description">
-        <p><strong>Sends an invitation to a user, inviting him/her to join a group</strong></p>
+        <p><strong>Initialize method for model</strong></p>
 
         
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a></span> <strong><a href="socialveo-core-models-invitation.html#sendInvitationToNetwork()-detail">sendInvitationToNetwork</a></strong> ( <span style="color: #0000BB">$connection</span>, <span style="color: #0000BB">$notification</span> )</td></tr>
-                                    <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$connection</span></td>
-                  <td class="param-type-col"></td>
-                  <td class="param-desc-col"></td>
-                </tr>
-                            <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$notification</span></td>
-                  <td class="param-type-col"></td>
-                  <td class="param-desc-col"></td>
-                </tr>
-                                                </table>
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">void</a></span> <strong><a href="socialveo-core-models-invitation.html#initialize()-detail">initialize</a></strong> ( )</td></tr>
+            </table>
 
 <!--	-->
 
-    <div class="detail-header h3" id="sendInvitationToSite()-detail">
+    <div class="detail-header h3" id="validation()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
-        <a class="tool-link hash" href="socialveo-core-models-invitation.html#sendInvitationToSite()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-invitation.html#validation()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
         
-        sendInvitationToSite()
+        validation()
         <span class="detail-header-tag small">
             public                                    method
                             (available since version 1.0)
@@ -577,19 +1201,14 @@
 
     
     <div class="doc-description">
-        <p><strong>Sends an invitation to join site, to a provided email addresses</strong></p>
+        <p><strong>Validations</strong></p>
 
         
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a></span> <strong><a href="socialveo-core-models-invitation.html#sendInvitationToSite()-detail">sendInvitationToSite</a></strong> ( <span style="color: #0000BB">$emails</span> )</td></tr>
-                                    <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$emails</span></td>
-                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
-                  <td class="param-desc-col"></td>
-                </tr>
-                                                </table>
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a>|<a href="http://php.net/manual/en/language.pseudo-types.php.html">void</a></span> <strong><a href="socialveo-core-models-invitation.html#validation()-detail">validation</a></strong> ( )</td></tr>
+            </table>
 
 <!--	-->
 </div>
@@ -639,7 +1258,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Fri, 08 Sep 2017 00:35:21 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 11 Sep 2017 16:48:45 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
