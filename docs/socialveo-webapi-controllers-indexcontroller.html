@@ -681,7 +681,7 @@
         <p><strong>Handles HybridAuth authorization flows with various providers.</strong></p>
 
         <p><code class="hljs api">/auth</code></p>
-<p><strong>Method:</strong> GET</p>
+<p><strong>Method:</strong> POST</p>
 <p><strong>Access:</strong> Public</p>
 <p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
@@ -696,10 +696,63 @@
 <td><strong>token</strong></td>
 <td style="text-align: center;"><em>required</em></td>
 <td>string</td>
-<td>social access_token</td>
+<td>social access_token of the provider</td>
+</tr>
+<tr>
+<td><strong>client_id</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>the client id of api application</td>
+</tr>
+<tr>
+<td><strong>client_secret</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>the client secret of api application</td>
 </tr>
 </tbody>
 </table></p>
+<p><strong>Affects:</strong> OAuth2AccessToken, OAuth2RefreshToken, <a href="socialveo-core-models-user.html" title="User">User</a>
+
+</p>
+<p>When you use authenticated user then you not require to send <strong>client_id<strong> and </strong>client_secret</strong>,
+but if user not logged or <code>access_token</code> is outdated you need to set <strong>client_id<strong> and </strong>client_secret</strong>
+for create new application <code>access_token</code>.</p>
+<p><strong>Examples:</strong> <pre><code>### Connect logged user with Google account using Google token
+POST https://api.socialveo.co/auth
+Content-Type: application/json
+Authorization: Bearer 1681fea42272ae1c2d823ac401ba96f0382dea17
+{
+  "provider": "Google",
+  "token": "ya29.GlvGBDOKXNWXanBnmUY3WgfYeFxmSh2reoGIMUxAbYu9m8CyORwXGadQzHoJpFsyN3sM3OyNvttZ5TIH1Vni4N1_pZPBSIYxfIsJqgeIlwP3YCVm5HwVbSr7UOAf"
+}
+
+Response:
+{
+  "status": "OK",
+  "timestamp": 1234567890
+}
+
+### Login/register via Google account using Google token
+POST https://api.socialveo.co/auth
+Content-Type: application/json
+{
+  "provider": "Google",
+  "token": "ya29.GlvGBDOKXNWXanBnmUY3WgfYeFxmSh2reoGIMUxAbYu9m8CyORwXGadQzHoJpFsyN3sM3OyNvttZ5TIH1Vni4N1_pZPBSIYxfIsJqgeIlwP3YCVm5HwVbSr7UOAf",
+  "client_id": "test",
+  "client_secret": "pass"
+}
+
+Response:
+{
+  "status": "OK",
+  "access_token": "0e7f74fc2b1c12ae1787fc487e72700f66256cf8",
+  "expires_in": "360000000",
+  "token_type": "Bearer",
+  "scope": null,
+  "refresh_token": "4568832f257932030ae62df8cd6009593937f766",
+  "timestamp": 1234567890
+}</code></pre></p>
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1224,7 +1277,7 @@ query (`?token=xxxxxxxxxxxxx`), this will initiate the authorization flow
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 11 Sep 2017 16:48:55 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 14 Sep 2017 14:50:38 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 

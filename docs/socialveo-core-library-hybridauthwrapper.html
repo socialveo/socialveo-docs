@@ -400,9 +400,19 @@
         <td>Handles the social login and social registration - oAuth redirect flows</td>
         <td><a href="socialveo-core-library-hybridauthwrapper.html">Socialveo\Core\library\HybridAuthWrapper</a></td>
     </tr>
+            <tr id="handleAuthorizationEnd()">
+        <td><a href="socialveo-core-library-hybridauthwrapper.html#handleAuthorizationEnd()-detail">handleAuthorizationEnd()</a></td>
+        <td>Handles the authorization end scenario</td>
+        <td><a href="socialveo-core-library-hybridauthwrapper.html">Socialveo\Core\library\HybridAuthWrapper</a></td>
+    </tr>
             <tr id="logout()">
         <td><a href="socialveo-core-library-hybridauthwrapper.html#logout()-detail">logout()</a></td>
         <td>Logout all providers</td>
+        <td><a href="socialveo-core-library-hybridauthwrapper.html">Socialveo\Core\library\HybridAuthWrapper</a></td>
+    </tr>
+            <tr id="setProviderToken()">
+        <td><a href="socialveo-core-library-hybridauthwrapper.html#setProviderToken()-detail">setProviderToken()</a></td>
+        <td>Sets provider token</td>
         <td><a href="socialveo-core-library-hybridauthwrapper.html">Socialveo\Core\library\HybridAuthWrapper</a></td>
     </tr>
             <tr id="setUserStatus()">
@@ -485,6 +495,41 @@
 
 <!--	-->
 
+    <div class="detail-header h3" id="handleAuthorizationEnd()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-library-hybridauthwrapper.html#handleAuthorizationEnd()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        handleAuthorizationEnd()
+        <span class="detail-header-tag small">
+            public                                    method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Handles the authorization end scenario</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-core-library-hybridauthwrapper.html#handleAuthorizationEnd()-detail">handleAuthorizationEnd</a></strong> ( <span style="color: #0000BB">$provider</span>, <b>&</b><span style="color: #0000BB">$user&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$provider</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user</span></td>
+                  <td class="param-type-col"><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="logout()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="socialveo-core-library-hybridauthwrapper.html#logout()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -506,6 +551,40 @@
     <table class="detail-table table table-striped table-bordered table-hover">
         <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="socialveo-core-library-hybridauthwrapper.html#logout()-detail">logout</a></strong> ( )</td></tr>
             </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="setProviderToken()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-library-hybridauthwrapper.html#setProviderToken()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        setProviderToken()
+        <span class="detail-header-tag small">
+            public                                    method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Sets provider token</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="socialveo-core-library-hybridauthwrapper.html#setProviderToken()-detail">setProviderToken</a></strong> ( <span style="color: #0000BB">$provider</span>, <span style="color: #0000BB">$token</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$provider</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$token</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
 
 <!--	-->
 
@@ -594,7 +673,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 11 Sep 2017 16:48:43 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 14 Sep 2017 14:50:26 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
