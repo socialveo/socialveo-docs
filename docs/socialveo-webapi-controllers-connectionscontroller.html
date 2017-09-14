@@ -739,7 +739,7 @@
 
         <p><code class="hljs api">/connections/users/{user_uuid}/follow</code></p>
 <p><strong>Method:</strong> POST</p>
-<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-user.html" title="User">User</a> passed by <i>{user_uuid}</i>)</p>
+<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-user.html" title="User">User</a> passed by _{user_uuid}_)</p>
 <p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
@@ -852,7 +852,7 @@
 
         <p><code class="hljs api">/connections/{connection_uuid}</code></p>
 <p><strong>Method:</strong> GET</p>
-<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-connection.html" title="Connection">Connection</a> passed by <i>{connection_uuid}</i>)</p>
+<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-connection.html" title="Connection">Connection</a> passed by _{connection_uuid}_)</p>
 <p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
@@ -1067,7 +1067,7 @@
 
         <p><code class="hljs api">/connections/users/{user_uuid}/unfollow</code></p>
 <p><strong>Method:</strong> POST</p>
-<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-user.html" title="User">User</a> passed by <i>{user_uuid}</i>)</p>
+<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-user.html" title="User">User</a> passed by _{user_uuid}_)</p>
 <p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
@@ -1132,7 +1132,7 @@
 
         <p><code class="hljs api">/connections/users/{user_uuid}/update</code></p>
 <p><strong>Method:</strong> POST</p>
-<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-user.html" title="User">User</a> passed by <i>{user_uuid}_) and UserHasAccessUuids (<a href="socialveo-core-models-circle.html" title="Circle">Circle</a>[] passed by _circle_uuids[]</i>)</p>
+<p><strong>Access:</strong> LoggedUserHasAccess (<a href="socialveo-core-models-user.html" title="User">User</a> passed by _{user_uuid}_) and UserHasAccessUuids (<a href="socialveo-core-models-circle.html" title="Circle">Circle</a>[] passed by _circle_uuids[]_)</p>
 <p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
@@ -1168,10 +1168,10 @@
 <p><strong>Returns:</strong> <a href="socialveo-core-models-connection.html" title="Connection">Connection</a>
 
 |null</p>
-<p><strong>Usage:</strong> * Follow. For add some user to logged user circles need to send request with <i>circle_uuids</i> in which</p>
+<p><strong>Usage:</strong> * Follow. For add some user to logged user circles need to send request with _circle_uuids_ in which</p>
 <p>circles want to add user.</p>
 <ul>
-<li>Unfollow. Send request without or empty <i>circle_uuids</i> will removes user from circles and remove connection.
+<li>Unfollow. Send request without or empty _circle<em>uuids</em> will removes user from circles and remove connection.
 <p><strong>Sample response:</strong> <pre><code class="language-json">{
 "status": "OK",
 "data":{
@@ -1328,7 +1328,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Thu, 14 Sep 2017 15:08:30 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 14 Sep 2017 15:14:44 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
