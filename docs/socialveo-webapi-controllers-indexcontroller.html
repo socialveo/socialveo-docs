@@ -703,19 +703,10 @@
         <p><code class="hljs api">/auth</code></p>
 <p><strong>Method:</strong> POST</p>
 <p><strong>Access:</strong> Public</p>
-<p><strong>Scopes:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
-
-<tbody>
-<tr>
-<td><strong>Google</strong></td>
-<td style="text-align: center;"><a href="https://www.googleapis.com/auth/plus.login">https://www.googleapis.com/auth/plus.login</a> <a href="https://www.googleapis.com/auth/plus.me">https://www.googleapis.com/auth/plus.me</a> <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a> <a href="https://www.googleapis.com/auth/userinfo.profile">https://www.googleapis.com/auth/userinfo.profile</a> <a href="https://www.googleapis.com/auth/user.birthday.read">https://www.googleapis.com/auth/user.birthday.read</a></td>
-</tr>
-<tr>
-<td><strong>Facebook</strong></td>
-<td style="text-align: center;">public_profile, email, user_friends</td>
-</tr>
-</tbody>
-</table></p>
+<p><strong>Scopes:</strong> Provider     | Scope</p>
+<p>-------------|--------
+<strong>Google</strong>   | <a href="https://www.googleapis.com/auth/plus.login">https://www.googleapis.com/auth/plus.login</a> <a href="https://www.googleapis.com/auth/plus.me">https://www.googleapis.com/auth/plus.me</a> <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a> <a href="https://www.googleapis.com/auth/userinfo.profile">https://www.googleapis.com/auth/userinfo.profile</a> <a href="https://www.googleapis.com/auth/user.birthday.read">https://www.googleapis.com/auth/user.birthday.read</a>
+<strong>Facebook</strong> | public_profile, email, user_friends</p>
 <p>Valid scopes can ne found in config at <code>hybridauth</code> category.
 The wrong scopes will create the wrong tokens!</p>
 <p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
@@ -890,7 +881,7 @@ query (`?token=xxxxxxxxxxxxx`), this will initiate the authorization flow
         <p><code class="hljs api">/config</code></p>
 <p><strong>Method:</strong> POST</p>
 <p><strong>Access:</strong> Public</p>
-<p><strong>Additional:</strong> Use base64 encoding + encryption by `AES-256-ECB` algorithm using secret `client_crypt_key`</p>
+<p><strong>Additional:</strong> Uses base64 encoding + encryption by `AES-256-ECB` algorithm using secret `client_crypt_key`</p>
 <p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
@@ -910,24 +901,25 @@ query (`?token=xxxxxxxxxxxxx`), this will initiate the authorization flow
 <td><strong>category</strong></td>
 <td style="text-align: center;"><em>optional</em></td>
 <td>string</td>
-<td>the category of config (optional), by default returns all public config.</td>
+<td>the category of config (optional), by default returns all public config. May contain dots <code>.</code> which means subcategories, e.g. <code>media.allowedImageExtensions</code> or <code>hybridauth.providers.Facebook</code></td>
+</tr>
+<tr>
+<td><strong>language</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>string</td>
+<td>language (example en_US, it_IT, de_DE), by default used from user settings</td>
 </tr>
 </tbody>
-</table>
-<p>May contain dots <code>.</code> which means subcategories, e.g. <code>media.allowedImageExtensions</code> or <code>hybridauth.providers.Facebook</code>
-<strong>language</strong>          | <em>optional</em> |  string | language (example en_US, it_IT, de_DE), by default used from user settings</p></p>
+</table></p>
 <p><strong>Returns:</strong> array</p>
-
 <p><strong>Sample response:</strong> <pre><code class="language-json">{
     "status": "OK",
     "data": "CGtErRYxvvsrALU0oMNVMp2ipOWRTNF6wScnna5QBNKwDNV2YcSYLzPF0gKdDCbYVVl8hSDUW18LKNpzlEwakenkEW6Bf...",
     "encrypted": true,
     "timestamp": 1234567890
 }</code></pre></p>
-
-The `data` of the response is base64 encoded and encrypted json data.
+<p>The <code>data</code> of the response is base64 encoded and encrypted json data.</p>
 <p><strong>Cipher:</strong> AES (Rijndael) 256-bit ECB mode (no IV is required!)</p>
-
 <p><strong>Encryption on server:</strong> <pre><code>  $json = '{"test":"test"}';
   $cipher = 'aes-256-ecb';
   $key = 'my client crypt key';
@@ -935,9 +927,8 @@ The `data` of the response is base64 encoded and encrypted json data.
   $crypted = openssl_encrypt($json, $cipher, $key, 1, $iv);
   $base64 = base64_encode($crypted);
   return $base64;</code></pre></p>
-
-  3B360BF69E749EB8B0B7B2142D87F7AA752780C1A2DE7558C349B3B7CC7AC04E
-    B374A26A71490437AA024E4FADD5B497FDFF1A8EA6FF12F6FB65AF2720B59CCF
+<p>3B360BF69E749EB8B0B7B2142D87F7AA752780C1A2DE7558C349B3B7CC7AC04E
+B374A26A71490437AA024E4FADD5B497FDFF1A8EA6FF12F6FB65AF2720B59CCF</p>
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
@@ -1390,7 +1381,7 @@ The `data` of the response is base64 encoded and encrypted json data.
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Fri, 15 Sep 2017 01:27:25 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 15 Sep 2017 01:32:34 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
