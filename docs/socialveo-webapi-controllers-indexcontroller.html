@@ -703,12 +703,6 @@
         <p><code class="hljs api">/auth</code></p>
 <p><strong>Method:</strong> POST</p>
 <p><strong>Access:</strong> Public</p>
-<p><strong>Scopes:</strong> Provider     | Scope</p>
-<p>-------------|--------
-<strong>Google</strong>   | <a href="https://www.googleapis.com/auth/plus.login">https://www.googleapis.com/auth/plus.login</a> <a href="https://www.googleapis.com/auth/plus.me">https://www.googleapis.com/auth/plus.me</a> <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a> <a href="https://www.googleapis.com/auth/userinfo.profile">https://www.googleapis.com/auth/userinfo.profile</a> <a href="https://www.googleapis.com/auth/user.birthday.read">https://www.googleapis.com/auth/user.birthday.read</a>
-<strong>Facebook</strong> | public_profile, email, user_friends</p>
-<p>Valid scopes can ne found in config at <code>hybridauth</code> category.
-The wrong scopes will create the wrong tokens!</p>
 <p><strong>Parameters:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
 
 <tbody>
@@ -744,6 +738,21 @@ The wrong scopes will create the wrong tokens!</p>
 <p>When you use authenticated user then you not require to send <strong>client_id</strong> and <strong>client_secret</strong>,
 but if user not logged or <code>access_token</code> is outdated you need to set <strong>client_id</strong> and <strong>client_secret</strong>
 for create new application <code>access_token</code>.</p>
+<p><strong>Scopes:</strong> <table class="summary-table table table-striped  table-bordered table-hover">
+
+<tbody>
+<tr>
+<td><strong>Google</strong></td>
+<td style="text-align: center;"><a href="https://www.googleapis.com/auth/plus.login">https://www.googleapis.com/auth/plus.login</a> <a href="https://www.googleapis.com/auth/plus.me">https://www.googleapis.com/auth/plus.me</a> <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a> <a href="https://www.googleapis.com/auth/userinfo.profile">https://www.googleapis.com/auth/userinfo.profile</a> <a href="https://www.googleapis.com/auth/user.birthday.read">https://www.googleapis.com/auth/user.birthday.read</a></td>
+</tr>
+<tr>
+<td><strong>Facebook</strong></td>
+<td style="text-align: center;">public_profile, email, user_friends</td>
+</tr>
+</tbody>
+</table></p>
+<p>Valid scopes can be found in the config at the <code>hybridauth</code> category.
+The wrong scopes will create the wrong tokens!</p>
 <p><strong>Examples:</strong> <pre><code>### Connect logged user with Google account using Google token
 POST https://api.socialveo.co/auth
 Content-Type: application/json
@@ -927,12 +936,10 @@ query (`?token=xxxxxxxxxxxxx`), this will initiate the authorization flow
   $crypted = openssl_encrypt($json, $cipher, $key, 1, $iv);
   $base64 = base64_encode($crypted);
   return $base64;</code></pre></p>
-<p>3B360BF69E749EB8B0B7B2142D87F7AA752780C1A2DE7558C349B3B7CC7AC04E
-B374A26A71490437AA024E4FADD5B497FDFF1A8EA6FF12F6FB65AF2720B59CCF</p>
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a>|<a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\translate\adapter\gettext.zep">Phalcon\Translate\Adapter\Gettext</a>|<a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-webapi-controllers-indexcontroller.html#configAction()-detail">configAction</a></strong> ( )</td></tr>
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-indexcontroller.html#configAction()-detail">configAction</a></strong> ( )</td></tr>
                                                             <tr>
                   <th class="param-name-col">throws</th>
                   <td class="param-type-col"><a href="http://www.php.net/class.exception">Exception</a></td>
@@ -1381,7 +1388,7 @@ B374A26A71490437AA024E4FADD5B497FDFF1A8EA6FF12F6FB65AF2720B59CCF</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Fri, 15 Sep 2017 01:32:34 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 15 Sep 2017 01:44:35 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
