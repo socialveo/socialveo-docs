@@ -123,6 +123,7 @@
 <a class="list-group-item" href="./socialveo-core-helpers-formhelper.html">FormHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-karmahelpers.html">KarmaHelpers</a>
 <a class="list-group-item" href="./socialveo-core-helpers-locationhelper.html">LocationHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-maphelper.html">MapHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-mediahelper.html">MediaHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-mediauploaderhelper.html">MediaUploaderHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-messagesdialogshelper.html">MessagesDialogsHelper</a>
@@ -282,6 +283,7 @@
 <a class="list-group-item" href="./socialveo-frontend-routes-connectionsroutes.html">ConnectionsRoutes</a>
 <a class="list-group-item" href="./socialveo-frontend-routes-iframeroutes.html">IframeRoutes</a>
 <a class="list-group-item" href="./socialveo-frontend-routes-indexroutes.html">IndexRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-maproutes.html">MapRoutes</a>
 <a class="list-group-item" href="./socialveo-frontend-routes-mediaroutes.html">MediaRoutes</a>
 <a class="list-group-item" href="./socialveo-frontend-routes-networksroutes.html">NetworksRoutes</a>
 <a class="list-group-item" href="./socialveo-frontend-routes-paymentsroutes.html">PaymentsRoutes</a>
@@ -862,6 +864,16 @@
         <td></td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
+            <tr id="getLocationAddress()">
+        <td><a href="socialveo-core-models-network.html#getLocationAddress()-detail">getLocationAddress()</a></td>
+        <td>Location address depending on current request</td>
+        <td><a href="socialveo-core-models-network.html">Socialveo\Core\models\Network</a></td>
+    </tr>
+            <tr id="getLocationPlaceId()">
+        <td><a href="socialveo-core-models-network.html#getLocationPlaceId()-detail">getLocationPlaceId()</a></td>
+        <td>Location google place id</td>
+        <td><a href="socialveo-core-models-network.html">Socialveo\Core\models\Network</a></td>
+    </tr>
             <tr id="getMembers()">
         <td><a href="socialveo-core-models-network.html#getMembers()-detail">getMembers()</a></td>
         <td>Get network members</td>
@@ -1256,7 +1268,7 @@ includes user Profile Network in the body of the User resource</td>
         <td>Before update hook</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
-                                                                                                                                                                                                                                                                                                <tr class="inherited" id="getSourceTable()">
+                                                                                                                                                                                                                                                                                                        <tr class="inherited" id="getSourceTable()">
         <td><a href="socialveo-core-models-socialveomodel.html#getSourceTable()-detail">getSourceTable()</a></td>
         <td>Returns the source table</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
@@ -2646,6 +2658,54 @@ includes user Profile Network in the body of the User resource</td>
 
 <!--	-->
 
+    <div class="detail-header h3" id="getLocationAddress()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-network.html#getLocationAddress()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getLocationAddress()
+        <span class="detail-header-tag small">
+            public                                    method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Location address depending on current request</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-models-network.html#getLocationAddress()-detail">getLocationAddress</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getLocationPlaceId()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-network.html#getLocationPlaceId()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getLocationPlaceId()
+        <span class="detail-header-tag small">
+            public                                    method
+                            (available since version 1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Location google place id</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-models-network.html#getLocationPlaceId()-detail">getLocationPlaceId</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="getMembers()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="socialveo-core-models-network.html#getMembers()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -3734,7 +3794,7 @@ includes user Profile Network in the body of the User resource</strong></p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Wed, 20 Sep 2017 12:15:29 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 24 Sep 2017 20:10:29 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
