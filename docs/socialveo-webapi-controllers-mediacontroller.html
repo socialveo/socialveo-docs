@@ -691,8 +691,19 @@
 <td>name of the media object</td>
 </tr>
 <tr>
-<td><strong>media_type</strong></td>
+<td><strong>target_type</strong></td>
 <td style="text-align: center;"><em>required</em></td>
+<td>string</td>
+<td>target type: tmp, post, dialog, comment</td>
+</tr>
+<tr>
+<td><strong>network_uuid</strong> or <strong>dialog_uuid</strong></td>
+<td style="text-align: center;"><em>required</em></td>
+<td>string target network or dialog uuid</td>
+</tr>
+<tr>
+<td><strong>media_type</strong></td>
+<td style="text-align: center;"><em>optional</em></td>
 <td>string</td>
 <td>type of media: image, video, embed</td>
 </tr>
@@ -711,7 +722,7 @@
     "data":{
         'uuid': '33c1f104-b5e7-11e4-9639-b88d1200a92c',
         'user_uuid': '3200e9d8-b5e7-11e4-be3b-b88d1200a92c',
-        'media_type': 'local',
+        'media_type': 'image',
         'name': 'Our vacation',
         ...
     },
@@ -721,7 +732,17 @@
 
     <table class="detail-table table table-striped table-bordered table-hover">
         <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-webapi-controllers-mediacontroller.html#createAction()-detail">createAction</a></strong> ( )</td></tr>
-            </table>
+                                                            <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="socialveo-core-exceptions-uploadexception.html">Socialveo\Core\exceptions\UploadException</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="http://www.php.net/class.exception">Exception</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                        </table>
 
 <!--	-->
 
@@ -1029,7 +1050,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 24 Sep 2017 20:10:38 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 28 Sep 2017 19:37:50 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
