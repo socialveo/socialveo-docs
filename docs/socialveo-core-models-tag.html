@@ -119,7 +119,9 @@
 <a class="list-group-item" href="#navigation-8142-8147" data-toggle="collapse" data-parent="#navigation-8142">Socialveo\Core\helpers <b class="caret"></b></a><div id="navigation-8142-8147" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-helpers-circlehelper.html">CircleHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-commentshelper.html">CommentsHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-connectionshelper.html">ConnectionsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-currencyhelper.html">CurrencyHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-datehelper.html">DateHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-emotionshelper.html">EmotionsHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-formhelper.html">FormHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-karmahelpers.html">KarmaHelpers</a>
 <a class="list-group-item" href="./socialveo-core-helpers-locationhelper.html">LocationHelper</a>
@@ -329,6 +331,7 @@
 <a class="list-group-item" href="./socialveo-webapi-controllers-circlescontroller.html">CirclesController</a>
 <a class="list-group-item" href="./socialveo-webapi-controllers-commentscontroller.html">CommentsController</a>
 <a class="list-group-item" href="./socialveo-webapi-controllers-connectionscontroller.html">ConnectionsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-emotionscontroller.html">EmotionsController</a>
 <a class="list-group-item" href="./socialveo-webapi-controllers-indexcontroller.html">IndexController</a>
 <a class="list-group-item" href="./socialveo-webapi-controllers-karmacontroller.html">KarmaController</a>
 <a class="list-group-item" href="./socialveo-webapi-controllers-locationscontroller.html">LocationsController</a>
@@ -748,11 +751,6 @@ This only works if the model is keeping data snapshots</td>
         <td>Checks whether model is new</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
-            <tr id="listPostEmotions()">
-        <td><a href="socialveo-core-models-tag.html#listPostEmotions()-detail">listPostEmotions()</a></td>
-        <td>Get post emotions</td>
-        <td><a href="socialveo-core-models-tag.html">Socialveo\Core\models\Tag</a></td>
-    </tr>
             <tr id="listPostTags()">
         <td><a href="socialveo-core-models-tag.html#listPostTags()-detail">listPostTags()</a></td>
         <td>Returns a list of Tags associated with the given resource</td>
@@ -895,7 +893,7 @@ This only works if the model is keeping data snapshots</td>
         <td>Returns user model of the currently logged in (or passed-in) user</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
-                                                                                                        </table>
+                                                                                                    </table>
 </div>
 
 <a id="events"></a>
@@ -1462,45 +1460,6 @@ This only works if the model is keeping data snapshots</td>
 
 <!--	-->
 
-    <div class="detail-header h3" id="listPostEmotions()-detail">
-        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
-        <a class="tool-link hash" href="socialveo-core-models-tag.html#listPostEmotions()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-        
-        listPostEmotions()
-        <span class="detail-header-tag small">
-            public                        static            method
-                    </span>
-    </div>
-
-    
-    <div class="doc-description">
-        <p><strong>Get post emotions</strong></p>
-
-        
-            </div>
-
-    <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a></span> <strong><a href="socialveo-core-models-tag.html#listPostEmotions()-detail">listPostEmotions</a></strong> ( <span style="color: #0000BB">$post_uuid</span>, <span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">=&nbsp;[]</span> )</td></tr>
-                                    <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$post_uuid</span></td>
-                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
-                  <td class="param-desc-col"></td>
-                </tr>
-                            <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$params</span></td>
-                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
-                  <td class="param-desc-col"><p>[optional]</p>
-</td>
-                </tr>
-                                                    <tr>
-                  <th class="param-name-col">throws</th>
-                  <td class="param-type-col"><a href="http://www.php.net/class.exception">Exception</a></td>
-                  <td class="param-desc-col"></td>
-                </tr>
-                        </table>
-
-<!--	-->
-
     <div class="detail-header h3" id="listPostTags()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="socialveo-core-models-tag.html#listPostTags()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -1605,7 +1564,7 @@ This only works if the model is keeping data snapshots</td>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 25 Sep 2017 04:59:53 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Sat, 07 Oct 2017 02:41:37 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
