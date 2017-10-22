@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/61fbc6e9/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/69bc769/solarized_light.css" rel="stylesheet">
+<link href="./assets/31affd55/style.css" rel="stylesheet">
+<script src="./assets/daf117c2/jquery.js"></script>
+<script src="./assets/61fbc6e9/js/bootstrap.js"></script>
+<script src="./assets/31affd55/socialveo/custom.js"></script>
+<script src="./assets/6ad8d0ed/jssearch.js"></script>    <title>MoneyHelper, Socialveo\Core\helpers\MoneyHelper - Socialveo API Documentation</title>
+    <link href="./assets/socialveo/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/socialveo/animate.css" rel="stylesheet">
+    <link href="./assets/socialveo/style.css" rel="stylesheet">
+    <link href="./assets/socialveo/custom.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navigation navigation-header site-header" role="banner">
+        <div class="container">
+            <div class="rowx">
+                <div class="col-md-3">
+                    <div class="navigation-brand">
+                        <div class="brand-logo">
+                            <a href="https://socialveo.com/" class="logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 searchbox-col" role="search">
+                    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+                </div>
+                <button class="navigation-toggle visible-sm visible-xs" type="button" data-toggle="dropdown"
+                        data-target=".navigation-navbar"><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+                <div class="col-md-6">
+                    <nav id="site-navigation" class="main-navigation navigation-navbar navigation-bar-right"
+                         role="navigation">
+                        <div class="menu-menu-1-container">
+                            <ul id="menu-menu-1" class="nav-menu navigation-bar navigation-bar-right">
+                                <li class="menu-item"><a href="https://socialveo.com/help/"><i
+                                            class="fa fa-life-ring"></i> Home</a></li>
+                                <li class="menu-item"><a href="https://socialveo.com/go/kb/"><i
+                                            class="fa fa-question-circle"></i> Knowledge Base</a></li>
+                                <li class="menu-item"><a href="https://socialveo.com/help/restapi/"><i
+                                            class="fa fa-code"></i> Rest API</a></li>
+                                <li class="menu-item"><a href="https://socialveo.com/help/docs/"><i
+                                            class="fa fa-file-code-o"></i> Documentation</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="wrap">
+    <nav id="w17575" class="navbar-inverse navbar-fixed-top navbar"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w17575-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Socialveo API Documentation</a></div><div id="w17575-collapse" class="collapse navbar-collapse"><ul id="w17576" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li></ul></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-3">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-17514" data-toggle="collapse" data-parent="#navigation">Socialveo\Admin <b class="caret"></b></a><div id="navigation-17514" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-17514-17515" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\Controllers <b class="caret"></b></a><div id="navigation-17514-17515" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-controllers-admincontroller.html">AdminController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-authcontroller.html">AuthController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-commentscontroller.html">CommentsController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-indexcontroller.html">IndexController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-karmabadgecontroller.html">KarmabadgeController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-mediacontroller.html">MediaController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-networkscontroller.html">NetworksController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-postscontroller.html">PostsController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-settingscontroller.html">SettingsController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-spamcontroller.html">SpamController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-staticpagescontroller.html">StaticpagesController</a>
+<a class="list-group-item" href="./socialveo-admin-controllers-userscontroller.html">UsersController</a></div>
+<a class="list-group-item" href="#navigation-17514-17516" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\forms <b class="caret"></b></a><div id="navigation-17514-17516" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-abstractform.html">AbstractForm</a></div>
+<a class="list-group-item" href="#navigation-17514-17517" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\forms\auth <b class="caret"></b></a><div id="navigation-17514-17517" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-auth-login.html">Login</a></div>
+<a class="list-group-item" href="#navigation-17514-17518" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\forms\comments <b class="caret"></b></a><div id="navigation-17514-17518" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-comments-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-comments-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-17514-17519" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\forms\karmabadge <b class="caret"></b></a><div id="navigation-17514-17519" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-karmabadge-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-karmabadge-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-17514-17520" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\forms\media <b class="caret"></b></a><div id="navigation-17514-17520" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-media-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-media-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-17514-17521" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\forms\networks <b class="caret"></b></a><div id="navigation-17514-17521" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-networks-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-networks-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-17514-17522" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\forms\posts <b class="caret"></b></a><div id="navigation-17514-17522" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-posts-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-posts-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-17514-17523" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\forms\spam <b class="caret"></b></a><div id="navigation-17514-17523" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-spam-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-spam-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-17514-17524" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\forms\staticpages <b class="caret"></b></a><div id="navigation-17514-17524" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-staticpages-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-staticpages-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-17514-17525" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\forms\users <b class="caret"></b></a><div id="navigation-17514-17525" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-forms-users-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-admin-forms-users-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-17514-17526" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\routes <b class="caret"></b></a><div id="navigation-17514-17526" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-routes-indexroutes.html">IndexRoutes</a>
+<a class="list-group-item" href="./socialveo-admin-routes-usersroutes.html">UsersRoutes</a></div>
+<a class="list-group-item" href="#navigation-17514-17527" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\widgets <b class="caret"></b></a><div id="navigation-17514-17527" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-widgets-widgetbase.html">WidgetBase</a></div>
+<a class="list-group-item" href="#navigation-17514-17528" data-toggle="collapse" data-parent="#navigation-17514">Socialveo\Admin\widgets\gridView <b class="caret"></b></a><div id="navigation-17514-17528" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-admin-widgets-gridview-gridview.html">GridView</a></div>
+<a class="list-group-item" href="./socialveo-admin-module.html">Module</a></div>
+<a class="list-group-item" href="#navigation-17529" data-toggle="collapse" data-parent="#navigation">Socialveo\Core <b class="caret"></b></a><div id="navigation-17529" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-17529-17530" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\behaviors <b class="caret"></b></a><div id="navigation-17529-17530" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-behaviors-hasassociations.html">HasAssociations</a>
+<a class="list-group-item" href="./socialveo-core-behaviors-isassociation.html">IsAssociation</a>
+<a class="list-group-item" href="./socialveo-core-behaviors-jsonbehavior.html">JsonBehavior</a>
+<a class="list-group-item" href="./socialveo-core-behaviors-locationbehavior.html">LocationBehavior</a></div>
+<a class="list-group-item" href="#navigation-17529-17531" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\exceptions <b class="caret"></b></a><div id="navigation-17529-17531" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-exceptions-httpexception.html">HttpException</a>
+<a class="list-group-item" href="./socialveo-core-exceptions-translatedexception.html">TranslatedException</a>
+<a class="list-group-item" href="./socialveo-core-exceptions-uploadexception.html">UploadException</a>
+<a class="list-group-item" href="./socialveo-core-exceptions-validateexception.html">ValidateException</a></div>
+<a class="list-group-item" href="#navigation-17529-17532" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\forms <b class="caret"></b></a><div id="navigation-17529-17532" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-forms-payment.html">Payment</a>
+<a class="list-group-item" href="./socialveo-core-forms-socialveoform.html">SocialveoForm</a></div>
+<a class="list-group-item" href="#navigation-17529-17533" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\forms\element <b class="caret"></b></a><div id="navigation-17529-17533" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-forms-element-checkboxlist.html">CheckBoxList</a></div>
+<a class="list-group-item active" href="#navigation-17529-17534" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\helpers <b class="caret"></b></a><div id="navigation-17529-17534" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./socialveo-core-helpers-cachehelper.html">CacheHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-circlehelper.html">CircleHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-commentshelper.html">CommentsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-connectionshelper.html">ConnectionsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-currencyhelper.html">CurrencyHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-datehelper.html">DateHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-emotionshelper.html">EmotionsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-formhelper.html">FormHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-karmahelpers.html">KarmaHelpers</a>
+<a class="list-group-item" href="./socialveo-core-helpers-locationhelper.html">LocationHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-maphelper.html">MapHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-mediahelper.html">MediaHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-mediauploaderhelper.html">MediaUploaderHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-messagesdialogshelper.html">MessagesDialogsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-messageshelper.html">MessagesHelper</a>
+<a class="list-group-item active" href="./socialveo-core-helpers-moneyhelper.html">MoneyHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-networkhelper.html">NetworkHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-paymenthelper.html">PaymentHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-postshelper.html">PostsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-spamhelper.html">SpamHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-tagshelper.html">TagsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-url.html">Url</a>
+<a class="list-group-item" href="./socialveo-core-helpers-usershelper.html">UsersHelper</a></div>
+<a class="list-group-item" href="#navigation-17529-17535" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\library <b class="caret"></b></a><div id="navigation-17529-17535" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-assetmanager.html">AssetManager</a>
+<a class="list-group-item" href="./socialveo-core-library-configmanager.html">ConfigManager</a>
+<a class="list-group-item" href="./socialveo-core-library-cryptojsaes.html">CryptoJsAes</a>
+<a class="list-group-item" href="./socialveo-core-library-cssminfilter.html">CssminFilter</a>
+<a class="list-group-item" href="./socialveo-core-library-fileuploader.html">FileUploader</a>
+<a class="list-group-item" href="./socialveo-core-library-filesystem.html">Filesystem</a>
+<a class="list-group-item" href="./socialveo-core-library-formatphrase.html">FormatPhrase</a>
+<a class="list-group-item" href="./socialveo-core-library-gettext.html">Gettext</a>
+<a class="list-group-item" href="./socialveo-core-library-googleclientwrapper.html">GoogleClientWrapper</a>
+<a class="list-group-item" href="./socialveo-core-library-hybridauthwrapper.html">HybridAuthWrapper</a>
+<a class="list-group-item" href="./socialveo-core-library-inviter.html">Inviter</a>
+<a class="list-group-item" href="./socialveo-core-library-mailer.html">Mailer</a>
+<a class="list-group-item" href="./socialveo-core-library-oauth2storage.html">OAuth2Storage</a>
+<a class="list-group-item" href="./socialveo-core-library-sqllogger.html">SqlLogger</a>
+<a class="list-group-item" href="./socialveo-core-library-urlembed.html">UrlEmbed</a></div>
+<a class="list-group-item" href="#navigation-17529-17536" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\library\db <b class="caret"></b></a><div id="navigation-17529-17536" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-db-migration.html">Migration</a></div>
+<a class="list-group-item" href="#navigation-17529-17537" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\library\import <b class="caret"></b></a><div id="navigation-17529-17537" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-import-phpfoximporter.html">PhpfoxImporter</a>
+<a class="list-group-item" href="./socialveo-core-library-import-socialveoimporter.html">SocialveoImporter</a></div>
+<a class="list-group-item" href="#navigation-17529-17538" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\library\payment <b class="caret"></b></a><div id="navigation-17529-17538" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-payment.html">Payment</a></div>
+<a class="list-group-item" href="#navigation-17529-17539" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\library\payment\adapter <b class="caret"></b></a><div id="navigation-17529-17539" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-adapter-abstractadapter.html">AbstractAdapter</a>
+<a class="list-group-item" href="./socialveo-core-library-payment-adapter-interfaceadapter.html">InterfaceAdapter</a>
+<a class="list-group-item" href="./socialveo-core-library-payment-adapter-paypaladapter.html">PayPalAdapter</a>
+<a class="list-group-item" href="./socialveo-core-library-payment-adapter-paymentadapter.html">PaymentAdapter</a>
+<a class="list-group-item" href="./socialveo-core-library-payment-adapter-stripeadapter.html">StripeAdapter</a></div>
+<a class="list-group-item" href="#navigation-17529-17540" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\library\payment\adapter\PayPal <b class="caret"></b></a><div id="navigation-17529-17540" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-adapter-paypal-paypal.html">PayPal</a></div>
+<a class="list-group-item" href="#navigation-17529-17541" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\library\payment\adapter\Stripe <b class="caret"></b></a><div id="navigation-17529-17541" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-payment-adapter-stripe-stripe.html">Stripe</a></div>
+<a class="list-group-item" href="#navigation-17529-17542" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\library\router <b class="caret"></b></a><div id="navigation-17529-17542" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-router-group.html">Group</a>
+<a class="list-group-item" href="./socialveo-core-library-router-route.html">Route</a></div>
+<a class="list-group-item" href="#navigation-17529-17543" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\library\view <b class="caret"></b></a><div id="navigation-17529-17543" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-library-view-view.html">View</a>
+<a class="list-group-item" href="./socialveo-core-library-view-volt.html">Volt</a>
+<a class="list-group-item" href="./socialveo-core-library-view-voltcompiler.html">VoltCompiler</a></div>
+<a class="list-group-item" href="#navigation-17529-17544" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\models <b class="caret"></b></a><div id="navigation-17529-17544" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-models-abstractquery.html">AbstractQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-circle.html">Circle</a>
+<a class="list-group-item" href="./socialveo-core-models-comment.html">Comment</a>
+<a class="list-group-item" href="./socialveo-core-models-connection.html">Connection</a>
+<a class="list-group-item" href="./socialveo-core-models-connectioncircle.html">ConnectionCircle</a>
+<a class="list-group-item" href="./socialveo-core-models-googlegeocodecache.html">GoogleGeocodeCache</a>
+<a class="list-group-item" href="./socialveo-core-models-googlemapcache.html">GoogleMapCache</a>
+<a class="list-group-item" href="./socialveo-core-models-index.html">Index</a>
+<a class="list-group-item" href="./socialveo-core-models-invitation.html">Invitation</a>
+<a class="list-group-item" href="./socialveo-core-models-karma.html">Karma</a>
+<a class="list-group-item" href="./socialveo-core-models-karmabadge.html">KarmaBadge</a>
+<a class="list-group-item" href="./socialveo-core-models-karmaquery.html">KarmaQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-lightmodel.html">LightModel</a>
+<a class="list-group-item" href="./socialveo-core-models-location.html">Location</a>
+<a class="list-group-item" href="./socialveo-core-models-locationcountry.html">LocationCountry</a>
+<a class="list-group-item" href="./socialveo-core-models-locationlocality.html">LocationLocality</a>
+<a class="list-group-item" href="./socialveo-core-models-locationregion.html">LocationRegion</a>
+<a class="list-group-item" href="./socialveo-core-models-log.html">Log</a>
+<a class="list-group-item" href="./socialveo-core-models-media.html">Media</a>
+<a class="list-group-item" href="./socialveo-core-models-mediaquery.html">MediaQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-messages.html">Messages</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogs.html">MessagesDialogs</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogsquery.html">MessagesDialogsQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogsusers.html">MessagesDialogsUsers</a>
+<a class="list-group-item" href="./socialveo-core-models-messagesdialogsusersquery.html">MessagesDialogsUsersQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-migration.html">Migration</a>
+<a class="list-group-item" href="./socialveo-core-models-network.html">Network</a>
+<a class="list-group-item" href="./socialveo-core-models-networkfields.html">NetworkFields</a>
+<a class="list-group-item" href="./socialveo-core-models-networkquery.html">NetworkQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-notification.html">Notification</a>
+<a class="list-group-item" href="./socialveo-core-models-oauth2accesstoken.html">OAuth2AccessToken</a>
+<a class="list-group-item" href="./socialveo-core-models-oauth2refreshtoken.html">OAuth2RefreshToken</a>
+<a class="list-group-item" href="./socialveo-core-models-passwordrecovery.html">PasswordRecovery</a>
+<a class="list-group-item" href="./socialveo-core-models-payment.html">Payment</a>
+<a class="list-group-item" href="./socialveo-core-models-paymenthistory.html">PaymentHistory</a>
+<a class="list-group-item" href="./socialveo-core-models-post.html">Post</a>
+<a class="list-group-item" href="./socialveo-core-models-postquery.html">PostQuery</a>
+<a class="list-group-item" href="./socialveo-core-models-socialveomodel.html">SocialveoModel</a>
+<a class="list-group-item" href="./socialveo-core-models-spam.html">Spam</a>
+<a class="list-group-item" href="./socialveo-core-models-staticpages.html">StaticPages</a>
+<a class="list-group-item" href="./socialveo-core-models-tag.html">Tag</a>
+<a class="list-group-item" href="./socialveo-core-models-tagassociation.html">TagAssociation</a>
+<a class="list-group-item" href="./socialveo-core-models-user.html">User</a>
+<a class="list-group-item" href="./socialveo-core-models-usersocialprofile.html">UserSocialProfile</a>
+<a class="list-group-item" href="./socialveo-core-models-wallet.html">Wallet</a>
+<a class="list-group-item" href="./socialveo-core-models-wallethistory.html">WalletHistory</a>
+<a class="list-group-item" href="./socialveo-core-models-webevent.html">WebEvent</a></div>
+<a class="list-group-item" href="#navigation-17529-17545" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\models\traits <b class="caret"></b></a><div id="navigation-17529-17545" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-models-traits-jsonproperties.html">JsonProperties</a></div>
+<a class="list-group-item" href="#navigation-17529-17546" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\plugins <b class="caret"></b></a><div id="navigation-17529-17546" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-plugins-autofollow.html">Autofollow</a>
+<a class="list-group-item" href="./socialveo-core-plugins-captcha.html">Captcha</a>
+<a class="list-group-item" href="./socialveo-core-plugins-exceptionlistener.html">ExceptionListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-invitationlistener.html">InvitationListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-karmalistener.html">KarmaListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-networklistener.html">NetworkListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-notificationslistener.html">NotificationsListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-paymentconnectionlistener.html">PaymentConnectionListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-paymentlistener.html">PaymentListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-paymentnetworklistener.html">PaymentNetworkListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-paymentuserlistener.html">PaymentUserListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-sendy.html">Sendy</a>
+<a class="list-group-item" href="./socialveo-core-plugins-usernotificationslistener.html">UserNotificationsListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-webeventlistener.html">WebEventListener</a>
+<a class="list-group-item" href="./socialveo-core-plugins-wordpresslistener.html">WordPressListener</a></div>
+<a class="list-group-item" href="#navigation-17529-17547" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\session <b class="caret"></b></a><div id="navigation-17529-17547" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-session-fakesession.html">FakeSession</a>
+<a class="list-group-item" href="./socialveo-core-session-oauth2user.html">OAuth2User</a>
+<a class="list-group-item" href="./socialveo-core-session-user.html">User</a></div>
+<a class="list-group-item" href="#navigation-17529-17548" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\traits <b class="caret"></b></a><div id="navigation-17529-17548" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-traits-locationfields.html">LocationFields</a></div>
+<a class="list-group-item" href="#navigation-17529-17549" data-toggle="collapse" data-parent="#navigation-17529">Socialveo\Core\validation\validator <b class="caret"></b></a><div id="navigation-17529-17549" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-validation-validator-between.html">Between</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-callback.html">Callback</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-exists.html">Exists</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-password.html">Password</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-uniquenesscirclename.html">UniquenessCircleName</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-uniquenessurl.html">UniquenessUrl</a>
+<a class="list-group-item" href="./socialveo-core-validation-validator-url.html">Url</a></div>
+<a class="list-group-item" href="./socialveo-core-acl.html">Acl</a>
+<a class="list-group-item" href="./socialveo-core-application.html">Application</a>
+<a class="list-group-item" href="./socialveo-core-classloader.html">ClassLoader</a>
+<a class="list-group-item" href="./socialveo-core-console.html">Console</a>
+<a class="list-group-item" href="./socialveo-core-cookies.html">Cookies</a>
+<a class="list-group-item" href="./socialveo-core-criteria.html">Criteria</a>
+<a class="list-group-item" href="./socialveo-core-dispatcher.html">Dispatcher</a>
+<a class="list-group-item" href="./socialveo-core-module.html">Module</a>
+<a class="list-group-item" href="./socialveo-core-router.html">Router</a>
+<a class="list-group-item" href="./socialveo-core-translatable.html">Translatable</a>
+<a class="list-group-item" href="./socialveo-core-url.html">Url</a></div>
+<a class="list-group-item" href="#navigation-17550" data-toggle="collapse" data-parent="#navigation">Socialveo\Frontend <b class="caret"></b></a><div id="navigation-17550" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-17550-17551" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\controllers <b class="caret"></b></a><div id="navigation-17550-17551" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-authcontroller.html">AuthController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-chatcontroller.html">ChatController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-circlecontroller.html">CircleController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-commentscontroller.html">CommentsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-connectionscontroller.html">ConnectionsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-frontendcontroller.html">FrontendController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-iframecontroller.html">IframeController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-indexcontroller.html">IndexController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-mapscontroller.html">MapsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-mediacontroller.html">MediaController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-networkscontroller.html">NetworksController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-postscontroller.html">PostsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-searchcontroller.html">SearchController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-staticpagescontroller.html">StaticPagesController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-userscontroller.html">UsersController</a></div>
+<a class="list-group-item" href="#navigation-17550-17552" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\controllers\api <b class="caret"></b></a><div id="navigation-17550-17552" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-api-jsoncontroller.html">JsonController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-mapscontroller.html">MapsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-notificationscontroller.html">NotificationsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-socketcontroller.html">SocketController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-api-translatorcontroller.html">TranslatorController</a></div>
+<a class="list-group-item" href="#navigation-17550-17553" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\controllers\payments <b class="caret"></b></a><div id="navigation-17550-17553" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-payments-paypalcontroller.html">PayPalController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-payments-paymentscontroller.html">PaymentsController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-payments-stripecontroller.html">StripeController</a></div>
+<a class="list-group-item" href="#navigation-17550-17554" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\controllers\users <b class="caret"></b></a><div id="navigation-17550-17554" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-controllers-users-blockscontroller.html">BlocksController</a>
+<a class="list-group-item" href="./socialveo-frontend-controllers-users-followcontroller.html">FollowController</a></div>
+<a class="list-group-item" href="#navigation-17550-17555" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\forms <b class="caret"></b></a><div id="navigation-17550-17555" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-forms-changepassword.html">ChangePassword</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-forgotpassword.html">ForgotPassword</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-login.html">Login</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-network.html">Network</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-networkchangeavatar.html">NetworkChangeAvatar</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-networkchangecover.html">NetworkChangeCover</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-networkpayment.html">NetworkPayment</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-payment.html">Payment</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-registration.html">Registration</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-settingchangeemail.html">SettingChangeEmail</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-settingchangepassword.html">SettingChangePassword</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-useravailability.html">UserAvailability</a>
+<a class="list-group-item" href="./socialveo-frontend-forms-usersetting.html">UserSetting</a></div>
+<a class="list-group-item" href="#navigation-17550-17556" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\forms\user <b class="caret"></b></a><div id="navigation-17550-17556" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-forms-user-block.html">Block</a></div>
+<a class="list-group-item" href="#navigation-17550-17557" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\routes <b class="caret"></b></a><div id="navigation-17550-17557" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-routes-apiroutes.html">ApiRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-authroutes.html">AuthRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-chatroutes.html">ChatRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-circleroutes.html">CircleRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-commentsroutes.html">CommentsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-connectionsroutes.html">ConnectionsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-iframeroutes.html">IframeRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-indexroutes.html">IndexRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-maproutes.html">MapRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-mediaroutes.html">MediaRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-networksroutes.html">NetworksRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-paymentsroutes.html">PaymentsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-postsroutes.html">PostsRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-searchroutes.html">SearchRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-staticpagesroutes.html">StaticPagesRoutes</a>
+<a class="list-group-item" href="./socialveo-frontend-routes-usersroutes.html">UsersRoutes</a></div>
+<a class="list-group-item" href="#navigation-17550-17558" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets <b class="caret"></b></a><div id="navigation-17550-17558" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationswidget.html">NotificationsWidget</a>
+<a class="list-group-item" href="./socialveo-frontend-widgets-widgetbase.html">WidgetBase</a></div>
+<a class="list-group-item" href="#navigation-17550-17559" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\completeProfile <b class="caret"></b></a><div id="navigation-17550-17559" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-completeprofile-completeprofile.html">CompleteProfile</a></div>
+<a class="list-group-item" href="#navigation-17550-17560" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\conversations <b class="caret"></b></a><div id="navigation-17550-17560" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-conversations-conversations.html">Conversations</a></div>
+<a class="list-group-item" href="#navigation-17550-17561" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\maybeFriend <b class="caret"></b></a><div id="navigation-17550-17561" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-maybefriend-maybefriend.html">MaybeFriend</a></div>
+<a class="list-group-item" href="#navigation-17550-17562" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\maybeNetwork <b class="caret"></b></a><div id="navigation-17550-17562" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-maybenetwork-maybenetwork.html">MaybeNetwork</a></div>
+<a class="list-group-item" href="#navigation-17550-17563" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\notificationsConnection <b class="caret"></b></a><div id="navigation-17550-17563" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationsconnection-notificationsconnection.html">NotificationsConnection</a></div>
+<a class="list-group-item" href="#navigation-17550-17564" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\notificationsGeneric <b class="caret"></b></a><div id="navigation-17550-17564" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationsgeneric-notificationsgeneric.html">NotificationsGeneric</a></div>
+<a class="list-group-item" href="#navigation-17550-17565" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\notificationsMessages <b class="caret"></b></a><div id="navigation-17550-17565" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-notificationsmessages-notificationsmessages.html">NotificationsMessages</a></div>
+<a class="list-group-item" href="#navigation-17550-17566" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\paginator <b class="caret"></b></a><div id="navigation-17550-17566" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-paginator-paginator.html">Paginator</a></div>
+<a class="list-group-item" href="#navigation-17550-17567" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\payment <b class="caret"></b></a><div id="navigation-17550-17567" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-payment-form.html">Form</a>
+<a class="list-group-item" href="./socialveo-frontend-widgets-payment-payment.html">Payment</a></div>
+<a class="list-group-item" href="#navigation-17550-17568" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\posts <b class="caret"></b></a><div id="navigation-17550-17568" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-posts-posts.html">Posts</a></div>
+<a class="list-group-item" href="#navigation-17550-17569" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\search <b class="caret"></b></a><div id="navigation-17550-17569" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-search-search.html">Search</a></div>
+<a class="list-group-item" href="#navigation-17550-17570" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\staticPagesMenu <b class="caret"></b></a><div id="navigation-17550-17570" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-staticpagesmenu-staticpagesmenu.html">StaticPagesMenu</a></div>
+<a class="list-group-item" href="#navigation-17550-17571" data-toggle="collapse" data-parent="#navigation-17550">Socialveo\Frontend\widgets\usersOnline <b class="caret"></b></a><div id="navigation-17550-17571" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-frontend-widgets-usersonline-usersonline.html">UsersOnline</a></div>
+<a class="list-group-item" href="./socialveo-frontend-module.html">Module</a></div>
+<a class="list-group-item" href="#navigation-17572" data-toggle="collapse" data-parent="#navigation">Socialveo\Tasks <b class="caret"></b></a><div id="navigation-17572" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-tasks-basetask.html">BaseTask</a>
+<a class="list-group-item" href="./socialveo-tasks-calctask.html">CalcTask</a>
+<a class="list-group-item" href="./socialveo-tasks-connectiontask.html">ConnectionTask</a>
+<a class="list-group-item" href="./socialveo-tasks-converttask.html">ConvertTask</a>
+<a class="list-group-item" href="./socialveo-tasks-crontask.html">CronTask</a>
+<a class="list-group-item" href="./socialveo-tasks-dbtask.html">DbTask</a>
+<a class="list-group-item" href="./socialveo-tasks-extractlangtask.html">ExtractlangTask</a>
+<a class="list-group-item" href="./socialveo-tasks-generatemodeltask.html">GenerateModelTask</a>
+<a class="list-group-item" href="./socialveo-tasks-importtask.html">ImportTask</a>
+<a class="list-group-item" href="./socialveo-tasks-importertask.html">ImporterTask</a>
+<a class="list-group-item" href="./socialveo-tasks-indextask.html">IndexTask</a>
+<a class="list-group-item" href="./socialveo-tasks-karmatask.html">KarmaTask</a>
+<a class="list-group-item" href="./socialveo-tasks-migrationtask.html">MigrationTask</a>
+<a class="list-group-item" href="./socialveo-tasks-paymenttask.html">PaymentTask</a>
+<a class="list-group-item" href="./socialveo-tasks-paymentstask.html">PaymentsTask</a>
+<a class="list-group-item" href="./socialveo-tasks-phpfoxmigratetask.html">PhpfoxmigrateTask</a>
+<a class="list-group-item" href="./socialveo-tasks-sitemaptask.html">SitemapTask</a>
+<a class="list-group-item" href="./socialveo-tasks-uploadtask.html">UploadTask</a></div>
+<a class="list-group-item" href="#navigation-17573" data-toggle="collapse" data-parent="#navigation">Socialveo\WebApi <b class="caret"></b></a><div id="navigation-17573" class="submenu panel-collapse collapse"><a class="list-group-item" href="#navigation-17573-17574" data-toggle="collapse" data-parent="#navigation-17573">Socialveo\WebApi\Controllers <b class="caret"></b></a><div id="navigation-17573-17574" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-webapi-controllers-chatcontroller.html">ChatController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-circlescontroller.html">CirclesController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-commentscontroller.html">CommentsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-connectionscontroller.html">ConnectionsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-emotionscontroller.html">EmotionsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-indexcontroller.html">IndexController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-karmacontroller.html">KarmaController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-locationscontroller.html">LocationsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-mediacontroller.html">MediaController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-networkscontroller.html">NetworksController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-notificationscontroller.html">NotificationsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-paymentscontroller.html">PaymentsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-postscontroller.html">PostsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-restapicontroller.html">RestApiController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-searchcontroller.html">SearchController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-socialprofilescontroller.html">SocialProfilesController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-spamcontroller.html">SpamController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-staticpagescontroller.html">StaticPagesController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-tagassociationscontroller.html">TagAssociationsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-tagscontroller.html">TagsController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-userblockscontroller.html">UserBlocksController</a>
+<a class="list-group-item" href="./socialveo-webapi-controllers-userscontroller.html">UsersController</a></div>
+<a class="list-group-item" href="./socialveo-webapi-module.html">Module</a></div></div>    </div>
+    <div class="col-md-9 api-content" role="main">
+        <h1>Class Socialveo\Core\helpers\MoneyHelper</h1>
+<div class="top-nav">
+    <a href="index.html">All Classes</a>
+                | <a href="#methods">Methods</a>
+                    | <a href="#constants">Constants</a>
+    </div>
+
+<table class="summaryTable docClass table table-bordered">
+    <colgroup>
+        <col class="col-name" />
+        <col class="col-value" />
+    </colgroup>
+            <tr><th>Inheritance</th><td><a href="socialveo-core-helpers-moneyhelper.html">Socialveo\Core\helpers\MoneyHelper</a></td></tr>
+                                        </table>
+
+<div class="class-description">
+    <p><strong>Class MoneyHelper</strong></p>
+    
+    </div>
+
+<a id="properties"></a>
+
+<a id="methods"></a>
+
+<div class="summary doc-method">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr id="format()">
+        <td><a href="socialveo-core-helpers-moneyhelper.html#format()-detail">format()</a></td>
+        <td>Format money</td>
+        <td><a href="socialveo-core-helpers-moneyhelper.html">Socialveo\Core\helpers\MoneyHelper</a></td>
+    </tr>
+            <tr id="getMoneyFormat()">
+        <td><a href="socialveo-core-helpers-moneyhelper.html#getMoneyFormat()-detail">getMoneyFormat()</a></td>
+        <td>Get money format</td>
+        <td><a href="socialveo-core-helpers-moneyhelper.html">Socialveo\Core\helpers\MoneyHelper</a></td>
+    </tr>
+            <tr id="replacePlaceholders()">
+        <td><a href="socialveo-core-helpers-moneyhelper.html#replacePlaceholders()-detail">replacePlaceholders()</a></td>
+        <td>Replace placeholders</td>
+        <td><a href="socialveo-core-helpers-moneyhelper.html">Socialveo\Core\helpers\MoneyHelper</a></td>
+    </tr>
+    </table>
+</div>
+
+<a id="events"></a>
+
+<a id="constants"></a>
+<div class="summary doc-const">
+    <h2>Constants</h2>
+
+    <p><a href="#" class="toggle">Hide inherited constants</a></p>
+
+    <table class="summary-table table table-striped table-bordered table-hover">
+    <colgroup>
+        <col class="col-const" />
+        <col class="col-value" />
+        <col class="col-description" />
+        <col class="col-defined" />
+    </colgroup>
+    <tr>
+        <th>Constant</th><th>Value</th><th>Description</th><th>Defined By</th>
+    </tr>
+            <tr id="FORMAT_DECIMALS">
+          <td id="FORMAT_DECIMALS-detail">FORMAT_DECIMALS</td>
+          <td>'decimals'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-helpers-moneyhelper.html">Socialveo\Core\helpers\MoneyHelper</a></td>
+        </tr>
+            <tr id="FORMAT_POINT">
+          <td id="FORMAT_POINT-detail">FORMAT_POINT</td>
+          <td>'dec_point'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-helpers-moneyhelper.html">Socialveo\Core\helpers\MoneyHelper</a></td>
+        </tr>
+            <tr id="FORMAT_PREFIX">
+          <td id="FORMAT_PREFIX-detail">FORMAT_PREFIX</td>
+          <td>'pre'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-helpers-moneyhelper.html">Socialveo\Core\helpers\MoneyHelper</a></td>
+        </tr>
+            <tr id="FORMAT_SUFFIX">
+          <td id="FORMAT_SUFFIX-detail">FORMAT_SUFFIX</td>
+          <td>'post'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-helpers-moneyhelper.html">Socialveo\Core\helpers\MoneyHelper</a></td>
+        </tr>
+            <tr id="FORMAT_THOUSANDS">
+          <td id="FORMAT_THOUSANDS-detail">FORMAT_THOUSANDS</td>
+          <td>'thousands_sep'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-helpers-moneyhelper.html">Socialveo\Core\helpers\MoneyHelper</a></td>
+        </tr>
+            <tr id="FORMAT_THOUSANDS_LENGTH">
+          <td id="FORMAT_THOUSANDS_LENGTH-detail">FORMAT_THOUSANDS_LENGTH</td>
+          <td>'thousands_len'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-helpers-moneyhelper.html">Socialveo\Core\helpers\MoneyHelper</a></td>
+        </tr>
+        </table>
+</div>
+
+<h2>Method Details</h2>
+
+<div class="method-doc">
+
+    <div class="detail-header h3" id="format()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-helpers-moneyhelper.html#format()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        format()
+        <span class="detail-header-tag small">
+            public                        static            method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Format money</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-helpers-moneyhelper.html#format()-detail">format</a></strong> ( <span style="color: #0000BB">$number</span>, <span style="color: #0000BB">$currency</span>, <span style="color: #0000BB">$language&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$number</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.integer">integer</a>|<a href="http://www.php.net/language.types.float">float</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$currency</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$language</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                                                    <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="http://www.php.net/class.exception">Exception</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                        </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getMoneyFormat()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-helpers-moneyhelper.html#getMoneyFormat()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getMoneyFormat()
+        <span class="detail-header-tag small">
+            public                        static            method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get money format</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-helpers-moneyhelper.html#getMoneyFormat()-detail">getMoneyFormat</a></strong> ( <span style="color: #0000BB">$language&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$language</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>[optional]</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="replacePlaceholders()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-helpers-moneyhelper.html#replacePlaceholders()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        replacePlaceholders()
+        <span class="detail-header-tag small">
+            public                        static            method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Replace placeholders</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-core-helpers-moneyhelper.html#replacePlaceholders()-detail">replacePlaceholders</a></strong> ( <span style="color: #0000BB">$format</span>, <span style="color: #0000BB">$currency</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$format</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$currency</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                    <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="http://www.php.net/class.exception">Exception</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                        </table>
+
+<!--	-->
+</div>
+        </div>
+</div>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    $("a.toggle").on('click', function () {
+        var $this = $(this);
+        if ($this.hasClass('properties-hidden')) {
+            $this.text($this.text().replace(/Show/,'Hide'));
+            $this.parents(".summary").find(".inherited").show();
+            $this.removeClass('properties-hidden');
+        } else {
+            $this.text($this.text().replace(/Hide/,'Show'));
+            $this.parents(".summary").find(".inherited").hide();
+            $this.addClass('properties-hidden');
+        }
+
+        return false;
+    }).trigger("click");
+
+    var openNavigation = function($item) {
+        var $e = $item.parent();
+        if ($e[0] && $e.is(".submenu")) {
+            $e.addClass("in");
+            $e.prev().removeClass("active");
+            openNavigation($e);
+        }
+    }
+
+    $(document).ready(function() {
+        openNavigation($("#navigation .list-group-item.active"));
+        openNavigation($("#navigation .submenu.active"));
+
+        $('.list-group-item[data-toggle="collapse"] + .submenu.collapse').each(function() {
+            if (!$(this).is(".in")) {
+                $(this).prev().addClass("collapsed");
+            }
+        })
+    });
+    /*]]>*/
+</script>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Sun, 22 Oct 2017 07:58:14 +0000</small></p>
+    <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
+</footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>
