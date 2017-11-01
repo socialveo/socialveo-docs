@@ -123,6 +123,7 @@
 <a class="list-group-item" href="#navigation-7701-7706" data-toggle="collapse" data-parent="#navigation-7701">Socialveo\Core\helpers <b class="caret"></b></a><div id="navigation-7701-7706" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-helpers-cachehelper.html">CacheHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-circlehelper.html">CircleHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-commentshelper.html">CommentsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-confighelper.html">ConfigHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-connectionshelper.html">ConnectionsHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-currencyhelper.html">CurrencyHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-customfieldshelper.html">CustomFieldsHelper</a>
@@ -1048,6 +1049,11 @@
         <td>Verification whether the mobile</td>
         <td><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
     </tr>
+            <tr id="getIsNetwork()">
+        <td><a href="socialveo-core-models-user.html#getIsNetwork()-detail">getIsNetwork()</a></td>
+        <td>Is network</td>
+        <td><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
+    </tr>
             <tr class="inherited" id="getIsOwner()">
         <td><a href="socialveo-core-models-socialveomodel.html#getIsOwner()-detail">getIsOwner()</a></td>
         <td>Check if user is owner of resource</td>
@@ -1076,6 +1082,11 @@
             <tr id="getIsRequiredPassword()">
         <td><a href="socialveo-core-models-user.html#getIsRequiredPassword()-detail">getIsRequiredPassword()</a></td>
         <td>Installed password do I have to drive</td>
+        <td><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
+    </tr>
+            <tr id="getIsUser()">
+        <td><a href="socialveo-core-models-user.html#getIsUser()-detail">getIsUser()</a></td>
+        <td>Is user</td>
         <td><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
     </tr>
             <tr id="getJoinGroups()">
@@ -1339,9 +1350,19 @@ This only works if the model is keeping data snapshots</td>
         <td>Returns true if user is admin or false if is not</td>
         <td><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
     </tr>
+            <tr id="isFollowerOf()">
+        <td><a href="socialveo-core-models-user.html#isFollowerOf()-detail">isFollowerOf()</a></td>
+        <td>Whether user is follower</td>
+        <td><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
+    </tr>
+            <tr id="isFollowingOf()">
+        <td><a href="socialveo-core-models-user.html#isFollowingOf()-detail">isFollowingOf()</a></td>
+        <td>Whether user is follower</td>
+        <td><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
+    </tr>
             <tr id="isFriend()">
         <td><a href="socialveo-core-models-user.html#isFriend()-detail">isFriend()</a></td>
-        <td></td>
+        <td>Whether user is friend</td>
         <td><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
     </tr>
             <tr id="isFriendNetwork()">
@@ -1537,7 +1558,7 @@ includes user Profile Network in the body of the User resource</td>
         <td>Before update hook</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                <tr class="inherited" id="getSourceTable()">
+                                                                                                                                                                                                                                                                                                                                                                                                        <tr class="inherited" id="getSourceTable()">
         <td><a href="socialveo-core-models-socialveomodel.html#getSourceTable()-detail">getSourceTable()</a></td>
         <td>Returns the source table</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
@@ -1547,7 +1568,7 @@ includes user Profile Network in the body of the User resource</td>
         <td>Returns user model of the currently logged in (or passed-in) user</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
-                                                                                                                                                                                                </table>
+                                                                                                                                                                                                        </table>
 </div>
 
 <a id="events"></a>
@@ -1599,6 +1620,13 @@ includes user Profile Network in the body of the User resource</td>
             <tr class="inherited" id="SCENARIO_PAYMENT">
           <td id="SCENARIO_PAYMENT-detail">SCENARIO_PAYMENT</td>
           <td>'payment'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+        </tr>
+            <tr class="inherited" id="SCENARIO_SAVE_USER">
+          <td id="SCENARIO_SAVE_USER-detail">SCENARIO_SAVE_USER</td>
+          <td>'save_user'</td>
           <td>
                         </td>
           <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
@@ -3595,6 +3623,29 @@ includes user Profile Network in the body of the User resource</td>
 
 <!--	-->
 
+    <div class="detail-header h3" id="getIsNetwork()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-user.html#getIsNetwork()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getIsNetwork()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Is network</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a></span> <strong><a href="socialveo-core-models-user.html#getIsNetwork()-detail">getIsNetwork</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="getIsPremium()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="socialveo-core-models-user.html#getIsPremium()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -3706,6 +3757,29 @@ includes user Profile Network in the body of the User resource</td>
 
     <table class="detail-table table table-striped table-bordered table-hover">
         <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a></span> <strong><a href="socialveo-core-models-user.html#getIsRequiredPassword()-detail">getIsRequiredPassword</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getIsUser()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-user.html#getIsUser()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getIsUser()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Is user</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a></span> <strong><a href="socialveo-core-models-user.html#getIsUser()-detail">getIsUser</a></strong> ( )</td></tr>
             </table>
 
 <!--	-->
@@ -4602,6 +4676,62 @@ especially for CustomFieldsBehavior what work only singular.</p>
 
 <!--	-->
 
+    <div class="detail-header h3" id="isFollowerOf()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-user.html#isFollowerOf()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        isFollowerOf()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Whether user is follower</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a></span> <strong><a href="socialveo-core-models-user.html#isFollowerOf()-detail">isFollowerOf</a></strong> ( <span style="color: #0000BB">$user</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user</span></td>
+                  <td class="param-type-col"><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="isFollowingOf()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-user.html#isFollowingOf()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        isFollowingOf()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Whether user is follower</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.boolean">boolean</a></span> <strong><a href="socialveo-core-models-user.html#isFollowingOf()-detail">isFollowingOf</a></strong> ( <span style="color: #0000BB">$user</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$user</span></td>
+                  <td class="param-type-col"><a href="socialveo-core-models-user.html">Socialveo\Core\models\User</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="isFriend()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="socialveo-core-models-user.html#isFriend()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -4614,7 +4744,7 @@ especially for CustomFieldsBehavior what work only singular.</p>
 
     
     <div class="doc-description">
-        <p><strong></strong></p>
+        <p><strong>Whether user is friend</strong></p>
 
         
             </div>
@@ -4640,6 +4770,9 @@ especially for CustomFieldsBehavior what work only singular.</p>
                     </span>
     </div>
 
+            <div class="doc-description deprecated">
+            <strong>Deprecated much better to use <code>$user-&gt;isFriend($network-&gt;user)</code></strong>
+        </div>
     
     <div class="doc-description">
         <p><strong></strong></p>
@@ -5021,7 +5154,7 @@ includes user Profile Network in the body of the User resource</strong></p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 29 Oct 2017 10:00:36 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 01 Nov 2017 18:23:44 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 

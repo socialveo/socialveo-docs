@@ -123,6 +123,7 @@
 <a class="list-group-item" href="#navigation-8079-8084" data-toggle="collapse" data-parent="#navigation-8079">Socialveo\Core\helpers <b class="caret"></b></a><div id="navigation-8079-8084" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-helpers-cachehelper.html">CacheHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-circlehelper.html">CircleHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-commentshelper.html">CommentsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-confighelper.html">ConfigHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-connectionshelper.html">ConnectionsHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-currencyhelper.html">CurrencyHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-customfieldshelper.html">CustomFieldsHelper</a>
@@ -747,7 +748,7 @@
     </tr>
             <tr id="getAvatar()">
         <td><a href="socialveo-core-models-comment.html#getAvatar()-detail">getAvatar()</a></td>
-        <td></td>
+        <td>Returns comment avatar</td>
         <td><a href="socialveo-core-models-comment.html">Socialveo\Core\models\Comment</a></td>
     </tr>
             <tr class="inherited" id="getChangedFields()">
@@ -787,7 +788,7 @@
     </tr>
             <tr id="getLink()">
         <td><a href="socialveo-core-models-comment.html#getLink()-detail">getLink()</a></td>
-        <td>Return link post author</td>
+        <td>Return link commetn author</td>
         <td><a href="socialveo-core-models-comment.html">Socialveo\Core\models\Comment</a></td>
     </tr>
             <tr id="getMedia()">
@@ -814,6 +815,21 @@
         <td><a href="socialveo-core-models-socialveomodel.html#getObjectTypeByParam()-detail">getObjectTypeByParam()</a></td>
         <td>Returns an resource type based on request URI</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+    </tr>
+            <tr id="getOwner()">
+        <td><a href="socialveo-core-models-comment.html#getOwner()-detail">getOwner()</a></td>
+        <td>Returns comment owner</td>
+        <td><a href="socialveo-core-models-comment.html">Socialveo\Core\models\Comment</a></td>
+    </tr>
+            <tr id="getOwnerName()">
+        <td><a href="socialveo-core-models-comment.html#getOwnerName()-detail">getOwnerName()</a></td>
+        <td>Returns comment owner name</td>
+        <td><a href="socialveo-core-models-comment.html">Socialveo\Core\models\Comment</a></td>
+    </tr>
+            <tr id="getOwnerUrl()">
+        <td><a href="socialveo-core-models-comment.html#getOwnerUrl()-detail">getOwnerUrl()</a></td>
+        <td>Returns comment avatar</td>
+        <td><a href="socialveo-core-models-comment.html">Socialveo\Core\models\Comment</a></td>
     </tr>
             <tr id="getParseBody()">
         <td><a href="socialveo-core-models-comment.html#getParseBody()-detail">getParseBody()</a></td>
@@ -1063,7 +1079,7 @@ This only works if the model is keeping data snapshots</td>
         <td>Before update hook</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
     </tr>
-                                                                                                                                                                                <tr class="inherited" id="getSourceTable()">
+                                                                                                                                                                                            <tr class="inherited" id="getSourceTable()">
         <td><a href="socialveo-core-models-socialveomodel.html#getSourceTable()-detail">getSourceTable()</a></td>
         <td>Returns the source table</td>
         <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
@@ -1125,6 +1141,13 @@ This only works if the model is keeping data snapshots</td>
             <tr class="inherited" id="SCENARIO_PAYMENT">
           <td id="SCENARIO_PAYMENT-detail">SCENARIO_PAYMENT</td>
           <td>'payment'</td>
+          <td>
+                        </td>
+          <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+        </tr>
+            <tr class="inherited" id="SCENARIO_SAVE_USER">
+          <td id="SCENARIO_SAVE_USER-detail">SCENARIO_SAVE_USER</td>
+          <td>'save_user'</td>
           <td>
                         </td>
           <td><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
@@ -1780,7 +1803,7 @@ This only works if the model is keeping data snapshots</td>
 
     
     <div class="doc-description">
-        <p><strong></strong></p>
+        <p><strong>Returns comment avatar</strong></p>
 
         
             </div>
@@ -1849,7 +1872,7 @@ This only works if the model is keeping data snapshots</td>
 
     
     <div class="doc-description">
-        <p><strong>Return link post author</strong></p>
+        <p><strong>Return link commetn author</strong></p>
 
         
             </div>
@@ -1902,6 +1925,75 @@ This only works if the model is keeping data snapshots</td>
 
     <table class="detail-table table table-striped table-bordered table-hover">
         <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-models-comment.html#getName()-detail">getName</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getOwner()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-comment.html#getOwner()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getOwner()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Returns comment owner</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-models-comment.html#getOwner()-detail">getOwner</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getOwnerName()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-comment.html#getOwnerName()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getOwnerName()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Returns comment owner name</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-models-comment.html#getOwnerName()-detail">getOwnerName</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getOwnerUrl()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-models-comment.html#getOwnerUrl()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getOwnerUrl()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Returns comment avatar</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-core-models-comment.html#getOwnerUrl()-detail">getOwnerUrl</a></strong> ( )</td></tr>
             </table>
 
 <!--	-->
@@ -2265,7 +2357,7 @@ This only works if the model is keeping data snapshots</td>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 29 Oct 2017 10:00:37 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 01 Nov 2017 18:23:45 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 

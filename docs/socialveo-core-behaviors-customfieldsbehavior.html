@@ -123,6 +123,7 @@
 <a class="list-group-item" href="#navigation-18600-18605" data-toggle="collapse" data-parent="#navigation-18600">Socialveo\Core\helpers <b class="caret"></b></a><div id="navigation-18600-18605" class="submenu panel-collapse collapse"><a class="list-group-item" href="./socialveo-core-helpers-cachehelper.html">CacheHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-circlehelper.html">CircleHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-commentshelper.html">CommentsHelper</a>
+<a class="list-group-item" href="./socialveo-core-helpers-confighelper.html">ConfigHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-connectionshelper.html">ConnectionsHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-currencyhelper.html">CurrencyHelper</a>
 <a class="list-group-item" href="./socialveo-core-helpers-customfieldshelper.html">CustomFieldsHelper</a>
@@ -466,12 +467,17 @@
     </tr>
             <tr id="afterFetch()">
         <td><a href="socialveo-core-behaviors-customfieldsbehavior.html#afterFetch()-detail">afterFetch()</a></td>
-        <td>Save custom fields after saving parent model</td>
+        <td>Fetch custom fields after saving parent model</td>
         <td><a href="socialveo-core-behaviors-customfieldsbehavior.html">Socialveo\Core\behaviors\CustomFieldsBehavior</a></td>
     </tr>
             <tr id="afterSave()">
         <td><a href="socialveo-core-behaviors-customfieldsbehavior.html#afterSave()-detail">afterSave()</a></td>
         <td>Save custom fields after saving parent model</td>
+        <td><a href="socialveo-core-behaviors-customfieldsbehavior.html">Socialveo\Core\behaviors\CustomFieldsBehavior</a></td>
+    </tr>
+            <tr id="beforeSave()">
+        <td><a href="socialveo-core-behaviors-customfieldsbehavior.html#beforeSave()-detail">beforeSave()</a></td>
+        <td>Save custom fields to model properties</td>
         <td><a href="socialveo-core-behaviors-customfieldsbehavior.html">Socialveo\Core\behaviors\CustomFieldsBehavior</a></td>
     </tr>
                 <tr id="getCustomFields()">
@@ -546,7 +552,7 @@
 <tr>
   <th>Method</th><th>Description</th><th>Defined By</th>
 </tr>
-                    <tr id="findRelation()">
+                        <tr id="findRelation()">
         <td><a href="socialveo-core-behaviors-customfieldsbehavior.html#findRelation()-detail">findRelation()</a></td>
         <td>Find relation</td>
         <td><a href="socialveo-core-behaviors-customfieldsbehavior.html">Socialveo\Core\behaviors\CustomFieldsBehavior</a></td>
@@ -690,7 +696,7 @@
 
     
     <div class="doc-description">
-        <p><strong>Save custom fields after saving parent model</strong></p>
+        <p><strong>Fetch custom fields after saving parent model</strong></p>
 
         
             </div>
@@ -728,6 +734,39 @@
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$model</span></td>
                   <td class="param-type-col"><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                    <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="http://www.php.net/class.exception">Exception</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                        </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="beforeSave()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-behaviors-customfieldsbehavior.html#beforeSave()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        beforeSave()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Save custom fields to model properties</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="socialveo-core-behaviors-customfieldsbehavior.html#beforeSave()-detail">beforeSave</a></strong> ( <span style="color: #0000BB">$model</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$model</span></td>
+                  <td class="param-type-col"><a href="socialveo-core-models-network.html">Socialveo\Core\models\Network</a></td>
                   <td class="param-desc-col"></td>
                 </tr>
                                                     <tr>
@@ -794,7 +833,7 @@
         <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="socialveo-core-models-customfields.html">Socialveo\Core\models\CustomFields</a></span> <strong><a href="socialveo-core-behaviors-customfieldsbehavior.html#getCustomFields()-detail">getCustomFields</a></strong> ( <span style="color: #0000BB">$model</span>, <span style="color: #0000BB">$attribute</span> )</td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$model</span></td>
-                  <td class="param-type-col"><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+                  <td class="param-type-col"><a href="socialveo-core-models-network.html">Socialveo\Core\models\Network</a></td>
                   <td class="param-desc-col"></td>
                 </tr>
                             <tr>
@@ -1143,7 +1182,7 @@
         <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.array">array</a></span> <strong><a href="socialveo-core-behaviors-customfieldsbehavior.html#toJson()-detail">toJson</a></strong> ( <span style="color: #0000BB">$model</span> )</td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$model</span></td>
-                  <td class="param-type-col"><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a></td>
+                  <td class="param-type-col"><a href="socialveo-core-models-socialveomodel.html">Socialveo\Core\models\SocialveoModel</a>|<a href="socialveo-core-models-network.html">Socialveo\Core\models\Network</a></td>
                   <td class="param-desc-col"></td>
                 </tr>
                                                 </table>
@@ -1229,7 +1268,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 29 Oct 2017 10:00:49 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 01 Nov 2017 18:23:57 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
