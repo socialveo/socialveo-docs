@@ -392,7 +392,7 @@
             <tr><th>Inheritance</th><td><a href="socialveo-core-forms-socialveoform.html">Socialveo\Core\forms\SocialveoForm</a> &raquo;
 <a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\forms\form.zep">Phalcon\Forms\Form</a></td></tr>
                         <tr><th>Uses Traits</th><td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td></tr>
-                <tr><th>Subclasses</th><td><a href="socialveo-frontend-forms-payment.html">Socialveo\Frontend\forms\Payment</a></td></tr>
+                <tr><th>Subclasses</th><td><a href="socialveo-frontend-forms-network.html">Socialveo\Frontend\forms\Network</a>, <a href="socialveo-frontend-forms-payment.html">Socialveo\Frontend\forms\Payment</a></td></tr>
                         </table>
 
 <div class="class-description">
@@ -433,6 +433,11 @@
         <td>Get view</td>
         <td><a href="socialveo-core-forms-socialveoform.html">Socialveo\Core\forms\SocialveoForm</a></td>
     </tr>
+            <tr id="load()">
+        <td><a href="socialveo-core-forms-socialveoform.html#load()-detail">load()</a></td>
+        <td>Load form</td>
+        <td><a href="socialveo-core-forms-socialveoform.html">Socialveo\Core\forms\SocialveoForm</a></td>
+    </tr>
                 <tr class="inherited" id="t()">
         <td><a href="socialveo-core-translatable.html#t()-detail">t()</a></td>
         <td>Gets translations</td>
@@ -455,7 +460,7 @@
 <tr>
   <th>Method</th><th>Description</th><th>Defined By</th>
 </tr>
-                    <tr id="renderView()">
+                        <tr id="renderView()">
         <td><a href="socialveo-core-forms-socialveoform.html#renderView()-detail">renderView()</a></td>
         <td>Renders partial view without layout</td>
         <td><a href="socialveo-core-forms-socialveoform.html">Socialveo\Core\forms\SocialveoForm</a></td>
@@ -505,7 +510,8 @@
 
     [subclasses] => Array
         (
-            [0] => Socialveo\Frontend\forms\Payment
+            [0] => Socialveo\Frontend\forms\Network
+            [1] => Socialveo\Frontend\forms\Payment
         )
 
     [events] => Array
@@ -786,6 +792,73 @@
 
                 )
 
+            [load] => yii\apidoc\models\MethodDoc Object
+                (
+                    [isAbstract] => 1
+                    [isFinal] => 
+                    [isStatic] => 
+                    [visibility] => public
+                    [definedBy] => Socialveo\Core\forms\SocialveoForm
+                    [params] => Array
+                        (
+                            [$data] => yii\apidoc\models\ParamDoc Object
+                                (
+                                    [name] => $data
+                                    [typeHint] => 
+                                    [isOptional] => 
+                                    [defaultValue] => 
+                                    [isPassedByReference] => 
+                                    [description] => 
+                                    [type] => array
+                                    [types] => Array
+                                        (
+                                            [0] => array
+                                        )
+
+                                    [sourceFile] => vendor/socialveo/socialveo/socialveo/core/forms/SocialveoForm.php
+                                )
+
+                        )
+
+                    [exceptions] => Array
+                        (
+                        )
+
+                    [return] => 
+                    [returnType] => 
+                    [returnTypes] => 
+                    [isReturnByReference] => 
+                    [phpDocContext] => phpDocumentor\Reflection\DocBlock\Context Object
+                        (
+                            [namespace:protected] => Socialveo\Core\forms
+                            [namespace_aliases:protected] => Array
+                                (
+                                    [Config] => \Phalcon\Config
+                                    [Di] => \Phalcon\Di
+                                    [Form] => \Phalcon\Forms\Form
+                                    [Text] => \Phalcon\Text
+                                    [SocialveoModel] => \Socialveo\Core\models\SocialveoModel
+                                    [Translatable] => \Socialveo\Core\Translatable
+                                )
+
+                            [lsen:protected] => 
+                        )
+
+                    [name] => load
+                    [sourceFile] => vendor/socialveo/socialveo/socialveo/core/forms/SocialveoForm.php
+                    [startLine] => 40
+                    [endLine] => 40
+                    [shortDescription] => Load form
+                    [description] => 
+                    [since] => 
+                    [deprecatedSince] => 
+                    [deprecatedReason] => 
+                    [tags] => Array
+                        (
+                        )
+
+                )
+
             [getForm] => yii\apidoc\models\MethodDoc Object
                 (
                     [isAbstract] => 
@@ -846,8 +919,8 @@
 
                     [name] => getForm
                     [sourceFile] => vendor/socialveo/socialveo/socialveo/core/forms/SocialveoForm.php
-                    [startLine] => 41
-                    [endLine] => 77
+                    [startLine] => 47
+                    [endLine] => 83
                     [shortDescription] => Get form
                     [description] => 
                     [since] => 
@@ -934,8 +1007,8 @@
 
                     [name] => renderView
                     [sourceFile] => vendor/socialveo/socialveo/socialveo/core/forms/SocialveoForm.php
-                    [startLine] => 86
-                    [endLine] => 98
+                    [startLine] => 92
+                    [endLine] => 104
                     [shortDescription] => Renders partial view without layout
                     [description] => 
                     [since] => 
@@ -973,7 +1046,7 @@
     [name] => Socialveo\Core\forms\SocialveoForm
     [sourceFile] => vendor/socialveo/socialveo/socialveo/core/forms/SocialveoForm.php
     [startLine] => 26
-    [endLine] => 99
+    [endLine] => 105
     [shortDescription] => Class SocialveoForm
     [description] => 
     [since] => 
@@ -1000,11 +1073,7 @@
                                 )
 
                             [tags:protected] => Array
-                                (
-                                    [0] => phpDocumentor\Reflection\DocBlock\Tag Object
  *RECURSION*
-                                )
-
                             [context:protected] => phpDocumentor\Reflection\DocBlock\Context Object
                                 (
                                     [namespace:protected] => Socialveo\Core\forms
@@ -1066,6 +1135,34 @@
     <table class="detail-table table table-striped table-bordered table-hover">
         <tr><td colspan="3" class="signature"><span class="signature-defs">public abstract</span> <span class="signature-type"><a href="http://php.net/manual/en/language.pseudo-types.php.html">mixed</a></span> <strong><a href="socialveo-core-forms-socialveoform.html#getView()-detail">getView</a></strong> ( )</td></tr>
             </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="load()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-core-forms-socialveoform.html#load()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        load()
+        <span class="detail-header-tag small">
+            public            abstract                        method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Load form</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public abstract</span> <span class="signature-type">void</span> <strong><a href="socialveo-core-forms-socialveoform.html#load()-detail">load</a></strong> ( <span style="color: #0000BB">$data</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$data</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
 
 <!--	-->
 
@@ -1156,7 +1253,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Wed, 01 Nov 2017 18:23:56 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 02 Nov 2017 04:33:59 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 

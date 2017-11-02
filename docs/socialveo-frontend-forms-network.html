@@ -391,6 +391,7 @@
         <col class="col-value" />
     </colgroup>
             <tr><th>Inheritance</th><td><a href="socialveo-frontend-forms-network.html">Socialveo\Frontend\forms\Network</a> &raquo;
+<a href="socialveo-core-forms-socialveoform.html">Socialveo\Core\forms\SocialveoForm</a> &raquo;
 <a href="https://github.com/phalcon/cphalcon/blob/phalcon-v2.0.12/phalcon\forms\form.zep">Phalcon\Forms\Form</a></td></tr>
                         <tr><th>Uses Traits</th><td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td></tr>
                             </table>
@@ -417,13 +418,13 @@
 <tr>
   <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
 </tr>
-        <tr id="$customFields">
+            <tr id="$customFields">
         <td><a href="socialveo-frontend-forms-network.html#$customFields-detail">$customFields</a></td>
         <td><a href="socialveo-core-forms-customfieldsform.html">Socialveo\Core\forms\CustomFieldsForm</a></td>
         <td></td>
         <td><a href="socialveo-frontend-forms-network.html">Socialveo\Frontend\forms\Network</a></td>
     </tr>
-        </table>
+            </table>
 </div>
 
 <div class="summary doc-property">
@@ -441,6 +442,18 @@
 <tr>
   <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
 </tr>
+        <tr id="$createViewPath">
+        <td><a href="socialveo-frontend-forms-network.html#$createViewPath-detail">$createViewPath</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td></td>
+        <td><a href="socialveo-frontend-forms-network.html">Socialveo\Frontend\forms\Network</a></td>
+    </tr>
+                <tr id="$editViewPath">
+        <td><a href="socialveo-frontend-forms-network.html#$editViewPath-detail">$editViewPath</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td></td>
+        <td><a href="socialveo-frontend-forms-network.html">Socialveo\Frontend\forms\Network</a></td>
+    </tr>
             <tr id="$updateFields">
         <td><a href="socialveo-frontend-forms-network.html#$updateFields-detail">$updateFields</a></td>
         <td><a href="http://www.php.net/language.types.array">array</a></td>
@@ -471,9 +484,19 @@
         <td>Gets translations</td>
         <td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td>
     </tr>
+            <tr class="inherited" id="getForm()">
+        <td><a href="socialveo-core-forms-socialveoform.html#getForm()-detail">getForm()</a></td>
+        <td>Get form</td>
+        <td><a href="socialveo-core-forms-socialveoform.html">Socialveo\Core\forms\SocialveoForm</a></td>
+    </tr>
             <tr id="getValue()">
         <td><a href="socialveo-frontend-forms-network.html#getValue()-detail">getValue()</a></td>
         <td>Get value from entity</td>
+        <td><a href="socialveo-frontend-forms-network.html">Socialveo\Frontend\forms\Network</a></td>
+    </tr>
+            <tr id="getView()">
+        <td><a href="socialveo-frontend-forms-network.html#getView()-detail">getView()</a></td>
+        <td>Get form view</td>
         <td><a href="socialveo-frontend-forms-network.html">Socialveo\Frontend\forms\Network</a></td>
     </tr>
             <tr id="initialize()">
@@ -486,12 +509,39 @@
         <td>Validates the form</td>
         <td><a href="socialveo-frontend-forms-network.html">Socialveo\Frontend\forms\Network</a></td>
     </tr>
-            <tr class="inherited" id="t()">
+            <tr id="load()">
+        <td><a href="socialveo-frontend-forms-network.html#load()-detail">load()</a></td>
+        <td>Load form</td>
+        <td><a href="socialveo-frontend-forms-network.html">Socialveo\Frontend\forms\Network</a></td>
+    </tr>
+                <tr class="inherited" id="t()">
         <td><a href="socialveo-core-translatable.html#t()-detail">t()</a></td>
         <td>Gets translations</td>
         <td><a href="socialveo-core-translatable.html">Socialveo\Core\Translatable</a></td>
     </tr>
     </table>
+</div>
+
+<div class="summary doc-method">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+                                    <tr class="inherited" id="renderView()">
+        <td><a href="socialveo-core-forms-socialveoform.html#renderView()-detail">renderView()</a></td>
+        <td>Renders partial view without layout</td>
+        <td><a href="socialveo-core-forms-socialveoform.html">Socialveo\Core\forms\SocialveoForm</a></td>
+    </tr>
+        </table>
 </div>
 
 <a id="events"></a>
@@ -501,6 +551,23 @@
 <h2>Property Details</h2>
 
 <div class="property-doc">
+
+    <div class="detail-header h3" id="$createViewPath-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-frontend-forms-network.html#$createViewPath-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $createViewPath        <span class="detail-header-tag small">
+            protected                                                property
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">protected</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="socialveo-frontend-forms-network.html#$createViewPath-detail">$createViewPath</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'@default/includes/modals/create-network.volt'</span></div>
+
 
     <div class="detail-header h3" id="$customFields-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
@@ -517,6 +584,23 @@
             </div>
 
     <div class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="socialveo-core-forms-customfieldsform.html">Socialveo\Core\forms\CustomFieldsForm</a></span> <a href="socialveo-frontend-forms-network.html#$customFields-detail">$customFields</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$editViewPath-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-frontend-forms-network.html#$editViewPath-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        $editViewPath        <span class="detail-header-tag small">
+            protected                                                property
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">protected</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <a href="socialveo-frontend-forms-network.html#$editViewPath-detail">$editViewPath</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'@default/includes/modals/edit-network.volt'</span></div>
 
 
     <div class="detail-header h3" id="$updateFields-detail">
@@ -565,6 +649,29 @@
                   <td class="param-desc-col"></td>
                 </tr>
                                                 </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getView()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-frontend-forms-network.html#getView()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getView()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Get form view</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="socialveo-frontend-forms-network.html#getView()-detail">getView</a></strong> ( )</td></tr>
+            </table>
 
 <!--	-->
 
@@ -628,6 +735,39 @@
                                                 </table>
 
 <!--	-->
+
+    <div class="detail-header h3" id="load()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="socialveo-frontend-forms-network.html#load()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        load()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>Load form</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="socialveo-frontend-forms-network.html#load()-detail">load</a></strong> ( <span style="color: #0000BB">$data</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$data</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                    <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="http://www.php.net/class.exception">Exception</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                        </table>
+
+<!--	-->
 </div>
         </div>
 </div>
@@ -675,7 +815,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Wed, 01 Nov 2017 18:23:52 +0000</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 02 Nov 2017 04:33:55 +0000</small></p>
     <a href="http://socialveo.com" rel="external"><img src="images/logo-dark.png" style=" height: 35px; margin-top: -6px;"></a></footer>
 </footer>
 
